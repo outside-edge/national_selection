@@ -1,0 +1,7 @@
+year,phase,train_rows,train_last_label,test_rows,test_positive
+2017,validation,319,2016-12-31,46,8
+2018,validation,370,2017-12-31,40,6
+2019,validation,416,2018-12-31,47,5
+2022,test,542,2021-12-31,40,11
+2023,test,591,2022-12-31,64,17
+2024,test,631,2023-12-31,65,8
