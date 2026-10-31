@@ -1,6 +1,6 @@
 # Data and sibling repositories
 
-The current forecasts already use three sibling repositories. Their newer files
+The forecasting pipeline uses three sibling repositories. Their newer files
 and acquisition code can support updates; a new collection system is not needed
 for every input. This inventory was checked against local records on October 30,
 2026. Dates below describe the inspected files, not a promise of complete coverage.
@@ -17,9 +17,10 @@ for every input. This inventory was checked against local records on October 30,
 
 `national_selection.data.import_local` reads raw IPL matches from `ipl_auction`,
 raw international matches from `war`, and the match calendar from `side_order`.
-It records source-file hashes and exports linkage and coverage audits. Its filters
-explicitly stop at **December 31, 2025**. Newer sibling files therefore do not
-automatically move the forecasting cutoff forward.
+It records source-file hashes and exports linkage and coverage audits. The
+benchmark import defaults to **December 31, 2025**. The monthly refresh
+passes a newer endpoint from the validated calendar and writes separate current
+inputs, leaving the benchmark unchanged.
 
 The international archives were retrieved on October 27, 2026. Their local 2026
 records add 21 men's Tests, 100 ODIs and 535 T20Is beyond the frozen analysis
@@ -28,12 +29,12 @@ October using that cache would omit later IPL performances.
 
 [Cricsheet's official downloads](https://cricsheet.org/downloads/) include an IPL
 JSON archive using the same player UUID convention. The downloader in
-`player_value` currently accepts Test, ODI and T20I; extending that existing
-acquisition pattern to IPL is the small missing piece. Its raw and prepared
+`player_value` accepts Test, ODI and T20I. The monthly refresh uses that same
+archive-validation pattern for all three formats and IPL. Its raw and prepared
 international tables are ignored locally rather than tracked in Git, so a fresh
 GitHub checkout must run acquisition or receive a versioned data artifact.
 
-## Reuse contract for weekly updates
+## Reuse contract for monthly updates
 
 1. Refresh international archives with the existing `player_value` downloader.
    Use all available participant history for prior-cap exclusions, rather than
@@ -65,5 +66,17 @@ historical Xs: their training and performance windows must end before each cutof
 - [Unsupported affiliations](../data/build/unsupported_affiliations.csv)
 - [Identity decisions](identity_notes.md)
 
-The published forecasts still use the frozen 2025 cutoff. This source inventory
-does not represent an executed weekly data refresh.
+The site publishes current snapshots when available and retains the frozen
+benchmark. The [monthly workflow](publication.md) records its actual source
+versions and coverage dates. The table above documents the sibling-file inventory
+before the refresh, not the date of the current forecast.
+
+## Affiliation reference used by automation
+
+The local `ipl_auction/data/acquisitions/sources/clod/ipl_2008_2026.csv` is not
+tracked at the upstream Git commit inspected for automation. The three fields
+`year`, `player`, and `nationality` are therefore preserved in this package's
+`reference/auction_affiliations.csv`: 3,385 source rows, without inferred values.
+The importer retains its conservative January-after-season availability rule.
+Match feeds update monthly; this affiliation reference needs an explicit update
+when new source evidence is collected. Unlinked players remain in the audit.

@@ -10,7 +10,8 @@ dates determine which performances can enter each forecast.
 
 [Backtest results](out/report.md) report how well the models predict, against
 historical entry-rate and country/calendar baselines. The sample covers the IPL
-pathway, not every country's domestic player pool. International archive gaps
+pathway, not every country's domestic player pool. Most overseas IPL players have
+already played internationally; see [country coverage](docs/country_coverage.md). International archive gaps
 mean this is recorded entry, not a certified census of debuts.
 
 ## X and Y
@@ -67,6 +68,8 @@ src/national_selection/
   backtest.py         Matched January and common-horizon comparisons
   cli.py              Command-line entry points
   site.py             Forecast tables and rendered publication checks
+  refresh.py          Monthly acquisition and dated forecast publication
+  coverage.py         Player exclusions and country counts
   reference/          Reviewed identity links and verified appearance evidence
 data/build/
   panel_6m.csv         Monthly panel with six-month labels
@@ -80,6 +83,9 @@ out/
   monthly_6m/         Shorter-horizon comparison
   monthly_24m/        Longer-horizon comparison
   annual_*m/         January-only benchmark at each horizon
+data/current/         Updated inputs, separate from the frozen benchmark
+out/current/          Most recent dated forecasts
+out/history/          Preserved forecast snapshots and source receipts
 tests/                Timing, accounting, identity and evaluation tests
 ```
 
@@ -115,8 +121,11 @@ national-selection evaluate --horizons 12
 national-selection forecast --horizons 12 --cutoff 2024-06-01
 ```
 
-The default forecast cutoff is January 1, 2026, using data through December 2025.
-It has no scored future outcomes and is not a live October 2026 forecast. The
+The frozen benchmark defaults to January 1, 2026, using data through December
+2025. `make refresh` creates current forecasts from updated match feeds. The
+monthly GitHub action runs on the 2nd at 08:23 UTC, retains earlier forecasts,
+and publishes the validated site. The actual cutoff follows source coverage;
+[forecast history](forecast_history.qmd) records each publication. The
 `fit_date` and `cutoff_date` are exported separately. Horizon-specific selection
 metadata must exist before forecasting that horizon. Forecasts are rejected if
 the policy was unavailable at the annual fit date, or if the requested cutoff

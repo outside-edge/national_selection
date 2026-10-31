@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 
 from national_selection.cli import read_inputs
+from national_selection.coverage import candidate_audit, country_summary
 from national_selection.features import build_panel
 
 
@@ -70,25 +71,52 @@ def markdown_table(frame):
 
 def prepare_content(root):
     root = Path(root)
-    data = root / "data/build"
+    current = (root / "out/current/refresh.json").is_file()
+    data = root / ("data/current" if current else "data/build")
+    output = "out/current" if current else "out"
+    if current:
+        refresh = json.loads((root / "out/current/refresh.json").read_text())
+        for name, digest in refresh["input_sha256"].items():
+            if checksum(data / name) != digest:
+                raise ValueError("Current input checksum differs from refresh receipt")
+        for name, digest in refresh["forecast_sha256"].items():
+            if checksum(root / "out/current" / name) != digest:
+                raise ValueError(
+                    "Current forecast checksum differs from refresh receipt"
+                )
     manifest = json.loads((data / "manifest.json").read_text())
     observed = manifest["observed_through"]
     tables = read_inputs(data)
     content = [
         "::: {.callout-warning}",
-        "## Historical forecasts",
-        f"Input coverage ends **{observed}**. These are saved forecasts, not live "
-        "predictions as of the website build date.",
+        "## Forecast dates",
+        f"Input coverage ends **{observed}**. The forecast date is determined by "
+        "source coverage, not by the date this website was built. Backtests retain "
+        "their frozen December 2025 inputs.",
         ":::",
         "",
     ]
     runs = []
     for horizon in [12, 6, 24]:
-        directory = root / f"out/monthly_{horizon}m"
+        directory = root / f"{output}/monthly_{horizon}m"
         frame = pd.read_csv(directory / "forecast.csv", dtype={"player_id": str})
         policy = json.loads((directory / "selection.json").read_text())
+        if current and policy["frozen_policy_sha256"] != checksum(
+            root / f"out/monthly_{horizon}m/selection.json"
+        ):
+            raise ValueError("Current forecast policy differs from frozen benchmark")
         selected = validate_forecast(frame, policy, observed)
         cutoff, end, fit = frame.iloc[0][["cutoff_date", "label_end", "fit_date"]]
+        audit = candidate_audit(tables[0], tables[1], tables[2], tables[4], cutoff)
+        candidates = set(audit.loc[audit.reason.eq("candidate"), "player_id"])
+        if candidates != set(frame.player_id):
+            raise ValueError("Candidate exclusion audit disagrees with saved forecast")
+        audit.to_csv(directory / "candidate_audit.csv", index=False)
+        countries = country_summary(audit)
+        countries["unresolved_affiliation"] = countries.get(
+            "unknown_affiliation", 0
+        ) + countries.get("conflicting_affiliations", 0)
+        countries.to_csv(directory / "candidate_countries.csv", index=False)
         snapshot = build_panel(
             *tables,
             cutoffs=[cutoff],
@@ -118,7 +146,7 @@ def prepare_content(root):
         joined = joined.sort_values(
             ["country", "logistic", "player_id"], ascending=[True, False, True]
         )
-        download = f"out/monthly_{horizon}m/forecast_metrics.csv"
+        download = f"{output}/monthly_{horizon}m/forecast_metrics.csv"
         columns = [
             "player_id",
             "player_name",
@@ -157,6 +185,29 @@ def prepare_content(root):
             f"[Backtest](out/monthly_{horizon}m/report.md)",
             "",
         ]
+        country_columns = {
+            "country": "Country",
+            "active_ipl_players": "Active IPL players",
+            "prior_international_appearance": "Excluded: earlier international",
+            "no_international_coverage": "Excluded: unsupported archive",
+            "unresolved_affiliation": "Excluded: affiliation unresolved",
+            "candidate": "Forecast candidates",
+        }
+        summary = countries.reindex(columns=country_columns, fill_value=0)
+        content += [
+            "### Coverage by country",
+            "",
+            "Active means an IPL appearance in the preceding 24 months. Zero "
+            "candidates does not mean zero domestic prospects. See "
+            "[why countries disappear](docs/country_coverage.md).",
+            "",
+            markdown_table(summary.rename(columns=country_columns)),
+            "",
+            "[Player-level exclusions]"
+            f"({output}/monthly_{horizon}m/candidate_audit.csv) · "
+            f"[Country counts]({output}/monthly_{horizon}m/candidate_countries.csv)",
+            "",
+        ]
         for country, group in joined.groupby("country", sort=True):
             display = group[
                 ["player_name", "selected_probability", "logistic", *features]
@@ -186,20 +237,50 @@ def prepare_content(root):
     status = (
         "::: {.callout-important}\n## Forecast vintage\n"
         f"Data through **{observed}**; forecast date(s): **{cutoffs}**. "
-        "These are historical snapshots. Rebuilding this website does not "
-        "advance the data cutoff.\n:::\n"
+        "Rebuilding this website does not advance the data cutoff. "
+        "Backtests retain their frozen December 2025 inputs.\n:::\n"
     )
     (generated / "status.md").write_text(status)
+    history = [
+        "# Forecast history",
+        "",
+        "Each monthly refresh saves its forecasts and acquisition receipts. "
+        "Multiple runs at the same forecast date are retained separately. "
+        "The forecast date, rather than the website build date, determines "
+        "the start of each outcome window.",
+        "",
+        "| Created (UTC) | Forecast date | Inputs through | Downloads |",
+        "| --- | --- | --- | --- |",
+        "| Frozen benchmark | 2026-01-01 | 2025-12-31 | "
+        "[6m](out/monthly_6m/forecast.csv) · "
+        "[12m](out/monthly_12m/forecast.csv) · "
+        "[24m](out/monthly_24m/forecast.csv) |",
+    ]
+    for path in sorted((root / "out/history").glob("*/*/refresh.json"), reverse=True):
+        record = json.loads(path.read_text())
+        directory = path.parent.relative_to(root).as_posix()
+        links = " · ".join(
+            f"[{h}m]({directory}/forecast_{h}m.csv)" for h in [6, 12, 24]
+        )
+        history.append(
+            f"| {record['created_at']} | {record['cutoff_date']} | "
+            f"{record['observed_through']} | {links} · "
+            f"[Receipts]({directory}/refresh.json) |"
+        )
+    (generated / "history.md").write_text("\n".join(history) + "\n")
     downloads = sorted(
-        set(data.glob("*"))
+        set((root / "data/build").glob("*"))
+        | set((root / "data/current").glob("*"))
         | set((root / "out").glob("**/*.csv"))
         | set((root / "out").glob("**/selection.json"))
+        | set((root / "out").glob("**/refresh.json"))
     )
     downloads = [
         p for p in downloads if p.is_file() and "site" not in p.relative_to(root).parts
     ]
     publication = {
         "observed_through": observed,
+        "forecast_source": output,
         "forecasts": runs,
         "downloads": {str(p.relative_to(root)): checksum(p) for p in downloads},
     }

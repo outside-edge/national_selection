@@ -2,6 +2,9 @@
 title: Player forecasts
 ---
 
+[Earlier forecast snapshots](forecast_history.qmd) ·
+[Country coverage](docs/country_coverage.md)
+
 {{< include docs/_generated/forecasts.md >}}
 
 ## Reading the table

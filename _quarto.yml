@@ -5,15 +5,19 @@ project:
   render:
     - index.qmd
     - forecasts.qmd
+    - forecast_history.qmd
     - docs/*.md
     - out/report.md
     - out/monthly_*/report.md
     - out/annual_*/report.md
   resources:
     - data/build/**
+    - data/current/**
     - out/**/*.csv
     - out/**/selection.json
     - out/publication.json
+    - out/current/refresh.json
+    - out/history/**
 
 website:
   title: International entry
@@ -28,6 +32,8 @@ website:
         text: Overview
       - href: forecasts.qmd
         text: Forecasts
+      - href: docs/country_coverage.md
+        text: Countries
       - href: out/report.md
         text: Backtests
       - href: docs/monthly_design.md

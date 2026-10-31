@@ -99,7 +99,8 @@ def clean_appearances(appearances):
     return clean, inconsistent
 
 
-def import_local(workspace, destination):
+def import_local(workspace, destination, *, observed_through="2025-12-31"):
+    observed_through = pd.Timestamp(observed_through).date().isoformat()
     workspace, destination = Path(workspace), Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
     receipts = []
@@ -119,7 +120,7 @@ def import_local(workspace, destination):
     for path in sorted(source.glob("*.json")):
         data = json.loads(path.read_text())
         info = data["info"]
-        if max(info["dates"]) > "2025-12-31":
+        if max(info["dates"]) > observed_through:
             continue
         if info["gender"] != "male" or info["match_type"] != "T20":
             raise ValueError(f"Unexpected competition: {path}")
@@ -198,7 +199,7 @@ def import_local(workspace, destination):
         )
     pd.DataFrame(crosswalk).to_csv(destination / "player_crosswalk.csv", index=False)
     nationality = pd.read_csv(nationality_path)
-    nationality = nationality[nationality.year <= 2025]
+    nationality = nationality[nationality.year <= int(observed_through[:4])]
     linked, unresolved = [], []
     for row in nationality.itertuples():
         ids, method = resolve_name(row.player, direct_ids, name_ids, overrides)
@@ -241,7 +242,8 @@ def import_local(workspace, destination):
     calendar = pd.read_csv(calendar_path, dtype={"match_id": str})
     calendar = calendar[(calendar["format"].isin(["Test", "ODI", "T20I"]))]
     calendar = calendar[
-        (calendar.start_date >= "2008-01-01") & (calendar.start_date <= "2025-12-31")
+        (calendar.start_date >= "2008-01-01")
+        & (calendar.start_date <= observed_through)
     ]
     calendar = calendar.melt(
         id_vars=["match_id", "format", "start_date", "end_date"],
@@ -261,7 +263,7 @@ def import_local(workspace, destination):
             if (
                 info["gender"] != "male"
                 or info.get("team_type") != "international"
-                or min(info["dates"]) > "2025-12-31"
+                or min(info["dates"]) > observed_through
             ):
                 continue
             record(path)
@@ -358,7 +360,7 @@ def import_local(workspace, destination):
 
     report = {
         "source_files": receipts,
-        "observed_through": "2025-12-31",
+        "observed_through": observed_through,
         "ipl_matches": int(stats.match_id.nunique()),
         "ipl_players": int(stats.player_id.nunique()),
         "nationality_linked_players": int(links.player_id.nunique()),
@@ -366,7 +368,7 @@ def import_local(workspace, destination):
         .player_id.nunique()
         .to_dict(),
         "unresolved_nationality_rows": len(unresolved),
-        "international_calendar_matches_2008_2025": int(calendar.match_id.nunique()),
+        "international_calendar_matches": int(calendar.match_id.nunique()),
         "missing_internationals": missing[
             ["match_id", "country", "format", "start_date"]
         ].to_dict("records"),

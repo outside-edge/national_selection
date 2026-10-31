@@ -1,0 +1,49 @@
+{
+  "classification_model_selected_on_validation_log_loss": "context_only",
+  "horizon_months": 6,
+  "training_cadence": "monthly",
+  "observed_through": "2026-10-25",
+  "policy_available_from": "2020-06-01",
+  "refit_cadence": "annual",
+  "input_columns": [
+    "career_matches",
+    "career_runs",
+    "career_balls_faced",
+    "career_dismissals",
+    "career_wickets",
+    "career_balls_bowled",
+    "career_runs_conceded",
+    "career_batting_average",
+    "career_strike_rate",
+    "career_bowling_average",
+    "career_economy",
+    "recent_matches",
+    "recent_runs",
+    "recent_balls_faced",
+    "recent_dismissals",
+    "recent_wickets",
+    "recent_balls_bowled",
+    "recent_runs_conceded",
+    "recent_batting_average",
+    "recent_strike_rate",
+    "recent_bowling_average",
+    "recent_economy",
+    "days_since_last_match",
+    "career_days",
+    "country",
+    "calendar_month"
+  ],
+  "validation_years": [
+    2017,
+    2018,
+    2019
+  ],
+  "test_years": [
+    2022,
+    2023,
+    2024
+  ],
+  "caveat": "Exploratory backtest; repeated players and overlapping windows are dependent.",
+  "frozen_policy_sha256": "554e6f8e2daa773edb9e8a7d4aac5caedcb57551d0c4a466b2a913581f30e084",
+  "benchmark_observed_through": "2025-12-31"
+}

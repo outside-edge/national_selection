@@ -13,6 +13,8 @@ out/site/
 docs/_generated/
 out/publication.json
 out/**/forecast_metrics.csv
+out/**/candidate_audit.csv
+out/**/candidate_countries.csv
 
 /.quarto/
 **/*.quarto_ipynb

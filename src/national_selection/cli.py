@@ -51,7 +51,9 @@ def main():
     ):
         parser.error("Horizons must be distinct positive calendar-month counts")
     if args.command in ["import", "all"]:
-        report = import_local(args.workspace, args.data)
+        report = import_local(
+            args.workspace, args.data, observed_through=args.observed_through
+        )
         print(
             json.dumps(
                 {

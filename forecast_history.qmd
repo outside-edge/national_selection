@@ -1,0 +1,5 @@
+---
+pagetitle: Forecast history
+---
+
+{{< include docs/_generated/history.md >}}
