@@ -358,6 +358,7 @@ def import_local(workspace, destination):
 
     report = {
         "source_files": receipts,
+        "observed_through": "2025-12-31",
         "ipl_matches": int(stats.match_id.nunique()),
         "ipl_players": int(stats.player_id.nunique()),
         "nationality_linked_players": int(links.player_id.nunique()),

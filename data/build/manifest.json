@@ -41200,5 +41200,6 @@
     }
   ],
   "label_caveat": "First recorded appearance, not certified debut. Match counts are observed lower bounds; gaps are exported.",
-  "nationality_timing": "Auction nationality is a proxy for affiliation, not verified eligibility. Affiliation begins January 1 after the recorded season; no future nationality cohort filter."
+  "nationality_timing": "Auction nationality is a proxy for affiliation, not verified eligibility. Affiliation begins January 1 after the recorded season; no future nationality cohort filter.",
+  "observed_through": "2025-12-31"
 }

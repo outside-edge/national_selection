@@ -2,19 +2,20 @@
 
 ## Question, unit and targets
 
-For a player active in the IPL, with no known prior senior international
-appearance at a January cutoff, predict any recorded Test, ODI or T20I appearance
-in the next two calendar years. The unit is player × cutoff. The principal
-quantity is a probability of recorded entry; the secondary quantity is the
-expected recorded match count, including zeros. There is no causal estimand.
+At each monthly cutoff, for a player active in the IPL with no known earlier
+senior international appearance, predict recorded Test, ODI or T20I participation
+during the next H calendar months. H=12 is primary; H=6 and H=24 are comparisons.
+The unit is player × cutoff. Outcomes are any recorded entry and expected
+recorded match count, including zeros. There is no causal estimand. The
+[monthly design](monthly_design.md) records the timing and evaluation choices.
 
-The panel spans January 2010–2024 cutoffs, with outcomes through December 2025.
-The forecast snapshot is January 2026, covering 2026–2027. Every player must have
-an IPL appearance in the previous two years and a nationality record from a
-season before the cutoff. Each player is removed after an earlier international
-appearance for **any** national side. Changing countries does not create a new
-debut. Future outcomes also include any national side; country attribution in
-evaluation remains the affiliation known at the cutoff.
+The panel begins in January 2010 and ends at the latest fully observed window
+for each horizon, using data through December 2025. The default unscored forecast
+is January 2026. Candidates need an IPL appearance in the preceding 24 months
+and country affiliation known at cutoff. Earlier international participation
+for any side removes a player; changing countries does not create a new debut.
+Future outcomes also span any side, while evaluation attributes the player to
+the affiliation known at cutoff.
 
 Season nationality becomes available on January 1 of the following year because
 auction dates are not consistently available. It is a proxy for affiliation,
@@ -39,9 +40,9 @@ No additional domestic competition has been added in this extension.
 | `performances.csv` | Unique player UUID × IPL match; completed-match date and count statistics. |
 | `eligibility.csv` | Unique player UUID × country, with earliest `known_from`; despite its filename this contains affiliation evidence, not certified eligibility. |
 | `international_appearances.csv` | Unique player UUID × match, with country, start date and format. |
-| `prior_appearances.csv` | Independently sourced earlier cap evidence, used only for risk-set exclusion; not a complete debut register or match-count supplement. |
+| `prior_appearances.csv` | Independently sourced cap evidence; excludes earlier caps and contributes a known event within a target window without duplicating an archived same-date appearance. |
 | `calendar.csv` | Unique match ID × country, including both sides of each fixture. |
-| `panel.csv` | Unique player UUID × cutoff; country, target window, observed labels, gap diagnostic and 24 numeric performance features. |
+| `panel_Hm.csv` | Unique player UUID × cutoff; country, target window, observed labels, gap diagnostic and 24 numeric performance features. |
 
 Cricsheet UUID is the primary key. Names and auction IDs never enter the model.
 The auction crosswalk can have several auction IDs for one UUID because its
@@ -63,8 +64,10 @@ country names are normalized before calendar joins.
 Pre-2008 records help exclude previously capped players, but are not exhaustive.
 Independently confirmed earlier appearances can also exclude players: the
 current reference covers Alfonso Thomas and Matheesha Pathirana, whose earlier
-caps are absent from this archive. It does not add fictional complete lineups
-or match counts. These targeted corrections do not certify remaining debuts.
+caps are absent from this archive. Each verified record can also supply one observed appearance if it falls within
+a target window and has no same-date archived appearance. It never certifies a
+complete lineup or complete match-count history. These targeted corrections do
+not certify remaining debuts.
 
 Missing fixtures are compared on country and string match ID. Some missing
 calendar fixtures were abandoned without play, so the number of missing fixtures
@@ -103,7 +106,7 @@ for 24 numeric features. No age, role, first-class statistics, WAR, region or ca
 is currently included. Career always means observed IPL career. Missing rate
 denominators stay missing; medians, missing indicators and scaling are learned
 only from the training fold. Country indicators are learned from training data
-using `OneHotEncoder(handle_unknown="ignore")`; unseen countries have zero country
+alongside calendar month using `OneHotEncoder(handle_unknown="ignore")`; unseen countries have zero country
 indicators, rather than being mapped to an existing country. See the official
 [encoder documentation](https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
@@ -116,48 +119,56 @@ participants; this is not a claim about the original XI.
 
 ## Models and evaluation
 
-Compare a pooled historical base rate; country-only logistic regression;
-performance-only logistic regression and boosted trees; and the same two models
-with country indicators added. All logistic models use C=0.1 and max_iter=5000.
+Compare pooled historical entry rate; country/calendar-only logistic regression;
+performance-only logistic and boosted trees; and the same models with country and
+calendar-month indicators. All logistic models use C=0.1 and max_iter=5000.
 Boosting uses 100 iterations, 7 leaves, minimum 20 examples per leaf, L2=10,
 seed 2026 and no random early-stopping split. Count comparisons are zero, pooled
-mean, performance-only Poisson regression and Poisson with country indicators,
-using alpha=10. The full three-way country/performance ablation applies to
-classification; there is no country-only count model. Settings are initial fixed
-choices, not a tuned optimum.
+mean, performance-only Poisson and Poisson with context, using alpha=10.
+Settings are initial fixed choices, not a tuned optimum. The same C with more
+monthly training rows changes regularization relative to accumulated loss; a
+cadence comparison does not isolate the effect of additional observations.
 
-Validation cutoffs are January 2017, 2018 and 2019; test cutoffs are January 2022,
-2023 and 2024. Each fit uses only snapshots whose label end is strictly before
-the forecast cutoff. January 2022 can train on January 2020, whose outcomes ended
-in December 2021, but not January 2021. Later fits may use newly matured outcomes.
-Classifier selection minimizes pooled validation log loss, without using later
-scores to pick the winner. This objective weights player snapshots equally and
-therefore largely reflects India. Repeated players and overlapping windows make
-rows dependent; no independent-row confidence intervals are reported.
+Parameters refit every January. Every training label must end before that fit
+date, even for forecasts made later in the year. Features update at each monthly
+cutoff. Models and all preprocessing remain fixed during that year. Prediction
+outputs distinguish `fit_date` from `cutoff_date`. Arbitrary-date forecasts use
+the same latest-January fitting rule.
 
-Export pooled, annual and country-specific log loss, Brier, average precision,
-ROC AUC and calibration. Equal-country mean log loss/Brier and count MAE are
-also exported; these give every represented country equal weight and can be
-unstable for very small pools. Country-specific ROC AUC is undefined for a
-single-class sample; average precision is undefined without positives.
+Validation covers 2017–2019 and test covers mature cutoffs in 2022–2024. Each
+horizon/cadence selects its own classifier by pooled validation log loss. Monthly
+procedures validate on months; annual benchmarks validate on January snapshots.
+The common January 2022–January 2024 period makes horizon comparisons transparent.
+January comparisons require identical candidate/date/outcome rows. Selection
+never chooses the best test model retrospectively.
 
-Top-10 rankings use separate country × cutoff pools, taking all available players
-if fewer than ten. Consequently, recall can be mechanically perfect in a small
-country pool. These are descriptive diagnostics, not evidence of strong overseas
-performance. Tied predictions use arbitrary stable UUID order. Pooled base-rate
-AUC can differ from 0.5 because the rate changes by year; annual metrics separate
-within-year ranking from changes in average entry probability.
+See the monthly design for metrics and dependence. Pooled probability losses
+weight player snapshots equally. Within each reported slice, equal-player scores
+give each player total weight one, divided equally over that player's snapshots.
+Country-specific and equal-country metrics are also exported. Small country
+samples cannot establish broad predictive validity. Unique entrants are counted
+separately from repeated positive rows.
 
-Counts measure opportunity and persistence, not skill. Use MAE and Poisson
-deviance. Always-zero predictions can win MAE for sparse outcomes but have infinite
-Poisson deviance when any positive outcome occurs. Predicted counts are expected
-values and need not be integers. Future performance quality would require separate
-role- and exposure-aware targets; estimating quality only among selected players
-would answer a different, selected-sample question.
+Top-ten rankings use country × cutoff pools. When fewer than ten candidates are
+available, all are taken and recall can become mechanically perfect. Tied scores
+use arbitrary UUID order. Calibration compares bin-level predicted and observed
+frequencies. A pooled baseline can have nontrivial ROC AUC because its fitted
+rate changes between years.
 
-The January 2026 forecast trains on labels completed through December 2025 and
-exports the validation-selected classifier plus comparison models. Fitted models
-are ignored local joblib files in `out/models/`. Only load trusted artifacts.
+Count forecasts measure opportunity and persistence, not skill. Compare MAE and
+Poisson deviance. Zero counts can win MAE for rare outcomes but have infinite
+deviance for positive outcomes. Forecast counts are expected values and need not
+be integers. Future batting/bowling quality requires separate role- and
+exposure-aware targets.
+
+Independent horizon classifiers can violate increasing probability with horizon.
+Export those violations; do not claim these probabilities are a survival curve.
+A later landmark survival model could impose coherent timing probabilities.
+
+Fitted forecasting models are ignored local joblib files in each run's `models/`
+folder. Only load trusted artifacts. Their metadata records horizon, fitting
+date, target and input columns. Default forecasts use January 2026 inputs and
+have no observed 2026-onward evaluation labels.
 
 ## Validation and remaining work
 

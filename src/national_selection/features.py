@@ -1,4 +1,4 @@
-"""Build annual two-year forecasts using only completed pre-cutoff matches."""
+"""Build dated forecasts using only completed pre-cutoff matches."""
 
 import numpy as np
 import pandas as pd
@@ -42,11 +42,21 @@ def build_panel(
     appearances,
     calendar,
     prior_appearances=None,
-    first_year=2010,
-    last_year=2024,
+    *,
+    cutoffs,
+    horizon_months=12,
     observed_through="2025-12-31",
     labeled=True,
 ):
+    if (
+        isinstance(horizon_months, bool)
+        or not isinstance(horizon_months, int)
+        or horizon_months <= 0
+    ):
+        raise ValueError("horizon_months must be a positive integer")
+    dates = pd.DatetimeIndex(pd.to_datetime(cutoffs))
+    if dates.hasnans or dates.has_duplicates or not (dates == dates.normalize()).all():
+        raise ValueError("Cutoffs must be unique, nonmissing calendar dates")
     perf, eligible, apps = performances.copy(), eligibility.copy(), appearances.copy()
     for frame, field in [(perf, "end_date"), (eligible, "known_from"), (apps, "date")]:
         frame[field] = pd.to_datetime(frame[field])
@@ -60,9 +70,13 @@ def build_panel(
         if perf[column].isna().any() or (perf[column] < 0).any():
             raise ValueError(f"Invalid totals: {column}")
     cap_records = apps[["player_id", "date"]]
+    verified = pd.Series(dtype="datetime64[ns]")
     if prior_appearances is not None:
         prior = prior_appearances[["player_id", "date"]].copy()
         prior["date"] = pd.to_datetime(prior.date)
+        if prior.player_id.duplicated().any():
+            raise ValueError("Duplicate verified prior appearance")
+        verified = prior.set_index("player_id").date
         cap_records = pd.concat([cap_records, prior], ignore_index=True)
     first = cap_records.groupby("player_id").date.min()
     app_groups = {p: g for p, g in apps.groupby("player_id")}
@@ -82,11 +96,14 @@ def build_panel(
         for player, group in perf.groupby("player_id")
     }
     rows = []
-    for year in range(first_year, last_year + 1):
-        cutoff = pd.Timestamp(year, 1, 1)
-        horizon = cutoff + pd.DateOffset(years=2)
+    for cutoff in dates.sort_values():
+        horizon = cutoff + pd.DateOffset(months=horizon_months)
+        if not labeled and cutoff > pd.Timestamp(observed_through) + pd.Timedelta(
+            days=1
+        ):
+            raise ValueError("Forecast cutoff exceeds documented input coverage")
         if labeled and horizon - pd.Timedelta(days=1) > pd.Timestamp(observed_through):
-            raise ValueError("Incomplete two-year label window")
+            raise ValueError("Incomplete forecast label window")
         supported_countries = set(apps.loc[apps.date < cutoff, "country"])
         known_rows = eligible[eligible.known_from <= cutoff]
         counts = known_rows.groupby("player_id").country.nunique()
@@ -107,14 +124,25 @@ def build_panel(
             future = player_apps[
                 (player_apps.date >= cutoff) & (player_apps.date < horizon)
             ]
+            extra_verified = int(
+                player in verified
+                and cutoff <= verified[player] < horizon
+                and verified[player] not in set(future.date)
+            )
+            observed_count = len(future) + extra_verified
             row = dict(
                 player_id=player,
                 country=known[player],
                 player_name=before.iloc[-1].player_name,
                 cutoff_date=cutoff.date().isoformat(),
+                horizon_months=horizon_months,
+                calendar_month=cutoff.month,
+                event_date=first[player].date().isoformat()
+                if labeled and player in first
+                else None,
                 label_end=(horizon - pd.Timedelta(days=1)).date().isoformat(),
-                selected=int(len(future) > 0) if labeled else np.nan,
-                n_matches=len(future) if labeled else np.nan,
+                selected=int(observed_count > 0) if labeled else np.nan,
+                n_matches=observed_count if labeled else np.nan,
                 missing_affiliation_matches=int(
                     (
                         (missing.country == known[player])

@@ -38,5 +38,7 @@ sets merely because their earlier appearances are missing from Cricsheet:
   [ICC player profile](https://www.icc-cricket.com/rankings/73830/matheesha-pathirana).
 
 The source URLs, UUIDs, event dates and review dates are in `prior_appearances.csv`.
-This is exclusion evidence, not an exhaustive debut register; recorded outcome
-counts are still computed from imported complete match lineups.
+This is not an exhaustive debut register. An earlier verified cap excludes a
+player; if it falls inside a target window, it also supplies one known appearance
+unless an archived appearance already exists on that date. It does not make the
+rest of that fixture or that player's career complete.

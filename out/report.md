@@ -1,46 +1,54 @@
-# Two-year international-entry pilot
+# Monthly international-entry backtests
 
-Validation selected **base_rate** by log loss.
+Predictions update monthly; model parameters refit each January using fully matured training labels. Primary horizon: 12 months. Evaluated horizons: 6, 12, 24 months. Model choice uses mature 2017–2019 validation outcomes.
 
-Later evaluation: 173 player snapshots, 90 distinct players, 38 positive snapshots across 2022–2024 cutoffs.
+## Same-date comparison across horizons
 
-Labels are recorded international entry and recorded appearances. Missing archive matches and unresolved identities limit interpretation.
+All rows below use shared forecast dates from 2022-01-01 through 2024-01-01. Each horizon has a different outcome frequency: compare improvement over its own baseline, not raw scores between horizons.
 
-## Classification
+| Horizon | Chosen model | Log loss | Base-rate log loss | Improvement | Brier | Average precision | Players | Unique entrants |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 6 months | context_only | 0.270 | 0.270 | -0.1% | 0.069 | 0.112 | 90 | 20 |
+| 12 months | base_rate | 0.437 | 0.437 | 0.0% | 0.128 | 0.147 | 90 | 25 |
+| 24 months | base_rate | 0.556 | 0.556 | 0.0% | 0.179 | 0.206 | 90 | 25 |
 
-| Model | Test log loss | Brier | Average precision | Top-10 precision |
-| --- | ---: | ---: | ---: | ---: |
-| base_rate | 0.553 | 0.178 | 0.188 | 34.4% |
-| boosting | 0.538 | 0.166 | 0.405 | 46.9% |
-| boosting_country | 0.536 | 0.165 | 0.417 | 46.9% |
-| country_only | 0.552 | 0.178 | 0.238 | 34.4% |
-| logistic | 0.529 | 0.164 | 0.411 | 46.9% |
-| logistic_country | 0.526 | 0.164 | 0.413 | 46.9% |
+Positive improvement means lower log loss. These are descriptive differences; repeated players and overlapping windows are not independent observations.
 
-Lower log loss and Brier are better. Higher average precision and top-10 precision are better. Up to ten players per country and year form the ranking comparison; tied base-rate ranks use arbitrary stable ID order.
+## All 12-month classifiers
 
-## Match counts
+Every family was specified before the monthly backtest. The lowest test loss does not override validation model selection.
 
-| Model | Test MAE | Poisson deviance |
-| --- | ---: | ---: |
-| mean_count | 3.538 | 10.286 |
-| poisson | 3.364 | 9.348 |
-| poisson_country | 3.363 | 9.348 |
-| zero_count | 2.520 | inf |
+| Model | Validation log loss | Test log loss | Test Brier | Test average precision | Test ROC AUC | Test top-10 precision |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| base_rate | 0.287 | 0.384 | 0.110 | 0.111 | 0.437 | 18.4% |
+| boosting | 0.360 | 0.339 | 0.097 | 0.366 | 0.756 | 33.1% |
+| boosting_context | 0.369 | 0.334 | 0.096 | 0.386 | 0.771 | 32.2% |
+| context_only | 0.287 | 0.384 | 0.110 | 0.121 | 0.472 | 18.4% |
+| logistic | 0.348 | 0.345 | 0.093 | 0.417 | 0.735 | 34.4% |
+| logistic_context | 0.345 | 0.342 | 0.093 | 0.415 | 0.743 | 32.8% |
 
-Counts measure opportunity, not performance quality. Always-zero predictions can minimize absolute error for sparse outcomes but have infinite Poisson deviance on positive outcomes.
+## Full 12-month test
 
-These are rolling chronological fits with fully matured labels. Overlapping windows and repeated players are dependent. Identity corrections were made during development; this is an exploratory backtest rather than an untouched confirmation sample.
+The chosen base_rate model has log loss 0.384, Brier 0.110, average precision 0.111, ROC AUC 0.437, and top-10 precision 18.4%.
+Mean predicted probability: 8.3%; observed entry frequency: 12.3%. Sample: 1987 snapshots, 93 distinct players, 26 distinct observed entrants.
 
-## Coverage by country
+Top-ten rankings use country/month pools. Calibration bins, all model families, count forecasts, annual breakdowns, country breakdowns and equal-player metrics are in each run folder.
 
-Country is the auction nationality recorded before each cutoff, a proxy for affiliation.
-Outcomes count appearances for any national side; earlier appearances for any side exclude a player.
+## January-only benchmark
 
-| Country | Test snapshots | Distinct players | Positive snapshots | Missing-calendar fixtures in label windows (max) |
-| --- | ---: | ---: | ---: | ---: |
-| England | 1 | 1 | 1 | 2 |
-| India | 171 | 88 | 36 | 6 |
-| South Africa | 1 | 1 | 1 | 5 |
+Both procedures below are evaluated on the same January candidate/date rows. Each chooses its model using its own validation cadence. The CSV also compares every identical model family.
 
-Per-country metrics and equal-country averages are exported separately. Small country samples cannot establish country-specific predictive accuracy. The pooled model is dominated by the largest cohort. IPL participation is a selective pathway, especially for overseas players who often already have caps. These results do not cover every country's domestic player pool.
+| Training snapshots | Chosen model | January test log loss | Brier | Average precision |
+| --- | --- | ---: | ---: | ---: |
+| monthly | base_rate | 0.435 | 0.128 | 0.137 |
+| annual | context_only | 0.428 | 0.126 | 0.216 |
+
+This compares forecasting procedures, not a causal effect of more observations. Fixed regularization also behaves differently as training rows increase.
+
+## Horizon consistency and limitations
+
+Independent horizon models violate increasing probability with longer horizons in 1/1358 shared forecasts. Raw probabilities are retained; they are not a coherent survival curve.
+
+The sample still covers IPL pathways. Country affiliation is conservatively dated, international history is incomplete, and overseas cohorts are small. Outcomes describe recorded entry; this does not establish comprehensive cross-country accuracy or discrimination.
+
+For definitions, censoring, leakage safeguards and design choices see [monthly design](../docs/monthly_design.md).

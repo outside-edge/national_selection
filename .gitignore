@@ -6,6 +6,6 @@ __pycache__/
 /build/
 dist/
 .DS_Store
-out/models/
+out/**/models/
 
 out/run.log
