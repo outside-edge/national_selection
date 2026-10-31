@@ -11,6 +11,7 @@ bb18be76,Shane Warne,sibling_alias,Australia,2009-01-01
 d18f9182,Mahela Jayawardene,sibling_alias,Sri Lanka,2009-01-01
 4ba44e19,Muttiah Muralitharan,sibling_alias,Sri Lanka,2009-01-01
 0c2730df,Anil Kumble,sibling_alias,India,2009-01-01
+ee7d0c82,Glenn McGrath,reviewed_name_link,Australia,2009-01-01
 8b5b6769,Harbhajan Singh,exact_scorecard_name,India,2009-01-01
 f233bbb4,Sanath Jayasuriya,sibling_alias,Sri Lanka,2009-01-01
 6b71e6cf,Kumar Sangakkara,sibling_alias,Sri Lanka,2009-01-01
@@ -38,38 +39,49 @@ c4487b84,AB de Villiers,exact_scorecard_name,South Africa,2009-01-01
 f3cb53a1,Mark Boucher,sibling_alias,South Africa,2009-01-01
 b5da6c24,Parthiv Patel,sibling_alias,India,2009-01-01
 ff077124,Kamran Akmal,exact_scorecard_name,Pakistan,2009-01-01
+75de770f,Tatenda Taibu,reviewed_name_link,Zimbabwe,2009-01-01
 c3d35165,Albie Morkel,sibling_alias,South Africa,2009-01-01
 fa463154,Ajit Agarkar,sibling_alias,India,2009-01-01
+88fccd6c,Shaun Pollock,reviewed_name_link,South Africa,2009-01-01
 5fa06777,Irfan Pathan,sibling_alias,India,2009-01-01
 57efa3be,Scott Styris,sibling_alias,New Zealand,2009-01-01
+ab89348d,Farveez Maharoof,reviewed_name_link,Sri Lanka,2009-01-01
 5bdcdb72,Tillakaratne Dilshan,sibling_alias,Sri Lanka,2009-01-01
 d0513f63,Cameron White,sibling_alias,Australia,2009-01-01
 3c6ffae8,Yusuf Pathan,sibling_alias,India,2009-01-01
 9f961c14,Joginder Sharma,exact_scorecard_name,India,2009-01-01
+36d33dd0,Ramnaresh Sarwan,reviewed_name_link,West Indies,2009-01-01
 fdedb37c,Simon Katich,sibling_alias,Australia,2009-01-01
 bb345e0b,Gautam Gambhir,sibling_alias,India,2009-01-01
 1c17e270,Robin Uthappa,sibling_alias,India,2009-01-01
+881a9bdd,Shivnarine Chanderpaul,reviewed_name_link,West Indies,2009-01-01
 de8cce37,VVS Laxman,exact_scorecard_name,India,2009-01-01
 619aa81f,Wasim Jaffer,sibling_alias,India,2009-01-01
 740742ef,Rohit Sharma,reviewed_name_link,India,2009-01-01
 d84378a4,Mohammad Kaif,sibling_alias,India,2009-01-01
 1dc12ab9,Suresh Raina,sibling_alias,India,2009-01-01
 26e5cabf,Manoj Tiwary,reviewed_name_link,India,2009-01-01
+1be70c88,Chamara Silva,reviewed_name_link,Sri Lanka,2009-01-01
 fd835ab3,David Hussey,sibling_alias,Australia,2009-01-01
 c3d1402f,RP Singh,exact_scorecard_name,India,2009-01-01
 abfeb126,Murali Kartik,sibling_alias,India,2009-01-01
+20a941bb,Makhaya Ntini,reviewed_name_link,South Africa,2009-01-01
 a12e1d51,Lasith Malinga,sibling_alias,Sri Lanka,2009-01-01
 bcce309e,Chaminda Vaas,sibling_alias,Sri Lanka,2009-01-01
 5d096f3d,Ramesh Powar,sibling_alias,India,2009-01-01
 16dfcc19,Umar Gul,exact_scorecard_name,Pakistan,2009-01-01
 8fd1a8f5,Dale Steyn,sibling_alias,South Africa,2009-01-01
+342d8ade,Dilhara Fernando,reviewed_name_link,Sri Lanka,2009-01-01
 5bb1a1c4,Ishant Sharma,sibling_alias,India,2009-01-01
 98ae73b1,Piyush Chawla,sibling_alias,India,2009-01-01
 f0f628c7,Munaf Patel,sibling_alias,India,2009-01-01
+e0351c86,Nuwan Zoysa,reviewed_name_link,Sri Lanka,2009-01-01
 5bb5a915,Morne Morkel,sibling_alias,South Africa,2009-01-01
 9ab63e7b,Mohammad Hafeez,exact_scorecard_name,Pakistan,2009-01-01
 b61a3e1a,Ross Taylor,sibling_alias,New Zealand,2009-01-01
 4329fbb5,Shane Watson,sibling_alias,Australia,2009-01-01
+2498e163,James Hopes,reviewed_name_link,Australia,2009-01-01
+50758325,Brett Geeves,reviewed_name_link,Australia,2009-01-01
 b63ab531,Luke Pomersbach,sibling_alias,Australia,2009-01-01
 7eae4418,Misbah-ul-Haq,exact_scorecard_name,Pakistan,2009-01-01
 4d6d6280,Salman Butt,exact_scorecard_name,Pakistan,2009-01-01
@@ -148,6 +160,7 @@ a2870fb7,Niraj Patel,reviewed_name_link,India,2009-01-01
 de8d3876,Mahesh Rawat,reviewed_name_link,India,2009-01-01
 3d7e087f,Siddharth Trivedi,reviewed_name_link,India,2009-01-01
 ae091d39,Swapnil Asnodkar,sibling_alias,India,2009-01-01
+53fe6ee4,Darren Lehmann,reviewed_name_link,Australia,2009-01-01
 fe11caa6,Wriddhiman Saha,sibling_alias,India,2009-01-01
 b1451597,Laxmi Ratan Shukla,reviewed_name_link,India,2009-01-01
 e249fdaa,Aakash Chopra,reviewed_name_link,India,2009-01-01
@@ -156,14 +169,19 @@ d4f9dbd4,Cheteshwar Pujara,sibling_alias,India,2009-01-01
 7050a1e7,Debabrata Das,reviewed_name_link,India,2009-01-01
 21ac077a,Ranadeb Bose,reviewed_name_link,India,2009-01-01
 297b26da,Yashpal Singh,exact_scorecard_name,India,2009-01-01
+0fa5042b,Luke Ronchi,reviewed_name_link,New Zealand,2009-01-01
 508a1ea7,Shaun Marsh,sibling_alias,Australia,2009-01-01
+7d3937ed,Dominic Thornely,reviewed_name_link,Australia,2009-01-01
 addfb70e,Shaun Tait,sibling_alias,Australia,2010-01-01
 2e8994e7,JP Duminy,exact_scorecard_name,South Africa,2010-01-01
+ddc0828d,Andrew Flintoff,reviewed_name_link,England,2010-01-01
 39f01cdb,Kevin Pietersen,sibling_alias,England,2010-01-01
 a7c226e1,Fidel Edwards,sibling_alias,West Indies,2010-01-01
 7bf96684,Owais Shah,sibling_alias,England,2010-01-01
 a386e91b,Paul Collingwood,sibling_alias,England,2010-01-01
+0a4ebc61,Tyron Henderson,reviewed_name_link,South Africa,2010-01-01
 7ca5e05d,Ravi Bopara,sibling_alias,England,2010-01-01
+b2ae53f5,Thilan Thushara,reviewed_name_link,Sri Lanka,2010-01-01
 91ffa6c6,Jesse Ryder,sibling_alias,New Zealand,2010-01-01
 35205dfc,Dwayne Smith,sibling_alias,West Indies,2010-01-01
 4180d897,Jerome Taylor,sibling_alias,West Indies,2010-01-01
@@ -174,14 +192,23 @@ e186f49c,Mashrafe Mortaza,exact_scorecard_name,Bangladesh,2010-01-01
 0a476045,Shikhar Dhawan,sibling_alias,India,2010-01-01
 91a4a398,Zaheer Khan,sibling_alias,India,2010-01-01
 1c17e270,Robin Uthappa,sibling_alias,India,2010-01-01
+c404f58a,Dirk Nannes,reviewed_name_link,Australia,2010-01-01
 dcce6f09,David Warner,sibling_alias,Australia,2010-01-01
+16043342,Andrew McDonald,reviewed_name_link,Australia,2010-01-01
+12eddf28,Ryan Harris,reviewed_name_link,Australia,2010-01-01
+611926bc,Graham Napier,reviewed_name_link,England,2010-01-01
 90edaaa9,Sachin Rana,reviewed_name_link,India,2010-01-01
 86ae8ef2,Monish Parmar,reviewed_name_link,India,2010-01-01
 b2570b38,Raiphi Gomez,reviewed_name_link,India,2010-01-01
+c654af19,Ryan McLaren,reviewed_name_link,South Africa,2010-01-01
+d7a57f75,Dillon du Preez,reviewed_name_link,South Africa,2010-01-01
 896d78ad,Angelo Mathews,sibling_alias,Sri Lanka,2010-01-01
 32198ae0,Moises Henriques,sibling_alias,Australia,2010-01-01
 890946a0,Naman Ojha,sibling_alias,India,2010-01-01
 6ef60d3a,Kamran Khan,exact_scorecard_name,India,2010-01-01
+d872f52a,Lee Carseldine,reviewed_name_link,Australia,2010-01-01
+63bff7f9,Shane Harwood,reviewed_name_link,Australia,2010-01-01
+23ac69e6,Robert Quiney,reviewed_name_link,Australia,2010-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2010-01-01
 1dc12ab9,Suresh Raina,sibling_alias,India,2010-01-01
 d8699ab7,Matthew Hayden,sibling_alias,Australia,2010-01-01
@@ -192,6 +219,7 @@ eea6b7f1,Stephen Fleming,sibling_alias,New Zealand,2010-01-01
 c3d35165,Albie Morkel,sibling_alias,South Africa,2010-01-01
 9f961c14,Joginder Sharma,exact_scorecard_name,India,2010-01-01
 b5da6c24,Parthiv Patel,sibling_alias,India,2010-01-01
+20a941bb,Makhaya Ntini,reviewed_name_link,South Africa,2010-01-01
 3576e47e,S Badrinath,exact_scorecard_name,India,2010-01-01
 c8179c68,Shadab Jakati,reviewed_name_link,India,2010-01-01
 495d42a5,R Ashwin,exact_scorecard_name,India,2010-01-01
@@ -205,6 +233,8 @@ d2c2b2d5,Sachin Tendulkar,sibling_alias,India,2010-01-01
 8b5b6769,Harbhajan Singh,exact_scorecard_name,India,2010-01-01
 f233bbb4,Sanath Jayasuriya,sibling_alias,Sri Lanka,2010-01-01
 a12e1d51,Lasith Malinga,sibling_alias,Sri Lanka,2010-01-01
+88fccd6c,Shaun Pollock,reviewed_name_link,South Africa,2010-01-01
+342d8ade,Dilhara Fernando,reviewed_name_link,Sri Lanka,2010-01-01
 709b0bac,Saurabh Tiwary,reviewed_name_link,India,2010-01-01
 a45a5e8d,Abhishek Nayar,reviewed_name_link,India,2010-01-01
 d2a989fc,Dhawal Kulkarni,sibling_alias,India,2010-01-01
@@ -229,6 +259,7 @@ c03f1114,Dinesh Karthik,sibling_alias,India,2010-01-01
 64c34cd0,Shoaib Malik,exact_scorecard_name,Pakistan,2010-01-01
 e03b66ec,Mohammad Asif,exact_scorecard_name,Pakistan,2010-01-01
 5bdcdb72,Tillakaratne Dilshan,sibling_alias,Sri Lanka,2010-01-01
+ab89348d,Farveez Maharoof,reviewed_name_link,Sri Lanka,2010-01-01
 26e5cabf,Manoj Tiwary,reviewed_name_link,India,2010-01-01
 6b19d823,Amit Mishra,sibling_alias,India,2010-01-01
 33a364a6,Rajat Bhatia,reviewed_name_link,India,2010-01-01
@@ -283,13 +314,19 @@ c3d1402f,RP Singh,exact_scorecard_name,India,2010-01-01
 6c6591ab,Pragyan Ojha,sibling_alias,India,2010-01-01
 57efa3be,Scott Styris,sibling_alias,New Zealand,2010-01-01
 bcce309e,Chaminda Vaas,sibling_alias,Sri Lanka,2010-01-01
+1be70c88,Chamara Silva,reviewed_name_link,Sri Lanka,2010-01-01
 fe763256,Venugopal Rao,reviewed_name_link,India,2010-01-01
+4f629497,Shane Bond,reviewed_name_link,New Zealand,2011-01-01
 a757b0d8,Kieron Pollard,sibling_alias,West Indies,2011-01-01
 78eb4223,Kemar Roach,sibling_alias,West Indies,2011-01-01
 3a60e0b5,Wayne Parnell,sibling_alias,South Africa,2011-01-01
 d84378a4,Mohammad Kaif,sibling_alias,India,2011-01-01
 d2a6c0e6,Eoin Morgan,sibling_alias,England,2011-01-01
+69762509,Damien Martyn,reviewed_name_link,Australia,2011-01-01
+6581d753,Justin Kemp,reviewed_name_link,South Africa,2011-01-01
 0f12f9df,Thissara Perera,sibling_alias,Sri Lanka,2011-01-01
+864c199e,Adam Voges,reviewed_name_link,Australia,2011-01-01
+4353bba5,Yusuf Abdulla,reviewed_name_link,South Africa,2011-01-01
 8291f939,Ashok Menaria,reviewed_name_link,India,2011-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2011-01-01
 32198ae0,Moises Henriques,sibling_alias,Australia,2011-01-01
@@ -307,6 +344,7 @@ ae78bc32,Manpreet Gony,sibling_alias,India,2011-01-01
 c8179c68,Shadab Jakati,reviewed_name_link,India,2011-01-01
 b5da6c24,Parthiv Patel,sibling_alias,India,2011-01-01
 b2b50355,Lakshmipathy Balaji,sibling_alias,India,2011-01-01
+ddc0828d,Andrew Flintoff,reviewed_name_link,England,2011-01-01
 5056011d,George Bailey,sibling_alias,Australia,2011-01-01
 6165bca6,Abhinav Mukund,reviewed_name_link,India,2011-01-01
 95a2ea61,Srikkanth Anirudha,reviewed_name_link,India,2011-01-01
@@ -339,6 +377,7 @@ e186f49c,Mashrafe Mortaza,exact_scorecard_name,Bangladesh,2011-01-01
 bb345e0b,Gautam Gambhir,sibling_alias,India,2011-01-01
 c4487b84,AB de Villiers,exact_scorecard_name,South Africa,2011-01-01
 5bdcdb72,Tillakaratne Dilshan,sibling_alias,Sri Lanka,2011-01-01
+c404f58a,Dirk Nannes,reviewed_name_link,Australia,2011-01-01
 dcce6f09,David Warner,sibling_alias,Australia,2011-01-01
 c03f1114,Dinesh Karthik,sibling_alias,India,2011-01-01
 6b19d823,Amit Mishra,sibling_alias,India,2011-01-01
@@ -390,20 +429,26 @@ c3d1402f,RP Singh,exact_scorecard_name,India,2011-01-01
 57efa3be,Scott Styris,sibling_alias,New Zealand,2011-01-01
 a7c226e1,Fidel Edwards,sibling_alias,West Indies,2011-01-01
 35205dfc,Dwayne Smith,sibling_alias,West Indies,2011-01-01
+12eddf28,Ryan Harris,reviewed_name_link,Australia,2011-01-01
 fe763256,Venugopal Rao,reviewed_name_link,India,2011-01-01
 7daedf2f,Arun Karthik,reviewed_name_link,India,2010-01-01
 6ad3a659,Palani Amarnath,reviewed_name_link,India,2010-01-01
+0fa5042b,Luke Ronchi,reviewed_name_link,New Zealand,2010-01-01
+7d3937ed,Dominic Thornely,reviewed_name_link,Australia,2010-01-01
 983f2f61,Swapnil Singh,exact_scorecard_name,India,2010-01-01
 4e04666c,Yogesh Takawale,sibling_alias,India,2010-01-01
 29d72eb2,Ankeet Chavan,sibling_alias,India,2010-01-01
 7d415ea5,Ricky Ponting,sibling_alias,Australia,2010-01-01
 e249fdaa,Aakash Chopra,reviewed_name_link,India,2010-01-01
 d4f9dbd4,Cheteshwar Pujara,sibling_alias,India,2010-01-01
+75de770f,Tatenda Taibu,reviewed_name_link,Zimbabwe,2010-01-01
 4d6d6280,Salman Butt,exact_scorecard_name,Pakistan,2010-01-01
 9ab63e7b,Mohammad Hafeez,exact_scorecard_name,Pakistan,2010-01-01
 85aae393,Iqbal Abdulla,exact_scorecard_name,India,2010-01-01
 dcf81436,Siddarth Kaul,reviewed_name_link,India,2010-01-01
+ee7d0c82,Glenn McGrath,reviewed_name_link,Australia,2010-01-01
 d7c6af50,Daniel Vettori,sibling_alias,New Zealand,2010-01-01
+50758325,Brett Geeves,reviewed_name_link,Australia,2010-01-01
 662c47a6,Yogesh Nagar,reviewed_name_link,India,2010-01-01
 0c2730df,Anil Kumble,sibling_alias,India,2010-01-01
 7eae4418,Misbah-ul-Haq,exact_scorecard_name,Pakistan,2010-01-01
@@ -411,7 +456,9 @@ d7c6af50,Daniel Vettori,sibling_alias,New Zealand,2010-01-01
 d92e42f5,KP Appanna,exact_scorecard_name,India,2010-01-01
 af7dadf7,Balachandra Akhil,reviewed_name_link,India,2010-01-01
 f48cf4da,Devraj Patil,reviewed_name_link,India,2010-01-01
+36d33dd0,Ramnaresh Sarwan,reviewed_name_link,West Indies,2010-01-01
 fdedb37c,Simon Katich,sibling_alias,Australia,2010-01-01
+2498e163,James Hopes,reviewed_name_link,Australia,2010-01-01
 b63ab531,Luke Pomersbach,sibling_alias,Australia,2010-01-01
 eaa90ab4,Pankaj Dharmani,reviewed_name_link,India,2010-01-01
 622cc511,Uday Kaul,reviewed_name_link,India,2010-01-01
@@ -425,11 +472,14 @@ ff077124,Kamran Akmal,exact_scorecard_name,Pakistan,2010-01-01
 b9be6507,Arjun Yadav,reviewed_name_link,India,2010-01-01
 b720a5d6,Dwaraka Ravi Teja,reviewed_name_link,India,2010-01-01
 0ed0cdbf,Halhadar Das,reviewed_name_link,India,2010-01-01
+e0351c86,Nuwan Zoysa,reviewed_name_link,Sri Lanka,2010-01-01
 acd4f5dc,P Vijay Kumar,reviewed_name_link,India,2010-01-01
 94bc776b,Doddapaneni Kalyankrishna,reviewed_name_link,India,2010-01-01
 4b4d1957,Sarvesh Kumar,reviewed_name_link,India,2010-01-01
 c24a2c5d,Sudeep Tyagi,reviewed_name_link,India,2011-01-01
 7daedf2f,Arun Karthik,reviewed_name_link,India,2011-01-01
+b2ae53f5,Thilan Thushara,reviewed_name_link,Sri Lanka,2011-01-01
+0fa5042b,Luke Ronchi,reviewed_name_link,New Zealand,2011-01-01
 983f2f61,Swapnil Singh,exact_scorecard_name,India,2011-01-01
 29d72eb2,Ankeet Chavan,sibling_alias,India,2011-01-01
 e249fdaa,Aakash Chopra,reviewed_name_link,India,2011-01-01
@@ -441,10 +491,12 @@ c42aaf71,Mithun Manhas,reviewed_name_link,India,2011-01-01
 d92e42f5,KP Appanna,exact_scorecard_name,India,2011-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2011-01-01
 eaa90ab4,Pankaj Dharmani,reviewed_name_link,India,2011-01-01
+2498e163,James Hopes,reviewed_name_link,Australia,2011-01-01
 e32d22f6,Pankaj Singh,exact_scorecard_name,India,2011-01-01
 b720a5d6,Dwaraka Ravi Teja,reviewed_name_link,India,2011-01-01
 b9be6507,Arjun Yadav,reviewed_name_link,India,2011-01-01
 0604ef16,Sanjay Bangar,reviewed_name_link,India,2011-01-01
+cfad138c,Chamara Kapugedera,reviewed_name_link,Sri Lanka,2011-01-01
 aaa1b522,Tirumalasetti Suman,reviewed_name_link,India,2011-01-01
 d2340a43,Anand Rajan,exact_scorecard_name,India,2011-01-01
 7bb62642,Anirudh Singh,exact_scorecard_name,India,2011-01-01
@@ -483,13 +535,19 @@ f5180fe6,Mitchell Johnson,sibling_alias,Australia,2013-01-01
 9a158001,Azhar Mahmood,exact_scorecard_name,Pakistan,2013-01-01
 f708a0bc,Brad Hogg,sibling_alias,Australia,2013-01-01
 5d096f3d,Ramesh Powar,sibling_alias,India,2013-01-01
+26ff4c29,Robin Peterson,reviewed_name_link,South Africa,2013-01-01
 e1d1b294,Herschelle Gibbs,sibling_alias,South Africa,2013-01-01
+39f82db3,Daniel Harris,reviewed_name_link,Australia,2013-01-01
+14b14cd8,Darren Bravo,reviewed_name_link,West Indies,2013-01-01
 2e9fdf9b,Doug Bracewell,sibling_alias,New Zealand,2013-01-01
+6042bf26,Nathan Rimmington,reviewed_name_link,Australia,2013-01-01
 7dc35884,Shakib Al Hasan,exact_scorecard_name,Bangladesh,2013-01-01
+d4eef961,Marchant de Lange,reviewed_name_link,South Africa,2013-01-01
 39f01cdb,Kevin Pietersen,sibling_alias,England,2013-01-01
 6c6591ab,Pragyan Ojha,sibling_alias,India,2013-01-01
 c03f1114,Dinesh Karthik,sibling_alias,India,2013-01-01
 626c5379,R Sathish,exact_scorecard_name,India,2013-01-01
+16043342,Andrew McDonald,reviewed_name_link,Australia,2013-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2013-01-01
 1dc12ab9,Suresh Raina,sibling_alias,India,2013-01-01
 4b57e452,M Vijay,exact_scorecard_name,India,2013-01-01
@@ -505,6 +563,7 @@ ae78bc32,Manpreet Gony,sibling_alias,India,2013-01-01
 c24a2c5d,Sudeep Tyagi,reviewed_name_link,India,2013-01-01
 f3171936,Ben Hilfenhaus,sibling_alias,Australia,2013-01-01
 35205dfc,Dwayne Smith,sibling_alias,West Indies,2013-01-01
+3355b542,Francois du Plessis,reviewed_name_link,South Africa,2013-01-01
 3576e47e,Subramanian Badrinath,reviewed_name_link,India,2013-01-01
 d2c2b2d5,Sachin Tendulkar,sibling_alias,India,2013-01-01
 8b5b6769,Harbhajan Singh,exact_scorecard_name,India,2013-01-01
@@ -517,6 +576,7 @@ f0f628c7,Munaf Patel,sibling_alias,India,2013-01-01
 a45a5e8d,Abhishek Nayar,reviewed_name_link,India,2013-01-01
 d2a989fc,Dhawal Kulkarni,sibling_alias,India,2013-01-01
 cf73ad76,James Franklin,sibling_alias,New Zealand,2013-01-01
+1efb8a28,Aiden Blizzard,reviewed_name_link,Australia,2013-01-01
 bb345e0b,Gautam Gambhir,sibling_alias,India,2013-01-01
 3c6ffae8,Yusuf Pathan,sibling_alias,India,2013-01-01
 86dc8f2e,Jacques Kallis,sibling_alias,South Africa,2013-01-01
@@ -547,6 +607,7 @@ c4487b84,AB de Villiers,exact_scorecard_name,South Africa,2013-01-01
 91a4a398,Zaheer Khan,sibling_alias,India,2013-01-01
 5bdcdb72,Tillakaratne Dilshan,sibling_alias,Sri Lanka,2013-01-01
 709b0bac,Saurabh Tiwary,reviewed_name_link,India,2013-01-01
+c404f58a,Dirk Nannes,reviewed_name_link,Australia,2013-01-01
 b63ab531,Luke Pomersbach,sibling_alias,Australia,2013-01-01
 66cf56a5,Abhimanyu Mithun,reviewed_name_link,India,2013-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2013-01-01
@@ -560,6 +621,7 @@ e938e1bc,Praveen Kumar,sibling_alias,India,2013-01-01
 25eeb281,Paul Valthaty,reviewed_name_link,India,2013-01-01
 c3a96caf,Mandeep Singh,exact_scorecard_name,India,2013-01-01
 d67d5f00,David Miller,sibling_alias,South Africa,2013-01-01
+c654af19,Ryan McLaren,reviewed_name_link,South Africa,2013-01-01
 addbde6c,Nitin Saini,reviewed_name_link,India,2013-01-01
 30e37810,Sunny Singh,exact_scorecard_name,India,2013-01-01
 c18496e1,Bipul Sharma,exact_scorecard_name,India,2013-01-01
@@ -567,6 +629,7 @@ bb18be76,Shane Warne,sibling_alias,Australia,2013-01-01
 4329fbb5,Shane Watson,sibling_alias,Australia,2013-01-01
 b61a3e1a,Ross Taylor,sibling_alias,New Zealand,2013-01-01
 0184dc35,Rahul Dravid,sibling_alias,India,2013-01-01
+7c503806,Johan Botha,reviewed_name_link,South Africa,2013-01-01
 addfb70e,Shaun Tait,sibling_alias,Australia,2013-01-01
 a386e91b,Paul Collingwood,sibling_alias,England,2013-01-01
 5b040b81,Amit Singh,sibling_alias,India,2013-01-01
@@ -599,6 +662,9 @@ b9be6507,Arjun Yadav,reviewed_name_link,India,2013-01-01
 c42aaf71,Mithun Manhas,reviewed_name_link,India,2013-01-01
 2e81a32d,Bhuvneshwar Kumar,sibling_alias,India,2013-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2013-01-01
+f846de6a,Marlon Samuels,reviewed_name_link,West Indies,2013-01-01
+b552a935,Alfonso Thomas,reviewed_name_link,South Africa,2013-01-01
+cca50cd6,Luke Wright,reviewed_name_link,England,2013-01-01
 725529bc,Sourav Ganguly,sibling_alias,India,2013-01-01
 30a45b23,Steven Smith,sibling_alias,Australia,2013-01-01
 6b71e6cf,Kumar Sangakkara,sibling_alias,Sri Lanka,2014-01-01
@@ -627,7 +693,9 @@ b8d490fd,Aaron Finch,sibling_alias,Australia,2014-01-01
 fb66ce1f,Chris Morris,sibling_alias,South Africa,2014-01-01
 e94915e6,Sam Curran,sibling_alias,England,2014-01-01
 de4b0555,Rahul Shukla,reviewed_name_link,India,2014-01-01
+4c4fa80b,Sachithra Senanayake,reviewed_name_link,Sri Lanka,2014-01-01
 4ba44e19,Muttiah Muralitharan,sibling_alias,Sri Lanka,2014-01-01
+d68e7f48,Ravi Rampaul,reviewed_name_link,West Indies,2014-01-01
 8a668774,Shoaib Ahmed,exact_scorecard_name,India,2014-01-01
 94eac556,Clint McKay,sibling_alias,Australia,2014-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2014-01-01
@@ -642,6 +710,7 @@ c3d35165,Albie Morkel,sibling_alias,South Africa,2014-01-01
 fe11caa6,Wriddhiman Saha,sibling_alias,India,2014-01-01
 c8179c68,Shadab Jakati,reviewed_name_link,India,2014-01-01
 759ac88f,Mohit Sharma,reviewed_name_link,India,2014-01-01
+c404f58a,Dirk Nannes,reviewed_name_link,Australia,2014-01-01
 d2c2b2d5,Sachin Tendulkar,sibling_alias,India,2014-01-01
 740742ef,Rohit Sharma,reviewed_name_link,India,2014-01-01
 8b5b6769,Harbhajan Singh,exact_scorecard_name,India,2014-01-01
@@ -689,6 +758,7 @@ c4487b84,AB de Villiers,exact_scorecard_name,South Africa,2014-01-01
 41eb4a4f,Vinay Kumar,sibling_alias,India,2014-01-01
 709b0bac,Saurabh Tiwary,reviewed_name_link,India,2014-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2014-01-01
+16043342,Andrew McDonald,reviewed_name_link,Australia,2014-01-01
 d92e42f5,KP Appanna,exact_scorecard_name,India,2014-01-01
 66cf56a5,Abhimanyu Mithun,reviewed_name_link,India,2014-01-01
 2b6e6dec,Adam Gilchrist,sibling_alias,Australia,2014-01-01
@@ -700,6 +770,7 @@ e938e1bc,Praveen Kumar,sibling_alias,India,2014-01-01
 c3a96caf,Mandeep Singh,exact_scorecard_name,India,2014-01-01
 9a158001,Azhar Mahmood,exact_scorecard_name,Pakistan,2014-01-01
 c18496e1,Bipul Sharma,exact_scorecard_name,India,2014-01-01
+12eddf28,Ryan Harris,reviewed_name_link,Australia,2014-01-01
 b63ab531,Luke Pomersbach,sibling_alias,Australia,2014-01-01
 4329fbb5,Shane Watson,sibling_alias,Australia,2014-01-01
 0184dc35,Rahul Dravid,sibling_alias,India,2014-01-01
@@ -711,6 +782,7 @@ f708a0bc,Brad Hogg,sibling_alias,Australia,2014-01-01
 808f425a,James Faulkner,sibling_alias,Australia,2014-01-01
 063b3673,Dishant Yagnik,reviewed_name_link,India,2014-01-01
 3d7e087f,Siddharth Trivedi,reviewed_name_link,India,2014-01-01
+557153ca,Kevon Cooper,reviewed_name_link,West Indies,2014-01-01
 8291f939,Ashok Menaria,reviewed_name_link,India,2014-01-01
 1c914163,Yuvraj Singh,exact_scorecard_name,India,2014-01-01
 1c17e270,Robin Uthappa,sibling_alias,India,2014-01-01
@@ -719,8 +791,11 @@ f708a0bc,Brad Hogg,sibling_alias,Australia,2014-01-01
 2e81a32d,Bhuvneshwar Kumar,sibling_alias,India,2014-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2014-01-01
 30a45b23,Steven Smith,sibling_alias,Australia,2014-01-01
+cca50cd6,Luke Wright,reviewed_name_link,England,2014-01-01
+f846de6a,Marlon Samuels,reviewed_name_link,West Indies,2014-01-01
 725529bc,Sourav Ganguly,sibling_alias,India,2014-01-01
 c42aaf71,Mithun Manhas,reviewed_name_link,India,2014-01-01
+b552a935,Alfonso Thomas,reviewed_name_link,South Africa,2014-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2015-01-01
 1dc12ab9,Suresh Raina,sibling_alias,India,2015-01-01
 fe93fd9d,Ravindra Jadeja,sibling_alias,India,2015-01-01
@@ -865,6 +940,7 @@ f62772e5,Pawan Negi,sibling_alias,India,2017-01-01
 5bb1a1c4,Ishant Sharma,sibling_alias,India,2017-01-01
 99b75528,Jos Buttler,sibling_alias,England,2017-01-01
 a4cc73aa,Sanju Samson,sibling_alias,India,2017-01-01
+e342e5fb,Carlos Brathwaite,reviewed_name_link,West Indies,2017-01-01
 c03f1114,Dinesh Karthik,sibling_alias,India,2017-01-01
 8fd1a8f5,Dale Steyn,sibling_alias,South Africa,2017-01-01
 e938e1bc,Praveen Kumar,sibling_alias,India,2017-01-01
@@ -900,6 +976,7 @@ a757b0d8,Kieron Pollard,sibling_alias,West Indies,2017-01-01
 dbe50b21,Hardik Pandya,sibling_alias,India,2017-01-01
 5b8c830e,Krunal Pandya,sibling_alias,India,2017-01-01
 b5da6c24,Parthiv Patel,sibling_alias,India,2017-01-01
+51a3c5ef,Mitchell McClenaghan,reviewed_name_link,New Zealand,2017-01-01
 bb345e0b,Gautam Gambhir,sibling_alias,India,2017-01-01
 9d430b40,Sunil Narine,sibling_alias,West Indies,2017-01-01
 1c17e270,Robin Uthappa,sibling_alias,India,2017-01-01
@@ -961,6 +1038,7 @@ c03f1114,Dinesh Karthik,sibling_alias,India,2015-01-01
 b8a55852,Brendon McCullum,sibling_alias,New Zealand,2015-01-01
 6b19d823,Amit Mishra,sibling_alias,India,2015-01-01
 c03c6200,Darren Sammy,sibling_alias,West Indies,2015-01-01
+2e8994e7,Jean-Paul Duminy,reviewed_name_link,South Africa,2015-01-01
 b8d490fd,Aaron Finch,sibling_alias,Australia,2015-01-01
 b57f8a9a,Brad Hodge,sibling_alias,Australia,2015-01-01
 508a1ea7,Shaun Marsh,sibling_alias,Australia,2015-01-01
@@ -982,6 +1060,7 @@ c3d35165,Albie Morkel,sibling_alias,South Africa,2015-01-01
 66b30f71,Ashok Dinda,sibling_alias,India,2015-01-01
 2e81a32d,Bhuvneshwar Kumar,sibling_alias,India,2015-01-01
 5bb5a915,Morne Morkel,sibling_alias,South Africa,2015-01-01
+d68e7f48,Ravi Rampaul,reviewed_name_link,West Indies,2015-01-01
 8cf9814c,Mohammed Shami,exact_scorecard_name,India,2015-01-01
 5bb1a1c4,Ishant Sharma,sibling_alias,India,2015-01-01
 3fb19989,Mitchell Starc,sibling_alias,Australia,2015-01-01
@@ -1007,6 +1086,7 @@ b2b50355,Lakshmipathy Balaji,sibling_alias,India,2015-01-01
 96fd40ae,Ashish Nehra,sibling_alias,India,2015-01-01
 759ac88f,Mohit Sharma,reviewed_name_link,India,2015-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2015-01-01
+76388dc8,Samuel Badree,reviewed_name_link,West Indies,2015-01-01
 45eda7c8,Chris Lynn,sibling_alias,Australia,2015-01-01
 fe763256,Venugopal Rao,reviewed_name_link,India,2015-01-01
 012829ff,John Hastings,sibling_alias,Australia,2015-01-01
@@ -1015,9 +1095,12 @@ fe763256,Venugopal Rao,reviewed_name_link,India,2015-01-01
 03806cf8,Josh Hazlewood,sibling_alias,Australia,2015-01-01
 f3171936,Ben Hilfenhaus,sibling_alias,Australia,2015-01-01
 0f721006,Jason Holder,sibling_alias,West Indies,2015-01-01
+dfc4d8b5,Kane Richardson,reviewed_name_link,Australia,2015-01-01
 13c35c9e,Tim Southee,sibling_alias,New Zealand,2015-01-01
 ded9240e,Pat Cummins,sibling_alias,Australia,2015-01-01
 3a60e0b5,Wayne Parnell,sibling_alias,South Africa,2015-01-01
+d4eef961,Marchant de Lange,reviewed_name_link,South Africa,2015-01-01
+531f0278,Krishmar Santokie,reviewed_name_link,West Indies,2015-01-01
 e84ac20c,Matt Henry,sibling_alias,New Zealand,2015-01-01
 00ea847a,Mayank Agarwal,sibling_alias,India,2015-01-01
 95a2ea61,Srikkanth Anirudha,reviewed_name_link,India,2015-01-01
@@ -1031,11 +1114,13 @@ b17e2f24,KL Rahul,exact_scorecard_name,India,2015-01-01
 6dbcf855,Vijay Zol,reviewed_name_link,India,2015-01-01
 5afd4539,Manvinder Bisla,reviewed_name_link,India,2015-01-01
 7050a1e7,Debabrata Das,reviewed_name_link,India,2015-01-01
+272d796e,Ben Dunk,reviewed_name_link,Australia,2015-01-01
 30a2649b,CM Gautam,exact_scorecard_name,India,2015-01-01
 4e04666c,Yogesh Takawale,sibling_alias,India,2015-01-01
 855a210c,Aditya Tare,reviewed_name_link,India,2015-01-01
 85aae393,Iqbal Abdullah,reviewed_name_link,India,2015-01-01
 33a364a6,Rajat Bhatia,reviewed_name_link,India,2015-01-01
+557153ca,Kevon Cooper,reviewed_name_link,West Indies,2015-01-01
 26a85969,Rishi Dhawan,sibling_alias,India,2015-01-01
 c42aaf71,Mithun Manhas,reviewed_name_link,India,2015-01-01
 9170ff49,Parvez Rasool,exact_scorecard_name,India,2015-01-01
@@ -1107,6 +1192,7 @@ dd09ff8e,Brett Lee,sibling_alias,Australia,2012-01-01
 b2b50355,Laxmipathy Balaji,reviewed_name_link,India,2012-01-01
 d2a6c0e6,Eoin Morgan,sibling_alias,England,2012-01-01
 7dc35884,Shakib Al Hasan,exact_scorecard_name,Bangladesh,2012-01-01
+b0c772ee,Brad Haddin,reviewed_name_link,Australia,2012-01-01
 26e5cabf,Manoj Tiwary,reviewed_name_link,India,2012-01-01
 4ec07775,Ryan ten Doeschate,sibling_alias,Netherlands,2012-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2012-01-01
@@ -1119,6 +1205,7 @@ f0f628c7,Munaf Patel,sibling_alias,India,2012-01-01
 cf73ad76,James Franklin,sibling_alias,New Zealand,2012-01-01
 94eac556,Clint McKay,sibling_alias,Australia,2012-01-01
 32198ae0,Moises Henriques,sibling_alias,Australia,2012-01-01
+1efb8a28,Aiden Blizzard,reviewed_name_link,Australia,2012-01-01
 a45a5e8d,Abhishek Nayar,reviewed_name_link,India,2012-01-01
 5fa06777,Irfan Pathan,sibling_alias,India,2012-01-01
 5bb5a915,Morne Morkel,sibling_alias,South Africa,2012-01-01
@@ -1128,13 +1215,17 @@ fe763256,Venugopal Rao,reviewed_name_link,India,2012-01-01
 b8d490fd,Aaron Finch,sibling_alias,Australia,2012-01-01
 66b30f71,Ashoke Dinda,reviewed_name_link,India,2012-01-01
 fa463154,Ajit Agarkar,sibling_alias,India,2012-01-01
+2498e163,James Hopes,reviewed_name_link,Australia,2012-01-01
 890946a0,Naman Ojha,sibling_alias,India,2012-01-01
+16043342,Andrew McDonald,reviewed_name_link,Australia,2012-01-01
+d2d4bb0a,Travis Birt,reviewed_name_link,Australia,2012-01-01
 662c47a6,Yogesh Nagar,reviewed_name_link,India,2012-01-01
 f62772e5,Pawan Negi,sibling_alias,India,2012-01-01
 709b0bac,Saurabh Tiwary,reviewed_name_link,India,2012-01-01
 c4487b84,AB de Villiers,exact_scorecard_name,South Africa,2012-01-01
 91a4a398,Zaheer Khan,sibling_alias,India,2012-01-01
 5bdcdb72,Tillakaratne Dilshan,sibling_alias,Sri Lanka,2012-01-01
+c404f58a,Dirk Nannes,reviewed_name_link,Australia,2012-01-01
 b63ab531,Luke Pomersbach,sibling_alias,Australia,2012-01-01
 c64c2443,Syed Mohammad,reviewed_name_link,India,2012-01-01
 66cf56a5,Abhimanyu Mithun,reviewed_name_link,India,2012-01-01
@@ -1156,6 +1247,7 @@ e938e1bc,Praveen Kumar,sibling_alias,India,2012-01-01
 c3a96caf,Mandeep Singh,exact_scorecard_name,India,2012-01-01
 c18496e1,Bipul Sharma,exact_scorecard_name,India,2012-01-01
 b61a3e1a,Ross Taylor,sibling_alias,New Zealand,2012-01-01
+7c503806,Johan Botha,reviewed_name_link,South Africa,2012-01-01
 0184dc35,Rahul Dravid,sibling_alias,India,2012-01-01
 a386e91b,Paul Collingwood,sibling_alias,England,2012-01-01
 addfb70e,Shaun Tait,sibling_alias,Australia,2012-01-01
@@ -1188,8 +1280,11 @@ d2340a43,Anand Rajan,exact_scorecard_name,India,2012-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2012-01-01
 2e81a32d,Bhuvneshwar Kumar,sibling_alias,India,2012-01-01
 5d9a1a73,Rahul Sharma,reviewed_name_link,India,2012-01-01
+b552a935,Alfonso Thomas,reviewed_name_link,South Africa,2012-01-01
 c42aaf71,Mithun Manhas,reviewed_name_link,India,2012-01-01
+f846de6a,Marlon Samuels,reviewed_name_link,West Indies,2012-01-01
 725529bc,Sourav Ganguly,sibling_alias,India,2012-01-01
+cca50cd6,Luke Wright,reviewed_name_link,England,2012-01-01
 3d8feaf8,Mitchell Marsh,sibling_alias,Australia,2012-01-01
 2815fe50,Abhishek Jhunjhunwala,reviewed_name_link,India,2012-01-01
 d18f9182,Mahela Jayawardene,sibling_alias,Sri Lanka,2012-01-01
@@ -1221,9 +1316,12 @@ f62772e5,Pawan Negi,sibling_alias,India,2012-01-01
 c24a2c5d,Sudeep Tyagi,reviewed_name_link,India,2012-01-01
 db584dad,Chris Gayle,sibling_alias,West Indies,2012-01-01
 3eac9d95,Jacob Oram,sibling_alias,New Zealand,2012-01-01
+c654af19,Ryan McLaren,reviewed_name_link,South Africa,2012-01-01
 d67d5f00,David Miller,sibling_alias,South Africa,2012-01-01
 f3cb53a1,Mark Boucher,sibling_alias,South Africa,2012-01-01
 808f425a,James Faulkner,sibling_alias,Australia,2012-01-01
+67af6f81,Ray Price,reviewed_name_link,Zimbabwe,2012-01-01
+342d8ade,Dilhara Fernando,reviewed_name_link,Sri Lanka,2012-01-01
 e0407c01,Ishwar Pandey,reviewed_name_link,India,2016-01-01
 012829ff,John Hastings,sibling_alias,Australia,2016-01-01
 c42aaf71,Mithun Manhas,reviewed_name_link,India,2016-01-01
@@ -1232,6 +1330,7 @@ b2b23612,Ronit More,reviewed_name_link,India,2016-01-01
 b8d490fd,Aaron Finch,sibling_alias,Australia,2016-01-01
 41eb4a4f,Vinay Kumar,sibling_alias,India,2016-01-01
 7a8bd078,Shreyas Gopal,reviewed_name_link,India,2016-01-01
+d4eef961,Marchant de Lange,reviewed_name_link,South Africa,2016-01-01
 462411b3,Jasprit Bumrah,sibling_alias,India,2016-01-01
 03806cf8,Josh Hazlewood,sibling_alias,Australia,2016-01-01
 4125d931,Jagadeesha Suchith,reviewed_name_link,India,2016-01-01
@@ -1266,6 +1365,7 @@ abfeb126,Murali Kartik,sibling_alias,India,2016-01-01
 1abb78f8,Shardul Thakur,sibling_alias,India,2016-01-01
 33a364a6,Rajat Bhatia,reviewed_name_link,India,2016-01-01
 063b3673,Dishant Yagnik,reviewed_name_link,India,2016-01-01
+557153ca,Kevon Cooper,reviewed_name_link,West Indies,2016-01-01
 a45a5e8d,Abhishek Nayar,reviewed_name_link,India,2016-01-01
 85aae393,Iqbal Abdullah,reviewed_name_link,India,2016-01-01
 24d94623,Ankit Sharma,exact_scorecard_name,India,2016-01-01
@@ -1305,6 +1405,7 @@ db31895a,Ankit Rajpoot,sibling_alias,India,2014-01-01
 dcf81436,Siddharth Kaul,reviewed_name_link,India,2014-01-01
 f62772e5,Pawan Negi,sibling_alias,India,2014-01-01
 81049310,Jayant Yadav,reviewed_name_link,India,2014-01-01
+27af6414,Ben Rohrer,reviewed_name_link,Australia,2014-01-01
 fe763256,Venugopal Rao,reviewed_name_link,India,2014-01-01
 b61a3e1a,Ross Taylor,sibling_alias,New Zealand,2014-01-01
 2e8994e7,JP Duminy,exact_scorecard_name,South Africa,2014-01-01
@@ -1331,12 +1432,14 @@ d7c6af50,Daniel Vettori,sibling_alias,New Zealand,2014-01-01
 abfeb126,Murali Kartik,sibling_alias,India,2014-01-01
 00ea847a,Mayank Agarwal,sibling_alias,India,2014-01-01
 f842c2cf,Michael Clarke,sibling_alias,Australia,2014-01-01
+dfc4d8b5,Kane Richardson,reviewed_name_link,Australia,2014-01-01
 3d8feaf8,Mitchell Marsh,sibling_alias,Australia,2014-01-01
 2815fe50,Abhishek Jhunjhunwala,reviewed_name_link,India,2014-01-01
 5afd4539,Manvinder Bisla,reviewed_name_link,India,2014-01-01
 b1451597,Laxmi Ratan Shukla,reviewed_name_link,India,2014-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2014-01-01
 8cf9814c,Shami Ahmed,reviewed_name_link,India,2014-01-01
+12eddf28,Ryan Harris,reviewed_name_link,Australia,2012-01-01
 aaa1b522,Tirumalasetti Suman,reviewed_name_link,India,2012-01-01
 62e07f92,Kedar Devdhar,reviewed_name_link,India,2012-01-01
 5d096f3d,Ramesh Powar,sibling_alias,India,2012-01-01
@@ -1355,6 +1458,7 @@ aedc3b7c,Nikhil Naik,reviewed_name_link,India,2017-01-01
 edb3d4f8,KC Cariappa,exact_scorecard_name,India,2017-01-01
 69be866a,Anureet Singh,exact_scorecard_name,India,2017-01-01
 9a0146b3,Pardeep Sahu,reviewed_name_link,India,2017-01-01
+e798611a,Hashim Amla,reviewed_name_link,South Africa,2017-01-01
 b56dc5f7,Beuran Hendricks,sibling_alias,South Africa,2017-01-01
 26a85969,Rishi Dhawan,sibling_alias,India,2017-01-01
 6eb146d2,Gurkeerat Singh Mann,sibling_alias,India,2017-01-01
@@ -1399,6 +1503,7 @@ dded65e7,Ishank Jaggi,reviewed_name_link,India,2018-01-01
 e0407c01,Ishwar Pandey,reviewed_name_link,India,2018-01-01
 2a2e6343,Daniel Christian,sibling_alias,Australia,2018-01-01
 1abb78f8,Shardul Thakur,sibling_alias,India,2018-01-01
+331ea488,Usman Khawaja,reviewed_name_link,Australia,2018-01-01
 66b30f71,Ashok Dinda,sibling_alias,India,2018-01-01
 77255a9e,Rahul Tripathi,sibling_alias,India,2018-01-01
 f19ccfad,Washington Sundar,exact_scorecard_name,India,2018-01-01
@@ -1430,6 +1535,7 @@ dbe50b21,Hardik Pandya,sibling_alias,India,2018-01-01
 5b8c830e,Krunal Pandya,sibling_alias,India,2018-01-01
 b5da6c24,Parthiv Patel,sibling_alias,India,2018-01-01
 99b75528,Jos Buttler,sibling_alias,England,2018-01-01
+51a3c5ef,Mitchell McClenaghan,reviewed_name_link,New Zealand,2018-01-01
 13c35c9e,Tim Southee,sibling_alias,New Zealand,2018-01-01
 fb2d1dda,Nitish Rana,sibling_alias,India,2018-01-01
 462411b3,Jasprit Bumrah,sibling_alias,India,2018-01-01
@@ -1474,6 +1580,7 @@ b17e2f24,KL Rahul,exact_scorecard_name,India,2018-01-01
 2e8994e7,JP Duminy,exact_scorecard_name,South Africa,2018-01-01
 85ec8e33,Shreyas Iyer,sibling_alias,India,2018-01-01
 a4cc73aa,Sanju Samson,sibling_alias,India,2018-01-01
+e342e5fb,Carlos Brathwaite,reviewed_name_link,West Indies,2018-01-01
 c16d4035,Sam Billings,sibling_alias,England,2018-01-01
 944533a5,Karun Nair,sibling_alias,India,2018-01-01
 6b19d823,Amit Mishra,sibling_alias,India,2018-01-01
@@ -1494,6 +1601,7 @@ c03e2850,Manan Vohra,sibling_alias,India,2018-01-01
 4b57e452,Murali Vijay,sibling_alias,India,2018-01-01
 d9273ee7,Marcus Stoinis,sibling_alias,Australia,2018-01-01
 6eb146d2,Gurkeerat Singh,exact_scorecard_name,India,2018-01-01
+e798611a,Hashim Amla,reviewed_name_link,South Africa,2018-01-01
 edb3d4f8,KC Cariappa,exact_scorecard_name,India,2018-01-01
 2be41edb,Martin Guptill,sibling_alias,New Zealand,2018-01-01
 0a3d54b9,Varun Aaron,reviewed_name_link,India,2018-01-01
@@ -1554,6 +1662,7 @@ d1c36f5c,Jason Roy,sibling_alias,England,2019-01-01
 45eda7c8,Chris Lynn,sibling_alias,Australia,2019-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2019-01-01
 4c5d73db,Chris Woakes,sibling_alias,England,2019-01-01
+e342e5fb,Carlos Brathwaite,reviewed_name_link,West Indies,2019-01-01
 4329fbb5,Shane Watson,sibling_alias,Australia,2019-01-01
 99d63244,Kedar Jadhav,reviewed_name_link,India,2019-01-01
 94d7f855,Colin de Grandhomme,sibling_alias,New Zealand,2019-01-01
@@ -1612,6 +1721,7 @@ db31895a,Ankit Rajpoot,sibling_alias,India,2019-01-01
 9d80c5e1,Shahbaz Nadeem,reviewed_name_link,India,2019-01-01
 90de905a,Krishnappa Gowtham,reviewed_name_link,India,2019-01-01
 e2db2409,Murugan Ashwin,reviewed_name_link,India,2019-01-01
+0ebfb1ad,Evin Lewis,reviewed_name_link,West Indies,2019-01-01
 709b0bac,Saurabh Tiwary,reviewed_name_link,India,2019-01-01
 c3a96caf,Mandeep Singh,exact_scorecard_name,India,2019-01-01
 26e5cabf,Manoj Tiwary,reviewed_name_link,India,2019-01-01
@@ -1671,31 +1781,39 @@ e4cdf230,Anukul Roy,reviewed_name_link,India,2019-01-01
 f10e94c4,Akshdeep Nath,reviewed_name_link,India,2019-01-01
 541f85c9,Shreevats Goswami,reviewed_name_link,India,2019-01-01
 798cc28e,KM Asif,exact_scorecard_name,India,2019-01-01
+b410bd3d,Sandeep Lamichhane,reviewed_name_link,Nepal,2019-01-01
 faa7365d,Dhruv Shorey,sibling_alias,India,2019-01-01
 da934ee8,Mahipal Lomror,reviewed_name_link,India,2019-01-01
 c33d8116,Mohsin Khan,exact_scorecard_name,India,2019-01-01
 39ed0d2f,Kshitiz Sharma,reviewed_name_link,India,2019-01-01
 fb24e76c,Monu Kumar,exact_scorecard_name,India,2019-01-01
-91b9300b,Aryaman Birla,reviewed_name_link,India,2019-01-01
 ade90de7,Sudhesan Midhun,reviewed_name_link,India,2019-01-01
 327b58d3,Dushmantha Chameera,sibling_alias,Sri Lanka,2019-01-01
+99ed60f8,Javon Searles,reviewed_name_link,West Indies,2019-01-01
+51a3c5ef,Mitchell McClenaghan,reviewed_name_link,New Zealand,2019-01-01
 8abdf100,Corey Anderson,sibling_alias,New Zealand,2019-01-01
 92aeac25,Alex Hales,sibling_alias,England,2019-01-01
 235c2bb6,Heinrich Klaasen,sibling_alias,South Africa,2019-01-01
 e86754b2,Tom Curran,sibling_alias,England,2019-01-01
+9a963804,Liam Plunkett,reviewed_name_link,England,2019-01-01
 7f048519,David Willey,sibling_alias,England,2019-01-01
 350bb1b1,Adam Milne,sibling_alias,New Zealand,2019-01-01
 641ac5ff,Ish Sodhi,sibling_alias,New Zealand,2019-01-01
 85e0cf10,Prasidh Krishna,reviewed_name_link,India,2019-01-01
+1cb14aa4,Junior Dala,reviewed_name_link,South Africa,2019-01-01
 5b7ab5a9,Varun Chakravarthy,sibling_alias,India,2020-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2020-01-01
 e94915e6,Sam Curran,sibling_alias,England,2020-01-01
+c995d726,Colin Ingram,reviewed_name_link,South Africa,2020-01-01
 2e171977,Axar Patel,sibling_alias,India,2020-01-01
 d014d5ac,Sherfane Rutherford,sibling_alias,West Indies,2020-01-01
 48a1d7b7,Shimron Hetmyer,sibling_alias,West Indies,2020-01-01
+e342e5fb,Carlos Brathwaite,reviewed_name_link,West Indies,2020-01-01
 2f9d0389,Lockie Ferguson,sibling_alias,New Zealand,2020-01-01
+e412cb64,Harry Gurney,reviewed_name_link,England,2020-01-01
 a12e1d51,Lasith Malinga,sibling_alias,Sri Lanka,2020-01-01
 d8b2f218,Barinder Sran,sibling_alias,India,2020-01-01
+c6097d68,Oshane Thomas,reviewed_name_link,West Indies,2020-01-01
 ff1e12a0,Ashton Turner,sibling_alias,Australia,2020-01-01
 50c6bc2b,Liam Livingstone,sibling_alias,England,2020-01-01
 a4e37e47,Shivam Dube,reviewed_name_link,India,2020-01-01
@@ -1739,6 +1857,7 @@ e62dd25d,Kagiso Rabada,sibling_alias,South Africa,2020-01-01
 9d80c5e1,Shahbaz Nadeem,reviewed_name_link,India,2020-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2020-01-01
 eef2536f,Avesh Khan,exact_scorecard_name,India,2020-01-01
+b410bd3d,Sandeep Lamichhane,reviewed_name_link,Nepal,2020-01-01
 a818c1be,Trent Boult,sibling_alias,New Zealand,2020-01-01
 fb66ce1f,Chris Morris,sibling_alias,South Africa,2020-01-01
 75224f22,Keemo Paul,sibling_alias,West Indies,2020-01-01
@@ -1768,6 +1887,7 @@ a757b0d8,Kieron Pollard,sibling_alias,West Indies,2020-01-01
 2ed569a0,Rahul Chahar,sibling_alias,India,2020-01-01
 a9fd84fb,Mayank Markande,reviewed_name_link,India,2020-01-01
 2e11c706,Ben Cutting,sibling_alias,Australia,2020-01-01
+0ebfb1ad,Evin Lewis,reviewed_name_link,West Indies,2020-01-01
 2e8994e7,JP Duminy,exact_scorecard_name,South Africa,2020-01-01
 855a210c,Aditya Tare,reviewed_name_link,India,2020-01-01
 9601c534,Siddhesh Lad,reviewed_name_link,India,2020-01-01
@@ -1839,12 +1959,15 @@ dc9dd038,Sachin Baby,exact_scorecard_name,India,2020-01-01
 b63e358a,Ricky Bhui,sibling_alias,India,2020-01-01
 ded9240e,Pat Cummins,sibling_alias,Australia,2021-01-01
 b681e71e,Glenn Maxwell,sibling_alias,Australia,2021-01-01
+a1d053dd,Sheldon Cottrell,reviewed_name_link,West Indies,2021-01-01
 fb66ce1f,Chris Morris,sibling_alias,South Africa,2021-01-01
 56ab442f,Nathan Coulter-Nile,sibling_alias,Australia,2021-01-01
 e94915e6,Sam Curran,sibling_alias,England,2021-01-01
+25f7b7d6,Tom Banton,reviewed_name_link,England,2021-01-01
 03806cf8,Josh Hazlewood,sibling_alias,Australia,2021-01-01
 b8d490fd,Aaron Finch,sibling_alias,Australia,2021-01-01
 98ae73b1,Piyush Chawla,sibling_alias,India,2021-01-01
+ac5ae4af,Isuru Udana,reviewed_name_link,Sri Lanka,2021-01-01
 45eda7c8,Chris Lynn,sibling_alias,Australia,2021-01-01
 d2a6c0e6,Eoin Morgan,sibling_alias,England,2021-01-01
 6c19c6e5,Yashasvi Jaiswal,reviewed_name_link,India,2021-01-01
@@ -1943,6 +2066,7 @@ da934ee8,Mahipal Lomror,reviewed_name_link,India,2021-01-01
 7c7d63a2,Andrew Tye,sibling_alias,Australia,2021-01-01
 d67d5f00,David Miller,sibling_alias,South Africa,2021-01-01
 1c17e270,Robin Uthappa,sibling_alias,India,2021-01-01
+c6097d68,Oshane Thomas,reviewed_name_link,West Indies,2021-01-01
 0a3d54b9,Varun Aaron,reviewed_name_link,India,2021-01-01
 e86754b2,Tom Curran,sibling_alias,England,2021-01-01
 ba607b88,Virat Kohli,sibling_alias,India,2021-01-01
@@ -1960,6 +2084,7 @@ f62772e5,Pawan Negi,sibling_alias,India,2021-01-01
 8fd1a8f5,Dale Steyn,sibling_alias,South Africa,2021-01-01
 f9e6e7ef,Shahbaz Ahmed,exact_scorecard_name,India,2021-01-01
 14f96089,Adam Zampa,sibling_alias,Australia,2021-01-01
+39086549,Josh Philippe,reviewed_name_link,Australia,2021-01-01
 dcce6f09,David Warner,sibling_alias,Australia,2021-01-01
 d027ba9f,Kane Williamson,sibling_alias,New Zealand,2021-01-01
 5f547c8b,Rashid Khan,exact_scorecard_name,Afghanistan,2021-01-01
@@ -1984,6 +2109,7 @@ b681e71e,Glenn Maxwell,sibling_alias,Australia,2022-01-01
 90de905a,Krishnappa Gowtham,reviewed_name_link,India,2022-01-01
 bb351c23,Moeen Ali,sibling_alias,England,2022-01-01
 7dc35884,Shakib Al Hasan,exact_scorecard_name,Bangladesh,2022-01-01
+ad9c32a2,Dawid Malan,reviewed_name_link,England,2022-01-01
 8b5b6769,Harbhajan Singh,exact_scorecard_name,India,2022-01-01
 30a45b23,Steve Smith,sibling_alias,Australia,2022-01-01
 e86754b2,Tom Curran,sibling_alias,England,2022-01-01
@@ -2069,7 +2195,7 @@ f088b960,Sarfaraz Khan,reviewed_name_link,India,2022-01-01
 e2db2409,Murugan Ashwin,reviewed_name_link,India,2022-01-01
 fdf7491e,Ishan Porel,reviewed_name_link,India,2022-01-01
 9418198b,Prabhsimran Singh,sibling_alias,India,2022-01-01
-b52ffbbd,Fabian Allen,sibling_alias,West Indies,2022-01-01
+b52ffbbd,Fabian Allen,reviewed_name_link,West Indies,2022-01-01
 a4cc73aa,Sanju Samson,sibling_alias,India,2022-01-01
 99b75528,Jos Buttler,sibling_alias,England,2022-01-01
 e087956b,Ben Stokes,sibling_alias,England,2022-01-01
@@ -2101,6 +2227,7 @@ c740ea83,Rajat Patidar,reviewed_name_link,India,2022-01-01
 44a89551,KS Bharat,exact_scorecard_name,India,2022-01-01
 be869ccf,George Garton,sibling_alias,England,2022-01-01
 f1f99156,Tim David,sibling_alias,Australia,2022-01-01
+a97c8ec2,Wanindu Hasaranga,reviewed_name_link,Sri Lanka,2022-01-01
 dcce6f09,David Warner,sibling_alias,Australia,2022-01-01
 d027ba9f,Kane Williamson,sibling_alias,New Zealand,2022-01-01
 5f547c8b,Rashid Khan,exact_scorecard_name,Afghanistan,2022-01-01
@@ -2171,6 +2298,7 @@ fb2d1dda,Nitish Rana,sibling_alias,India,2023-01-01
 0f721006,Jason Holder,sibling_alias,West Indies,2023-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2023-01-01
 73ad96ed,Deepak Hooda,sibling_alias,India,2023-01-01
+a97c8ec2,Wanindu Hasaranga,reviewed_name_link,Sri Lanka,2023-01-01
 f19ccfad,Washington Sundar,exact_scorecard_name,India,2023-01-01
 5b8c830e,Krunal Pandya,sibling_alias,India,2023-01-01
 3d8feaf8,Mitchell Marsh,sibling_alias,Australia,2023-01-01
@@ -2193,6 +2321,7 @@ ce794613,T Natarajan,exact_scorecard_name,India,2023-01-01
 57ee1fde,Yuzvendra Chahal,sibling_alias,India,2023-01-01
 bb965e9a,Priyam Garg,reviewed_name_link,India,2023-01-01
 0890552f,Abhinav Manohar,reviewed_name_link,India,2023-01-01
+844e79d1,Dewald Brevis,reviewed_name_link,South Africa,2023-01-01
 77255a9e,Rahul Tripathi,sibling_alias,India,2023-01-01
 04a418e8,Riyan Parag,reviewed_name_link,India,2023-01-01
 f29185a1,Abhishek Sharma,exact_scorecard_name,India,2023-01-01
@@ -2240,6 +2369,7 @@ ce820073,Sandeep Sharma,exact_scorecard_name,India,2023-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2023-01-01
 a9fd84fb,Mayank Markande,reviewed_name_link,India,2023-01-01
 9d80c5e1,Shahbaz Nadeem,reviewed_name_link,India,2023-01-01
+f24c6701,Maheesh Theekshana,reviewed_name_link,Sri Lanka,2023-01-01
 0a509d6b,Rinku Singh,reviewed_name_link,India,2023-01-01
 c03e2850,Manan Vohra,sibling_alias,India,2023-01-01
 ad427b5c,Lalit Yadav,exact_scorecard_name,India,2023-01-01
@@ -2254,7 +2384,6 @@ ba6b2f91,Raj Bawa,reviewed_name_link,India,2023-01-01
 c3c92b42,Rajvardhan Hangargekar,reviewed_name_link,India,2023-01-01
 7210d461,Yash Dayal,exact_scorecard_name,India,2023-01-01
 30df8c66,Simarjeet Singh,exact_scorecard_name,India,2023-01-01
-b52ffbbd,Finn Allen,sibling_alias,New Zealand,2023-01-01
 df5a6881,Devon Conway,sibling_alias,New Zealand,2023-01-01
 650d5e49,Rovman Powell,sibling_alias,West Indies,2023-01-01
 5574750c,Jofra Archer,sibling_alias,England,2023-01-01
@@ -2263,6 +2392,7 @@ df5a6881,Devon Conway,sibling_alias,New Zealand,2023-01-01
 d014d5ac,Sherfane Rutherford,sibling_alias,West Indies,2023-01-01
 caf69bf7,Daniel Sams,sibling_alias,Australia,2023-01-01
 e4a0deae,Mitchell Santner,sibling_alias,New Zealand,2023-01-01
+c5aef772,Romario Shepherd,reviewed_name_link,West Indies,2023-01-01
 4933f499,Jason Behrendorff,sibling_alias,Australia,2023-01-01
 529eb9e0,Obed McCoy,sibling_alias,West Indies,2023-01-01
 245c97cb,Tymal Mills,sibling_alias,England,2023-01-01
@@ -2284,9 +2414,9 @@ ff1e68fa,Baba Indrajith,reviewed_name_link,India,2023-01-01
 aa5d8c9e,Abhijeet Tomar,reviewed_name_link,India,2023-01-01
 9fc0ef64,Pradeep Sangwan,reviewed_name_link,India,2023-01-01
 26989d80,Shashank Singh,exact_scorecard_name,India,2023-01-01
+73c18486,Kyle Mayers,reviewed_name_link,West Indies,2023-01-01
 6b2ff18f,Saurabh Dubey,reviewed_name_link,India,2023-01-01
 12314277,Mohammed Arshad Khan,reviewed_name_link,India,2023-01-01
-2e171977,Ansh Patel,sibling_alias,India,2023-01-01
 d67d5f00,David Miller,sibling_alias,South Africa,2023-01-01
 c16d4035,Sam Billings,sibling_alias,England,2023-01-01
 fe11caa6,Wriddhiman Saha,sibling_alias,India,2023-01-01
@@ -2299,8 +2429,10 @@ f834dcfc,Lungi Ngidi,sibling_alias,South Africa,2023-01-01
 119678fd,Karn Sharma,reviewed_name_link,India,2023-01-01
 2e78f685,Kuldeep Sen,reviewed_name_link,India,2023-01-01
 92aeac25,Alex Hales,sibling_alias,England,2023-01-01
+0ebfb1ad,Evin Lewis,reviewed_name_link,West Indies,2023-01-01
 944533a5,Karun Nair,sibling_alias,India,2023-01-01
 9a46c4e5,Glenn Phillips,sibling_alias,New Zealand,2023-01-01
+4663bd23,Tim Seifert,reviewed_name_link,New Zealand,2023-01-01
 9eb1455b,Nathan Ellis,sibling_alias,Australia,2023-01-01
 e9c7f0d0,Fazalhaq Farooqi,exact_scorecard_name,Afghanistan,2023-01-01
 be24ead0,Ramandeep Singh,exact_scorecard_name,India,2023-01-01
@@ -2311,7 +2443,7 @@ c28e9f12,Tejas Baroka,exact_scorecard_name,India,2023-01-01
 6c882e9a,Bhanuka Rajapaksa,sibling_alias,Sri Lanka,2023-01-01
 6eb146d2,Gurkeerat Singh,exact_scorecard_name,India,2023-01-01
 13c35c9e,Tim Southee,sibling_alias,New Zealand,2023-01-01
-8d2c70ad,Kuldip Yadav,sibling_alias,India,2023-01-01
+030f3089,Kuldip Yadav,reviewed_name_link,India,2023-01-01
 0a3d54b9,Varun Aaron,reviewed_name_link,India,2023-01-01
 0c9652b0,Hrithik Shokeen,sibling_alias,India,2023-01-01
 44aac2f0,Arjun Tendulkar,exact_scorecard_name,India,2023-01-01
@@ -2319,26 +2451,32 @@ c28e9f12,Tejas Baroka,exact_scorecard_name,India,2023-01-01
 cc1e8c68,Umesh Yadav,sibling_alias,India,2023-01-01
 9219eff0,James Neesham,sibling_alias,New Zealand,2023-01-01
 56ab442f,Nathan Coulter-Nile,sibling_alias,Australia,2023-01-01
+9948e262,Rassie van der Dussen,reviewed_name_link,South Africa,2023-01-01
 eade4650,Daryl Mitchell,sibling_alias,New Zealand,2023-01-01
 dcf81436,Siddharth Kaul,reviewed_name_link,India,2023-01-01
 d5130a30,B Sai Sudharsan,exact_scorecard_name,India,2023-01-01
-b52ffbbd,Fabian Allen,sibling_alias,West Indies,2023-01-01
+b52ffbbd,Fabian Allen,reviewed_name_link,West Indies,2023-01-01
 7f048519,David Willey,sibling_alias,England,2023-01-01
 378daa89,Aman Khan,reviewed_name_link,India,2023-01-01
 0bacade8,Rahmanullah Gurbaz,exact_scorecard_name,Afghanistan,2023-01-01
 b8d490fd,Aaron Finch,sibling_alias,Australia,2023-01-01
 7c7d63a2,Andrew Tye,sibling_alias,Australia,2023-01-01
 c740ea83,Rajat Patidar,reviewed_name_link,India,2023-01-01
+172dff15,Corbin Bosch,reviewed_name_link,South Africa,2023-01-01
 77b1aa15,Harshit Rana,exact_scorecard_name,India,2023-01-01
+64839cb3,Matheesha Pathirana,reviewed_name_link,Sri Lanka,2023-01-01
 f6d8a7ab,Kumar Kartikeya Singh,reviewed_name_link,India,2023-01-01
+85b3fab2,Tristan Stubbs,reviewed_name_link,South Africa,2023-01-01
 4bd09374,Akash Madhwal,exact_scorecard_name,India,2023-01-01
 e94915e6,Sam Curran,sibling_alias,England,2024-01-01
 eaa76d3c,Cameron Green,sibling_alias,Australia,2024-01-01
 e087956b,Ben Stokes,sibling_alias,England,2024-01-01
 3241e3fd,Nicholas Pooran,sibling_alias,West Indies,2024-01-01
+4ae1755b,Harry Brook,reviewed_name_link,England,2024-01-01
 00ea847a,Mayank Agarwal,sibling_alias,India,2024-01-01
 cad00a4d,Rilee Rossouw,sibling_alias,South Africa,2024-01-01
 249d60c9,Adil Rashid,sibling_alias,England,2024-01-01
+a343262c,Joe Root,reviewed_name_link,England,2024-01-01
 9caf69a1,Will Jacks,sibling_alias,England,2024-01-01
 8db7f47f,Reece Topley,sibling_alias,England,2024-01-01
 0f721006,Jason Holder,sibling_alias,West Indies,2024-01-01
@@ -2347,8 +2485,10 @@ cad00a4d,Rilee Rossouw,sibling_alias,South Africa,2024-01-01
 1b7b0fa7,Vivrant Sharma,exact_scorecard_name,India,2024-01-01
 1ee08e9a,Jhye Richardson,sibling_alias,Australia,2024-01-01
 d027ba9f,Kane Williamson,sibling_alias,New Zealand,2024-01-01
+f0af99a7,Donovan Ferreira,reviewed_name_link,South Africa,2024-01-01
 3d284ca3,Phil Salt,sibling_alias,England,2024-01-01
 5bb1a1c4,Ishant Sharma,sibling_alias,India,2024-01-01
+0404d43c,Litton Das,reviewed_name_link,Bangladesh,2024-01-01
 93b4fc78,Manish Pandey,sibling_alias,India,2024-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2024-01-01
 fe93fd9d,Ravindra Jadeja,sibling_alias,India,2024-01-01
@@ -2359,6 +2499,8 @@ a4e37e47,Shivam Dube,reviewed_name_link,India,2024-01-01
 df5a6881,Devon Conway,sibling_alias,New Zealand,2024-01-01
 23eeb873,Deepak Chahar,sibling_alias,India,2024-01-01
 46a9bea1,Tushar Deshpande,sibling_alias,India,2024-01-01
+f24c6701,Maheesh Theekshana,reviewed_name_link,Sri Lanka,2024-01-01
+64839cb3,Matheesha Pathirana,reviewed_name_link,Sri Lanka,2024-01-01
 e4a0deae,Mitchell Santner,sibling_alias,New Zealand,2024-01-01
 c3c92b42,Rajvardhan Hangargekar,reviewed_name_link,India,2024-01-01
 30df8c66,Simarjeet Singh,exact_scorecard_name,India,2024-01-01
@@ -2429,6 +2571,7 @@ eef2536f,Avesh Khan,exact_scorecard_name,India,2024-01-01
 8d92a2c3,Mark Wood,sibling_alias,England,2024-01-01
 872b03f7,Ayush Badoni,sibling_alias,India,2024-01-01
 c33d8116,Mohsin Khan,exact_scorecard_name,India,2024-01-01
+73c18486,Kyle Mayers,reviewed_name_link,West Indies,2024-01-01
 c03e2850,Manan Vohra,sibling_alias,India,2024-01-01
 9d80c5e1,Shahbaz Nadeem,reviewed_name_link,India,2024-01-01
 b1ad996b,Mayank Yadav,reviewed_name_link,India,2024-01-01
@@ -2441,9 +2584,11 @@ c0c411cb,Naveen ul Haq,exact_scorecard_name,Afghanistan,2024-01-01
 752f7486,Ishan Kishan,exact_scorecard_name,India,2024-01-01
 b0482a1d,Tilak Varma,exact_scorecard_name,India,2024-01-01
 f1f99156,Tim David,sibling_alias,Australia,2024-01-01
+844e79d1,Dewald Brevis,reviewed_name_link,South Africa,2024-01-01
 5574750c,Jofra Archer,sibling_alias,England,2024-01-01
 44aac2f0,Arjun Tendulkar,exact_scorecard_name,India,2024-01-01
 0c9652b0,Hrithik Shokeen,sibling_alias,India,2024-01-01
+85b3fab2,Tristan Stubbs,reviewed_name_link,South Africa,2024-01-01
 f6d8a7ab,Kumar Kartikeya Singh,reviewed_name_link,India,2024-01-01
 4bd09374,Akash Madhwal,exact_scorecard_name,India,2024-01-01
 be24ead0,Ramandeep Singh,exact_scorecard_name,India,2024-01-01
@@ -2480,13 +2625,14 @@ a818c1be,Trent Boult,sibling_alias,New Zealand,2024-01-01
 2e78f685,Kuldeep Sen,reviewed_name_link,India,2024-01-01
 edb3d4f8,KC Cariappa,exact_scorecard_name,India,2024-01-01
 529eb9e0,Obed McCoy,sibling_alias,West Indies,2024-01-01
-8d2c70ad,Kuldip Yadav,sibling_alias,India,2024-01-01
+030f3089,Kuldip Yadav,reviewed_name_link,India,2024-01-01
 bcf325d2,Dhruv Jurel,exact_scorecard_name,India,2024-01-01
 ba607b88,Virat Kohli,sibling_alias,India,2024-01-01
 b681e71e,Glenn Maxwell,sibling_alias,Australia,2024-01-01
 2f49c897,Mohammed Siraj,exact_scorecard_name,India,2024-01-01
 3355b542,Faf du Plessis,sibling_alias,South Africa,2024-01-01
 f986ca1a,Harshal Patel,sibling_alias,India,2024-01-01
+a97c8ec2,Wanindu Hasaranga,reviewed_name_link,Sri Lanka,2024-01-01
 c03f1114,Dinesh Karthik,sibling_alias,India,2024-01-01
 f9e6e7ef,Shahbaz Ahmed,exact_scorecard_name,India,2024-01-01
 c8f5f961,Anuj Rawat,exact_scorecard_name,India,2024-01-01
@@ -2523,16 +2669,25 @@ f986ca1a,Harshal Patel,sibling_alias,India,2025-01-01
 0a8fce53,Mustafizur Rahman,exact_scorecard_name,Bangladesh,2025-01-01
 3204c99f,Gerald Coetzee,sibling_alias,South Africa,2025-01-01
 989889ff,Josh Inglis,sibling_alias,Australia,2025-01-01
+85b3fab2,Tristan Stubbs,reviewed_name_link,South Africa,2025-01-01
+83c3e8e3,Spencer Johnson,reviewed_name_link,Australia,2025-01-01
+ba5e1069,Rachin Ravindra,reviewed_name_link,New Zealand,2025-01-01
 a4e37e47,Shivam Dube,reviewed_name_link,India,2025-01-01
+a97c8ec2,Wanindu Hasaranga,reviewed_name_link,Sri Lanka,2025-01-01
+9b6e1b3f,Jake Fraser-McGurk,reviewed_name_link,Australia,2025-01-01
+f0af99a7,Donovan Ferreira,reviewed_name_link,South Africa,2025-01-01
 f89d3b11,Sameer Rizvi,exact_scorecard_name,India,2025-01-01
 54e52590,Vyshak Vijaykumar,reviewed_name_link,India,2025-01-01
+f836b33d,Tom Kohler-Cadmore,reviewed_name_link,England,2025-01-01
 4b31f3a3,Yash Thakur,exact_scorecard_name,India,2025-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2025-01-01
 45a43fe2,Ruturaj Gaikwad,sibling_alias,India,2025-01-01
 fe93fd9d,Ravindra Jadeja,sibling_alias,India,2025-01-01
 df5a6881,Devon Conway,sibling_alias,New Zealand,2025-01-01
+64839cb3,Matheesha Pathirana,reviewed_name_link,Sri Lanka,2025-01-01
 46a9bea1,Tushar Deshpande,sibling_alias,India,2025-01-01
 23eeb873,Deepak Chahar,sibling_alias,India,2025-01-01
+f24c6701,Maheesh Theekshana,reviewed_name_link,Sri Lanka,2025-01-01
 e4a0deae,Mitchell Santner,sibling_alias,New Zealand,2025-01-01
 bb351c23,Moeen Ali,sibling_alias,England,2025-01-01
 70d205c9,Ambati Rayudu,sibling_alias,India,2025-01-01
@@ -2606,6 +2761,7 @@ c0c411cb,Naveen ul Haq,exact_scorecard_name,Afghanistan,2025-01-01
 872b03f7,Ayush Badoni,sibling_alias,India,2025-01-01
 c33d8116,Mohsin Khan,exact_scorecard_name,India,2025-01-01
 b1ad996b,Mayank Yadav,reviewed_name_link,India,2025-01-01
+73c18486,Kyle Mayers,reviewed_name_link,West Indies,2025-01-01
 c03e2850,Manan Vohra,sibling_alias,India,2025-01-01
 2c25d4f5,Devdutt Padikkal,sibling_alias,India,2025-01-01
 663b5e34,Prerak Mankad,reviewed_name_link,India,2025-01-01
@@ -2618,6 +2774,7 @@ dbe50b21,Hardik Pandya,sibling_alias,India,2025-01-01
 752f7486,Ishan Kishan,exact_scorecard_name,India,2025-01-01
 b0482a1d,Tilak Varma,exact_scorecard_name,India,2025-01-01
 f1f99156,Tim David,sibling_alias,Australia,2025-01-01
+844e79d1,Dewald Brevis,reviewed_name_link,South Africa,2025-01-01
 5574750c,Jofra Archer,sibling_alias,England,2025-01-01
 4bd09374,Akash Madhwal,exact_scorecard_name,India,2025-01-01
 f6d8a7ab,Kumar Kartikeya Singh,reviewed_name_link,India,2025-01-01
@@ -2625,6 +2782,8 @@ f6d8a7ab,Kumar Kartikeya Singh,reviewed_name_link,India,2025-01-01
 44aac2f0,Arjun Tendulkar,exact_scorecard_name,India,2025-01-01
 fffa744b,Naman Dhir,exact_scorecard_name,India,2025-01-01
 d1a60072,Nehal Wadhera,reviewed_name_link,India,2025-01-01
+ee1b6c27,Nuwan Thushara,reviewed_name_link,Sri Lanka,2025-01-01
+c5aef772,Romario Shepherd,reviewed_name_link,West Indies,2025-01-01
 9d704f6f,Shams Mulani,reviewed_name_link,India,2025-01-01
 0a476045,Shikhar Dhawan,sibling_alias,India,2025-01-01
 e94915e6,Sam Curran,sibling_alias,England,2025-01-01
@@ -2657,7 +2816,9 @@ bcf325d2,Dhruv Jurel,exact_scorecard_name,India,2025-01-01
 21d4e29b,Navdeep Saini,reviewed_name_link,India,2025-01-01
 85e0cf10,Prasidh Krishna,reviewed_name_link,India,2025-01-01
 eef2536f,Avesh Khan,exact_scorecard_name,India,2025-01-01
+f836b33d,Tom Kohler-Cadmore,reviewed_name_link,England,2025-01-01
 650d5e49,Rovman Powell,sibling_alias,West Indies,2025-01-01
+465aa633,Nandre Burger,reviewed_name_link,South Africa,2025-01-01
 e3851766,Kunal Rathore,reviewed_name_link,India,2025-01-01
 ba607b88,Virat Kohli,sibling_alias,India,2025-01-01
 b681e71e,Glenn Maxwell,sibling_alias,Australia,2025-01-01
@@ -2695,10 +2856,12 @@ f9e6e7ef,Shahbaz Ahmed,exact_scorecard_name,India,2025-01-01
 1e66c162,Jaydev Unadkat,reviewed_name_link,India,2025-01-01
 45a43fe2,Ruturaj Gaikwad,sibling_alias,India,2026-01-01
 fe93fd9d,Ravindra Jadeja,sibling_alias,India,2026-01-01
+64839cb3,Matheesha Pathirana,reviewed_name_link,Sri Lanka,2026-01-01
 a4e37e47,Shivam Dube,reviewed_name_link,India,2026-01-01
 4a8a2e3b,MS Dhoni,exact_scorecard_name,India,2026-01-01
 2e171977,Axar Patel,sibling_alias,India,2026-01-01
 8d2c70ad,Kuldeep Yadav,exact_scorecard_name,India,2026-01-01
+85b3fab2,Tristan Stubbs,reviewed_name_link,South Africa,2026-01-01
 ad3b6e95,Abishek Porel,exact_scorecard_name,India,2026-01-01
 5f547c8b,Rashid Khan,exact_scorecard_name,Afghanistan,2026-01-01
 b4b99816,Shubman Gill,exact_scorecard_name,India,2026-01-01
@@ -2749,7 +2912,9 @@ d67d5f00,David Miller,sibling_alias,South Africa,2026-01-01
 b17e2f24,KL Rahul,exact_scorecard_name,India,2026-01-01
 8cf9814c,Mohammed Shami,exact_scorecard_name,India,2026-01-01
 2f49c897,Mohammed Siraj,exact_scorecard_name,India,2026-01-01
+4ae1755b,Harry Brook,reviewed_name_link,England,2026-01-01
 df5a6881,Devon Conway,sibling_alias,New Zealand,2026-01-01
+9b6e1b3f,Jake Fraser-McGurk,reviewed_name_link,Australia,2026-01-01
 6a26221c,Aiden Markram,sibling_alias,South Africa,2026-01-01
 2c25d4f5,Devdutt Padikkal,sibling_alias,India,2026-01-01
 77255a9e,Rahul Tripathi,sibling_alias,India,2026-01-01
@@ -2758,6 +2923,7 @@ a24be938,Venkatesh Iyer,sibling_alias,India,2026-01-01
 3d8feaf8,Mitchell Marsh,sibling_alias,Australia,2026-01-01
 b681e71e,Glenn Maxwell,sibling_alias,Australia,2026-01-01
 50c6bc2b,Liam Livingstone,sibling_alias,England,2026-01-01
+ba5e1069,Rachin Ravindra,reviewed_name_link,New Zealand,2026-01-01
 d9273ee7,Marcus Stoinis,sibling_alias,Australia,2026-01-01
 372455c4,Quinton de Kock,sibling_alias,South Africa,2026-01-01
 0bacade8,Rahmanullah Gurbaz,exact_scorecard_name,Afghanistan,2026-01-01
@@ -2774,6 +2940,8 @@ ce794613,T Natarajan,exact_scorecard_name,India,2026-01-01
 acdc62f5,Anrich Nortje,sibling_alias,South Africa,2026-01-01
 efc04be7,Noor Ahmad,exact_scorecard_name,Afghanistan,2026-01-01
 2ed569a0,Rahul Chahar,sibling_alias,India,2026-01-01
+a97c8ec2,Wanindu Hasaranga,reviewed_name_link,Sri Lanka,2026-01-01
+f24c6701,Maheesh Theekshana,reviewed_name_link,Sri Lanka,2026-01-01
 14f96089,Adam Zampa,sibling_alias,Australia,2026-01-01
 23eeb873,Deepak Chahar,sibling_alias,India,2026-01-01
 3204c99f,Gerald Coetzee,sibling_alias,South Africa,2026-01-01
@@ -2793,6 +2961,7 @@ f19ccfad,Washington Sundar,exact_scorecard_name,India,2026-01-01
 29e95537,Ajinkya Rahane,sibling_alias,India,2026-01-01
 235c2bb6,Heinrich Klaasen,sibling_alias,South Africa,2026-01-01
 989889ff,Josh Inglis,sibling_alias,Australia,2026-01-01
+e66732f8,Ryan Rickelton,reviewed_name_link,South Africa,2026-01-01
 495d42a5,Ravichandran Ashwin,sibling_alias,India,2026-01-01
 0994d0ae,Vijay Shankar,reviewed_name_link,India,2026-01-01
 9eb1455b,Nathan Ellis,sibling_alias,Australia,2026-01-01
@@ -2806,6 +2975,7 @@ f89d3b11,Sameer Rizvi,exact_scorecard_name,India,2026-01-01
 944533a5,Karun Nair,sibling_alias,India,2026-01-01
 327b58d3,Dushmantha Chameera,sibling_alias,Sri Lanka,2026-01-01
 5ffc0565,Vipraj Nigam,reviewed_name_link,India,2026-01-01
+f0af99a7,Donovan Ferreira,reviewed_name_link,South Africa,2026-01-01
 d67d5f00,David Miller,sibling_alias,South Africa,2026-01-01
 81049310,Jayant Yadav,reviewed_name_link,India,2026-01-01
 d5130a30,Sai Sudharsan,reviewed_name_link,India,2026-01-01
@@ -2814,10 +2984,12 @@ c8f5f961,Anuj Rawat,exact_scorecard_name,India,2026-01-01
 57ca01b3,Kumar Kushagra,exact_scorecard_name,India,2026-01-01
 025c4400,Manav Suthar,reviewed_name_link,India,2026-01-01
 da934ee8,Mahipal Lomror,reviewed_name_link,India,2026-01-01
+83c3e8e3,Spencer Johnson,reviewed_name_link,Australia,2026-01-01
 a9fd84fb,Mayank Markande,reviewed_name_link,India,2026-01-01
 d7017798,Angkrish Raghuvanshi,reviewed_name_link,India,2026-01-01
 bb351c23,Moeen Ali,sibling_alias,England,2026-01-01
 8e514b4c,Abdul Samad,exact_scorecard_name,India,2026-01-01
+97290faf,Shamar Joseph,reviewed_name_link,West Indies,2026-01-01
 13fc5c6d,Digvesh Singh,reviewed_name_link,India,2026-01-01
 b483905d,Akash Singh,exact_scorecard_name,India,2026-01-01
 2d140b79,Arshin Kulkarni,reviewed_name_link,India,2026-01-01
@@ -2828,12 +3000,14 @@ bafd0398,Robin Minz,reviewed_name_link,India,2026-01-01
 d45c29b1,Ashwani Kumar,exact_scorecard_name,India,2026-01-01
 ba6b2f91,Raj Angad Bawa,reviewed_name_link,India,2026-01-01
 8db7f47f,Reece Topley,sibling_alias,England,2026-01-01
+a1d95bd8,Lizaad Williams,reviewed_name_link,South Africa,2026-01-01
 119678fd,Karn Sharma,reviewed_name_link,India,2026-01-01
 1e030637,Vignesh Puthur,reviewed_name_link,India,2026-01-01
 c05edf8e,Harpreet Brar,exact_scorecard_name,India,2026-01-01
 54e52590,Vijaykumar Vyshak,exact_scorecard_name,India,2026-01-01
 b5797845,Priyansh Arya,exact_scorecard_name,India,2026-01-01
 8f6dd463,Azmatullah Omarzai,exact_scorecard_name,Afghanistan,2026-01-01
+3b53243a,Xavier Bartlett,reviewed_name_link,Australia,2026-01-01
 970ddd24,Suryansh Shedge,exact_scorecard_name,India,2026-01-01
 d621b427,Musheer Khan,exact_scorecard_name,India,2026-01-01
 ed5a5510,Pravin Dubey,reviewed_name_link,India,2026-01-01
@@ -2843,12 +3017,16 @@ ed5a5510,Pravin Dubey,reviewed_name_link,India,2026-01-01
 470f446b,Vaibhav Suryavanshi,reviewed_name_link,India,2026-01-01
 e3851766,Kunal Rathore,reviewed_name_link,India,2026-01-01
 e9c7f0d0,Fazalhaq Farooqi,exact_scorecard_name,Afghanistan,2026-01-01
+107c26fb,Kwena Maphaka,reviewed_name_link,South Africa,2026-01-01
 b483905d,Akash Maharaj Singh,reviewed_name_link,India,2026-01-01
 9385de2e,Suyash Prabhudessai,reviewed_name_link,India,2026-01-01
 a457cfb5,Mayank Dagar,exact_scorecard_name,India,2026-01-01
+ee1b6c27,Nuwan Thushara,reviewed_name_link,Sri Lanka,2026-01-01
 f1f99156,Tim David,sibling_alias,Australia,2026-01-01
 f834dcfc,Lungi Ngidi,sibling_alias,South Africa,2026-01-01
+3c55c703,Jacob Bethell,reviewed_name_link,England,2026-01-01
 0890552f,Abhinav Manohar,reviewed_name_link,India,2026-01-01
+c5aef772,Romario Shepherd,reviewed_name_link,West Indies,2026-01-01
 9a5f2863,Mohit Rathee,exact_scorecard_name,India,2026-01-01
 1ac746c8,Atharva Taide,exact_scorecard_name,India,2026-01-01
 0890552f,Abhinav Manohar,reviewed_name_link,India,2026-01-01
@@ -2858,3 +3036,4 @@ dc9dd038,Sachin Baby,exact_scorecard_name,India,2026-01-01
 36619795,Zeeshan Ansari,exact_scorecard_name,India,2026-01-01
 a3b0600d,Aniket Verma,exact_scorecard_name,India,2026-01-01
 30df8c66,Simarjeet Singh,exact_scorecard_name,India,2026-01-01
+08548b13,Kamindu Mendis,reviewed_name_link,Sri Lanka,2026-01-01

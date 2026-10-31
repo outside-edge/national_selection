@@ -1,6 +1,6 @@
 {
-  "classification_model_selected_on_validation_log_loss": "boosting",
-  "features": [
+  "classification_model_selected_on_validation_log_loss": "base_rate",
+  "input_columns": [
     "career_matches",
     "career_runs",
     "career_balls_faced",
@@ -24,7 +24,8 @@
     "recent_bowling_average",
     "recent_economy",
     "days_since_last_match",
-    "career_days"
+    "career_days",
+    "country"
   ],
   "test_years": [
     2022,

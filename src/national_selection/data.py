@@ -11,6 +11,22 @@ import pandas as pd
 NON_BOWLER_WICKETS = {"run out", "retired hurt", "obstructing the field", "retired out"}
 
 
+COUNTRY_NAMES = {
+    "UAE": "United Arab Emirates",
+    "U.A.E.": "United Arab Emirates",
+    "U.S.A.": "United States of America",
+    "P.N.G.": "Papua New Guinea",
+    "Cayman": "Cayman Islands",
+    "Czech Rep.": "Czech Republic",
+    "Turks and C.": "Turks and Caicos Island",
+    "World-XI": "ICC World XI",
+}
+
+
+def country_name(name):
+    return COUNTRY_NAMES.get(name, name)
+
+
 def normalize(name):
     return re.sub(r"[^a-z0-9]", "", name.lower())
 
@@ -74,6 +90,15 @@ def match_stats(data, match_id):
     return list(rows.values())
 
 
+def clean_appearances(appearances):
+    """Quarantine entire matches with duplicate player IDs, preserving evidence."""
+    inconsistent = appearances[
+        appearances.duplicated(["match_id", "player_id"], keep=False)
+    ].copy()
+    clean = appearances[~appearances.match_id.isin(inconsistent.match_id)].copy()
+    return clean, inconsistent
+
+
 def import_local(workspace, destination):
     workspace, destination = Path(workspace), Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
@@ -122,6 +147,20 @@ def import_local(workspace, destination):
             "sha256": hashlib.sha256(reference.read_bytes()).hexdigest(),
         }
     )
+    prior_reference = Path(__file__).parent / "reference/prior_appearances.csv"
+    receipts.append(
+        {
+            "path": "src/national_selection/reference/prior_appearances.csv",
+            "sha256": hashlib.sha256(prior_reference.read_bytes()).hexdigest(),
+        }
+    )
+    prior = pd.read_csv(prior_reference, dtype={"player_id": str})
+    if (
+        prior.player_id.duplicated().any()
+        or not prior.player_id.isin(stats.player_id).all()
+    ):
+        raise ValueError("Invalid prior-appearance reference IDs")
+    prior.to_csv(destination / "prior_appearances.csv", index=False)
     overrides = {
         normalize(r.auction_name): normalize(r.scorecard_name)
         for r in pd.read_csv(reference).itertuples()
@@ -178,7 +217,7 @@ def import_local(workspace, destination):
                 "player_id": next(iter(ids)),
                 "source_name": row.player,
                 "link_method": method,
-                "nationality": row.nationality,
+                "nationality": country_name(row.nationality),
                 "known_from": f"{row.year + 1}-01-01",
             }
         )
@@ -187,11 +226,9 @@ def import_local(workspace, destination):
     conflicts = links.groupby("player_id").nationality.nunique()
     conflicted = links[links.player_id.isin(conflicts[conflicts > 1].index)]
     conflicted.to_csv(destination / "nationality_conflicts.csv", index=False)
-    if (conflicted.nationality == "India").any():
-        raise ValueError("Conflicting Indian eligibility records")
     eligibility = (
-        links[links.nationality == "India"]
-        .groupby("player_id", as_index=False)
+        links.rename(columns={"nationality": "country"})
+        .groupby(["player_id", "country"], as_index=False)
         .known_from.min()
     )
     eligibility.to_csv(destination / "eligibility.csv", index=False)
@@ -202,13 +239,17 @@ def import_local(workspace, destination):
     calendar_path = workspace / "side_order/data/build/matches.csv"
     record(calendar_path)
     calendar = pd.read_csv(calendar_path, dtype={"match_id": str})
-    calendar = calendar[
-        (calendar["format"].isin(["Test", "ODI", "T20I"]))
-        & ((calendar.team1 == "India") | (calendar.team2 == "India"))
-    ]
+    calendar = calendar[(calendar["format"].isin(["Test", "ODI", "T20I"]))]
     calendar = calendar[
         (calendar.start_date >= "2008-01-01") & (calendar.start_date <= "2025-12-31")
     ]
+    calendar = calendar.melt(
+        id_vars=["match_id", "format", "start_date", "end_date"],
+        value_vars=["team1", "team2"],
+        value_name="country",
+    ).drop(columns="variable")
+    calendar["country"] = calendar.country.map(country_name)
+    calendar = calendar.drop_duplicates(["match_id", "country"])
     appearance_rows = []
     for folder in ["tests", "odis", "t20is"]:
         for path in sorted(
@@ -219,24 +260,26 @@ def import_local(workspace, destination):
             info = json.loads(path.read_text())["info"]
             if (
                 info["gender"] != "male"
-                or "India" not in info["teams"]
+                or info.get("team_type") != "international"
                 or min(info["dates"]) > "2025-12-31"
             ):
                 continue
             record(path)
-            for name in info["players"]["India"]:
-                appearance_rows.append(
-                    dict(
-                        match_id=path.stem,
-                        player_id=info["registry"]["people"][name],
-                        player_name=name,
-                        date=min(info["dates"]),
-                        format=info["match_type"],
+            for team, names in info["players"].items():
+                for name in names:
+                    appearance_rows.append(
+                        dict(
+                            match_id=path.stem,
+                            player_id=info["registry"]["people"][name],
+                            player_name=name,
+                            country=country_name(team),
+                            date=min(info["dates"]),
+                            format=info["match_type"],
+                        )
                     )
-                )
     appearances = pd.DataFrame(appearance_rows)
-    if appearances.duplicated(["match_id", "player_id"]).any():
-        raise ValueError("Duplicate international appearance")
+    appearances, inconsistent = clean_appearances(appearances)
+    inconsistent.to_csv(destination / "inconsistent_appearances.csv", index=False)
     first = (
         appearances.groupby("player_id", as_index=False)
         .date.min()
@@ -244,11 +287,36 @@ def import_local(workspace, destination):
     )
     first.to_csv(destination / "first_recorded_appearances.csv", index=False)
     appearances.to_csv(destination / "international_appearances.csv", index=False)
-    missing = calendar[~calendar.match_id.isin(appearances.match_id)]
-    missing.to_csv(destination / "missing_internationals.csv", index=False)
-    calendar[["match_id", "format", "start_date", "end_date"]].to_csv(
-        destination / "calendar.csv", index=False
+    observed = appearances[["match_id", "country"]].drop_duplicates()
+    coverage_calendar = calendar.merge(
+        observed,
+        on=["match_id", "country"],
+        how="left",
+        indicator=True,
+        validate="one_to_one",
     )
+    coverage_calendar["missing"] = coverage_calendar._merge == "left_only"
+    coverage_calendar["year"] = coverage_calendar.start_date.str[:4]
+    coverage_calendar.groupby(["country", "format", "year"]).agg(
+        calendar_matches=("match_id", "size"), missing_matches=("missing", "sum")
+    ).reset_index().to_csv(
+        destination / "international_coverage_by_country.csv", index=False
+    )
+    unsupported = eligibility[~eligibility.country.isin(appearances.country)]
+    unsupported = (
+        unsupported.groupby("country")
+        .agg(players=("player_id", "nunique"))
+        .reset_index()
+    )
+    unsupported["reason"] = (
+        "No international appearance coverage; omitted from risk sets"
+    )
+    unsupported.to_csv(destination / "unsupported_affiliations.csv", index=False)
+    missing = coverage_calendar[coverage_calendar._merge == "left_only"].drop(
+        columns=["_merge", "missing", "year"]
+    )
+    missing.to_csv(destination / "missing_internationals.csv", index=False)
+    calendar.to_csv(destination / "calendar.csv", index=False)
     stats.to_csv(destination / "performances.csv", index=False)
     master = (
         stats.sort_values(["end_date", "match_id"])
@@ -261,8 +329,12 @@ def import_local(workspace, destination):
         )
         .reset_index()
     )
+    affiliations = eligibility.groupby("player_id", as_index=False).agg(
+        countries=("country", lambda x: "|".join(sorted(x))),
+        known_from=("known_from", "min"),
+    )
     master = master.merge(
-        eligibility, on="player_id", how="left", validate="one_to_one"
+        affiliations, on="player_id", how="left", validate="one_to_one"
     )
     master = master.merge(first, on="player_id", how="left", validate="one_to_one")
     master.to_csv(destination / "players.csv", index=False)
@@ -271,11 +343,15 @@ def import_local(workspace, destination):
     coverage = coverage.drop_duplicates(["year", "player_id"])
     linked_ids = set(links.player_id)
     coverage["nationality_resolved"] = coverage.player_id.isin(linked_ids)
-    coverage["indian_resolved"] = coverage.player_id.isin(eligibility.player_id)
+    first_known = eligibility.groupby("player_id").known_from.min()
+    coverage["affiliation_known_next_january"] = (
+        coverage.player_id.map(first_known)
+        <= (coverage.year + 1).astype(str) + "-01-01"
+    )
     coverage.groupby("year").agg(
         players=("player_id", "size"),
         nationality_resolved=("nationality_resolved", "sum"),
-        indian_resolved=("indian_resolved", "sum"),
+        affiliation_known_next_january=("affiliation_known_next_january", "sum"),
     ).to_csv(destination / "linkage_by_year.csv")
     unmatched = master[~master.player_id.isin(linked_ids)]
     unmatched.to_csv(destination / "unlinked_players.csv", index=False)
@@ -285,18 +361,21 @@ def import_local(workspace, destination):
         "ipl_matches": int(stats.match_id.nunique()),
         "ipl_players": int(stats.player_id.nunique()),
         "nationality_linked_players": int(links.player_id.nunique()),
-        "indian_players": len(eligibility),
+        "players_by_affiliation": eligibility.groupby("country")
+        .player_id.nunique()
+        .to_dict(),
         "unresolved_nationality_rows": len(unresolved),
-        "india_internationals_2008_2025": len(calendar),
-        "missing_internationals": missing[["match_id", "format", "start_date"]].to_dict(
-            "records"
-        ),
+        "international_calendar_matches_2008_2025": int(calendar.match_id.nunique()),
+        "missing_internationals": missing[
+            ["match_id", "country", "format", "start_date"]
+        ].to_dict("records"),
         "label_caveat": (
             "First recorded appearance, not certified debut. "
             "Match counts are observed lower bounds; gaps are exported."
         ),
         "nationality_timing": (
-            "Eligibility begins January 1 after the recorded season; "
+            "Auction nationality is a proxy for affiliation, not verified eligibility. "
+            "Affiliation begins January 1 after the recorded season; "
             "no future nationality cohort filter."
         ),
     }

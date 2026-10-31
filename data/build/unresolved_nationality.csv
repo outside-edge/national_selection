@@ -1,22 +1,10 @@
 year,name,nationality,candidates
 2008,Mohammed Yousuf,Pakistan,0
 2008,Ashwell Prince,South Africa,0
-2008,Glenn McGrath,Australia,0
-2008,Tatenda Taibu,Zimbabwe,0
-2008,Shaun Pollock,South Africa,0
-2008,Farveez Maharoof,Sri Lanka,0
-2008,Ramnaresh Sarwan,West Indies,0
 2008,Justin Langer,Australia,0
-2008,Shivnarine Chanderpaul,West Indies,0
 2008,Loots Bosman,South Africa,0
-2008,Chamara Silva,Sri Lanka,0
 2008,Nathan Bracken,Australia,0
-2008,Makhaya Ntini,South Africa,0
-2008,Dilhara Fernando,Sri Lanka,0
-2008,Nuwan Zoysa,Sri Lanka,0
 2008,Kyle Mills,New Zealand,0
-2008,James Hopes,Australia,0
-2008,Brett Geeves,Australia,0
 2008,Napoleon Einstein,India,0
 2008,Ajitesh Argal,India,0
 2008,Viraj Kadbe,India,0
@@ -31,161 +19,63 @@ year,name,nationality,candidates
 2008,Aditya Angle,India,0
 2008,Sumit Khatri,India,0
 2008,Parag More,India,0
-2008,Darren Lehmann,Australia,0
 2008,Rohan Banerjee,India,0
 2008,Saurasish Lahiri,India,0
-2008,Luke Ronchi,New Zealand,0
-2008,Dominic Thornely,Australia,0
-2009,Andrew Flintoff,England,0
-2009,Tyron Henderson,South Africa,0
-2009,Thilan Thushara,Sri Lanka,0
 2009,Kyle Mills,New Zealand,0
-2009,Dirk Nannes,Australia,0
-2009,Andrew McDonald,Australia,0
-2009,Ryan Harris,Australia,0
-2009,Graham Napier,England,0
-2009,Ryan McLaren,South Africa,0
-2009,Dillon du Preez,South Africa,0
-2009,Lee Carseldine,Australia,0
-2009,Shane Harwood,Australia,0
-2009,Robert Quiney,Australia,0
 2009,Burt Cockley,Australia,0
-2009,Makhaya Ntini,South Africa,0
-2009,Shaun Pollock,South Africa,0
-2009,Dilhara Fernando,Sri Lanka,0
 2009,Loots Bosman,South Africa,0
-2009,Farveez Maharoof,Sri Lanka,0
 2009,Ajitesh Argal,India,0
-2009,Chamara Silva,Sri Lanka,0
-2010,Shane Bond,New Zealand,0
-2010,Damien Martyn,Australia,0
-2010,Justin Kemp,South Africa,0
-2010,Adam Voges,Australia,0
-2010,Yusuf Abdulla,South Africa,0
 2010,Harmeet Singh,India,4
-2010,Andrew Flintoff,England,0
-2010,Dirk Nannes,Australia,0
-2010,Ryan Harris,Australia,0
 2009,Napoleon Einstein,India,0
 2009,Suresh Kumar,India,0
-2009,Luke Ronchi,New Zealand,0
-2009,Dominic Thornely,Australia,0
-2009,Tatenda Taibu,Zimbabwe,0
-2009,Glenn McGrath,Australia,0
 2009,Mayank Tehlan,India,0
-2009,Brett Geeves,Australia,0
 2009,Nathan Bracken,Australia,0
 2009,Kyle Mills,New Zealand,0
-2009,Ramnaresh Sarwan,West Indies,0
-2009,James Hopes,Australia,0
 2009,Justin Langer,Australia,0
 2009,Aditya Angle,India,0
-2009,Nuwan Zoysa,Sri Lanka,0
 2009,Harmeet Singh,India,4
 2009,Abhinav Kumar,India,0
 2010,Napoleon Einstein,India,0
-2010,Thilan Thushara,Sri Lanka,0
-2010,Luke Ronchi,New Zealand,0
 2010,Mayank Tehlan,India,0
-2010,James Hopes,Australia,0
-2010,Chamara Kapugedera,Sri Lanka,0
 2010,Aditya Angle,India,0
 2010,Sumit Khatri,India,0
 2010,Vikas Mishra,India,0
 2010,Sarandeep Singh,India,0
-2012,Robin Peterson,South Africa,0
 2012,Dinesh Chandimal,Sri Lanka,0
-2012,Daniel Harris,Australia,0
-2012,Darren Bravo,West Indies,0
-2012,Nathan Rimmington,Australia,0
-2012,Marchant de Lange,South Africa,0
 2012,Harmeet Singh,India,4
-2012,Andrew McDonald,Australia,0
-2012,Francois du Plessis,South Africa,0
-2012,Aiden Blizzard,Australia,0
-2012,Dirk Nannes,Australia,0
-2012,Ryan McLaren,South Africa,0
-2012,Johan Botha,South Africa,0
-2012,Marlon Samuels,West Indies,0
-2012,Alfonso Thomas,South Africa,0
-2012,Luke Wright,England,0
 2013,Akash Bhandari,India,0
 2013,Karan Sharma,India,0
-2013,Sachithra Senanayake,Sri Lanka,0
-2013,Ravi Rampaul,West Indies,0
-2013,Dirk Nannes,Australia,0
-2013,Andrew McDonald,Australia,0
 2013,Harmeet Singh,India,4
-2013,Ryan Harris,Australia,0
-2013,Kevon Cooper,West Indies,0
-2013,Luke Wright,England,0
-2013,Marlon Samuels,West Indies,0
-2013,Alfonso Thomas,South Africa,0
-2016,Carlos Brathwaite,West Indies,0
-2016,Mitchell McClenaghan,New Zealand,0
-2014,Jean-Paul Duminy,South Africa,0
-2014,Ravi Rampaul,West Indies,0
 2014,Brendan Taylor,Zimbabwe,0
-2014,Samuel Badree,West Indies,0
-2014,Kane Richardson,Australia,0
-2014,Marchant de Lange,South Africa,0
-2014,Krishmar Santokie,West Indies,0
 2014,Baba Aparajith,India,0
 2014,Ankush Bains,India,0
-2014,Ben Dunk,Australia,0
 2014,Sushant Marathe,India,0
-2014,Kevon Cooper,West Indies,0
 2014,Apoorv Wankhade,India,0
 2014,HS Sharath,India,0
 2014,Chama Milind,India,0
 2014,Sayan Mondal,India,0
 2014,Milind Kumar,India,0
-2011,Brad Haddin,Australia,0
-2011,Aiden Blizzard,Australia,0
-2011,James Hopes,Australia,0
-2011,Andrew McDonald,Australia,0
-2011,Travis Birt,Australia,0
-2011,Dirk Nannes,Australia,0
 2011,Stuart Broad,England,0
-2011,Johan Botha,South Africa,0
-2011,Alfonso Thomas,South Africa,0
-2011,Marlon Samuels,West Indies,0
 2011,Harshad Khadiwale,India,0
-2011,Luke Wright,England,0
 2011,Suresh Kumar,India,0
-2011,Ryan McLaren,South Africa,0
-2011,Ray Price,Zimbabwe,0
-2011,Dilhara Fernando,Sri Lanka,0
 2015,Baba Aparajith,India,0
-2015,Marchant de Lange,South Africa,0
 2015,Sushant Marathe,India,0
 2015,Apoorv Wankhade,India,0
 2015,Sayan Mondal,India,0
 2015,Chama Milind,India,0
-2015,Kevon Cooper,West Indies,0
 2016,Baba Aparajith,India,0
 2016,Suresh Kumar,India,0
 2013,Baba Aparajith,India,0
 2013,Imtiyaz Ahmed,India,0
 2013,R Karthikeyan,India,0
-2013,Ben Rohrer,Australia,0
-2013,Kane Richardson,Australia,0
 2013,Harshad Khadiwale,India,0
 2011,Ravi Teja,India,0
-2011,Ryan Harris,Australia,0
 2011,Akash Bhandari,India,0
-2016,Hashim Amla,South Africa,0
 2016,Vikas Tokas,India,0
 2017,Baba Aparajith,India,0
 2017,Ankush Bains,India,0
-2017,Usman Khawaja,Australia,0
 2017,Chirag Suri,UAE,0
-2017,Mitchell McClenaghan,New Zealand,0
-2017,Carlos Brathwaite,West Indies,0
-2017,Hashim Amla,South Africa,0
 2017,Armaan Jaffer,India,0
-2018,Carlos Brathwaite,West Indies,0
-2018,Evin Lewis,West Indies,0
 2018,Apoorv Wankhade,India,0
 2018,Manjot Kalra,India,0
 2018,Zahir Khan Pakteen,Afghanistan,0
@@ -194,42 +84,22 @@ year,name,nationality,candidates
 2018,Cameron Delport,South Africa,0
 2018,Tajinder Singh,India,0
 2018,Ben Dwarshuis,Australia,0
-2018,Sandeep Lamichhane,Nepal,0
 2018,Sharad Lumba,India,0
 2018,Kanishk Seth,India,0
 2018,Mehdi Hasan,India,0
 2018,Chaitanya Bishnoi,India,0
 2018,Jatin Saxena,India,0
+2018,Aryaman Birla,India,0
 2018,Pavan Deshpande,India,0
 2018,Aniruddha Joshi,India,0
 2018,MD Nidheesh,India,0
 2018,Manzoor Dar,India,0
-2018,Javon Searles,West Indies,0
-2018,Mitchell McClenaghan,New Zealand,0
-2018,Liam Plunkett,England,0
-2018,Junior Dala,South Africa,0
-2019,Colin Ingram,South Africa,0
-2019,Carlos Brathwaite,West Indies,0
-2019,Harry Gurney,England,0
-2019,Oshane Thomas,West Indies,0
-2019,Sandeep Lamichhane,Nepal,0
 2019,Manjot Kalra,India,0
-2019,Evin Lewis,West Indies,0
 2019,Manzoor Dar,India,0
-2020,Sheldon Cottrell,West Indies,0
-2020,Tom Banton,England,0
-2020,Isuru Udana,Sri Lanka,0
-2020,Oshane Thomas,West Indies,0
 2020,Anirudha Joshi,India,0
-2020,Josh Philippe,Australia,0
-2021,Dawid Malan,England,0
-2021,Wanindu Hasaranga,Sri Lanka,0
-2022,Wanindu Hasaranga,Sri Lanka,0
-2022,Dewald Brevis,South Africa,0
 2022,Ashwin Hebbar,India,0
 2022,Dominic Drakes,West Indies,0
-2022,Maheesh Theekshana,Sri Lanka,0
-2022,Romario Shepherd,West Indies,0
+2022,Finn Allen,New Zealand,0
 2022,Subhranshu Senapati,India,0
 2022,Chama Milind,India,0
 2022,Aneeshwar Gautam,India,0
@@ -237,95 +107,46 @@ year,name,nationality,candidates
 2022,Ravikumar Samarth,India,0
 2022,Writtick Chatterjee,India,0
 2022,Pratham Singh,India,0
-2022,Kyle Mayers,West Indies,0
 2022,Karan Sharma,India,0
 2022,Baltej Singh,India,0
+2022,Ansh Patel,India,0
 2022,Ashok Sharma,India,0
 2022,Anunay Singh,India,2
 2022,C Hari Nishanth,India,0
-2022,Evin Lewis,West Indies,0
-2022,Tim Seifert,New Zealand,0
 2022,Rahul Buddhi,India,0
 2022,Benny Howell,England,0
 2022,Ramesh Kumar,India,0
 2022,K Bhagath Varma,India,0
 2022,Shubham Garhwal,India,0
 2022,Vicky Ostwal,India,0
-2022,Rassie van der Dussen,South Africa,0
 2022,Aryan Juyal,India,0
 2022,Luvnith Sisodia,India,0
-2022,Corbin Bosch,South Africa,0
-2022,Matheesha Pathirana,Sri Lanka,0
 2022,Sushant Mishra,India,0
-2022,Tristan Stubbs,South Africa,0
-2023,Harry Brook,England,0
-2023,Joe Root,England,0
 2023,Saransh Jain,India,0
-2023,Donovan Ferreira,South Africa,0
-2023,Litton Das,Bangladesh,0
-2023,Maheesh Theekshana,Sri Lanka,0
-2023,Matheesha Pathirana,Sri Lanka,0
 2023,Subhranshu Senapati,India,0
 2023,Vicky Ostwal,India,0
-2023,Kyle Mayers,West Indies,0
-2023,Dewald Brevis,South Africa,0
-2023,Tristan Stubbs,South Africa,0
 2023,Rahul Buddhi,India,0
 2023,Baltej Singh,India,0
 2023,Writtick Chatterjee,India,0
-2023,Wanindu Hasaranga,Sri Lanka,0
-2024,Tristan Stubbs,South Africa,0
-2024,Spencer Johnson,Australia,0
-2024,Rachin Ravindra,New Zealand,0
-2024,Wanindu Hasaranga,Sri Lanka,0
-2024,Jake Fraser-McGurk,Australia,0
-2024,Donovan Ferreira,South Africa,0
-2024,Tom Kohler-Cadmore,England,0
-2024,Matheesha Pathirana,Sri Lanka,0
-2024,Maheesh Theekshana,Sri Lanka,0
 2024,Subhranshu Senapati,India,0
 2024,Vicky Ostwal,India,0
-2024,Kyle Mayers,West Indies,0
-2024,Dewald Brevis,South Africa,0
-2024,Nuwan Thushara,Sri Lanka,0
-2024,Romario Shepherd,West Indies,0
-2024,Tom Kohler-Cadmore,England,0
-2024,Nandre Burger,South Africa,0
 2024,Abdul P A,India,0
 2024,Rajan Kumar,India,0
 2024,Upendra Yadav,India,0
-2025,Matheesha Pathirana,Sri Lanka,0
-2025,Tristan Stubbs,South Africa,0
-2025,Harry Brook,England,0
-2025,Jake Fraser-McGurk,Australia,0
-2025,Rachin Ravindra,New Zealand,0
-2025,Wanindu Hasaranga,Sri Lanka,0
-2025,Maheesh Theekshana,Sri Lanka,0
 2025,Allah Ghazanfar,Afghanistan,0
-2025,Ryan Rickelton,South Africa,0
 2025,Gurjapneet Singh,India,0
 2025,Vansh Bedi,India,0
 2025,Andre Siddarth,India,0
 2025,Manvanth Kumar,India,0
-2025,Donovan Ferreira,South Africa,0
 2025,Tripurana Vijay,India,0
 2025,Nishant Sindhu,India,0
-2025,Spencer Johnson,Australia,0
 2025,Luvnith Sisodia,India,0
-2025,Shamar Joseph,West Indies,0
 2025,Yuvraj Chaudhary,India,0
 2025,Mitchell Owen,New Zealand,0
-2025,Lizaad Williams,South Africa,0
 2025,Bevon Jacobs,India,0
-2025,Xavier Bartlett,Australia,0
 2025,Pyla Avinash,India,0
 2025,Aaron Hardie,Australia,0
 2025,Harnoor Pannu,India,0
-2025,Kwena Maphaka,South Africa,0
 2025,Ashok Sharma,India,0
 2025,Swastik Chikara,India,0
-2025,Nuwan Thushara,Sri Lanka,0
-2025,Jacob Bethell,England,0
-2025,Romario Shepherd,West Indies,0
 2025,Adam Hose,England,0
-2025,Kamindu Mendis,Sri Lanka,0

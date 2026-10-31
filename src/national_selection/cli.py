@@ -24,7 +24,12 @@ def main():
         report = import_local(args.workspace, args.data)
         print(
             json.dumps(
-                {k: v for k, v in report.items() if k != "source_files"}, indent=2
+                {
+                    k: v
+                    for k, v in report.items()
+                    if k not in {"source_files", "missing_internationals"}
+                },
+                indent=2,
             )
         )
     if args.command in ["prepare", "all"]:
@@ -35,10 +40,14 @@ def main():
                 "eligibility.csv",
                 "international_appearances.csv",
                 "calendar.csv",
+                "prior_appearances.csv",
             ]
         ]
         panel = build_panel(*tables)
         panel.to_csv(args.data / "panel.csv", index=False)
+        panel.groupby(["country", "cutoff_date"]).agg(
+            players=("player_id", "size"), positives=("selected", "sum")
+        ).reset_index().to_csv(args.data / "risk_set_by_country.csv", index=False)
         print(
             panel.groupby("cutoff_date")
             .agg(players=("player_id", "size"), positives=("selected", "sum"))
@@ -56,6 +65,7 @@ def main():
                 "eligibility.csv",
                 "international_appearances.csv",
                 "calendar.csv",
+                "prior_appearances.csv",
             ]
         ]
         snapshot = build_panel(*tables, first_year=2026, last_year=2026, labeled=False)

@@ -8,6 +8,7 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
+from sklearn.compose import ColumnTransformer
 from sklearn.dummy import DummyClassifier, DummyRegressor
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.impute import SimpleImputer
@@ -21,37 +22,63 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from national_selection.features import FEATURES
 
+MODEL_INPUTS = FEATURES + ["country"]
+
 
 def models():
-    def pipeline(model):
-        return make_pipeline(
-            SimpleImputer(
-                strategy="median", add_indicator=True, keep_empty_features=True
-            ),
-            StandardScaler(),
-            model,
+    def pipeline(model, performance=True, country=False):
+        transformers = []
+        if performance:
+            transformers.append(
+                (
+                    "performance",
+                    make_pipeline(
+                        SimpleImputer(
+                            strategy="median",
+                            add_indicator=True,
+                            keep_empty_features=True,
+                        ),
+                        StandardScaler(),
+                    ),
+                    FEATURES,
+                )
+            )
+        if country:
+            transformers.append(
+                (
+                    "country",
+                    OneHotEncoder(handle_unknown="ignore", sparse_output=False),
+                    ["country"],
+                )
+            )
+        return make_pipeline(ColumnTransformer(transformers), model)
+
+    def boosting():
+        return HistGradientBoostingClassifier(
+            max_iter=100,
+            max_leaf_nodes=7,
+            min_samples_leaf=20,
+            l2_regularization=10,
+            early_stopping=False,
+            random_state=2026,
         )
 
-    return {
+    result = {
         "base_rate": (pipeline(DummyClassifier(strategy="prior")), "selected"),
-        "logistic": (pipeline(LogisticRegression(C=0.1, max_iter=5000)), "selected"),
-        "boosting": (
+        "country_only": (
             pipeline(
-                HistGradientBoostingClassifier(
-                    max_iter=100,
-                    max_leaf_nodes=7,
-                    min_samples_leaf=20,
-                    l2_regularization=10,
-                    early_stopping=False,
-                    random_state=2026,
-                )
+                LogisticRegression(C=0.1, max_iter=5000),
+                performance=False,
+                country=True,
             ),
             "selected",
         ),
+        "logistic": (pipeline(LogisticRegression(C=0.1, max_iter=5000)), "selected"),
+        "boosting": (pipeline(boosting()), "selected"),
         "zero_count": (
             pipeline(DummyRegressor(strategy="constant", constant=0)),
             "n_matches",
@@ -59,6 +86,20 @@ def models():
         "mean_count": (pipeline(DummyRegressor(strategy="mean")), "n_matches"),
         "poisson": (pipeline(PoissonRegressor(alpha=10, max_iter=5000)), "n_matches"),
     }
+    result.update(
+        {
+            "logistic_country": (
+                pipeline(LogisticRegression(C=0.1, max_iter=5000), country=True),
+                "selected",
+            ),
+            "boosting_country": (pipeline(boosting(), country=True), "selected"),
+            "poisson_country": (
+                pipeline(PoissonRegressor(alpha=10, max_iter=5000), country=True),
+                "n_matches",
+            ),
+        }
+    )
+    return result
 
 
 def metrics(frame):
@@ -77,7 +118,7 @@ def metrics(frame):
             roc_auc=roc_auc_score(y, p) if len(np.unique(y)) == 2 else None,
         )
         hits, slots, positives = 0, 0, 0
-        for _, block in frame.groupby("cutoff_date"):
+        for _, block in frame.groupby(["cutoff_date", "country"]):
             top = block.sort_values(
                 ["prediction", "player_id"], ascending=[False, True]
             ).head(10)
@@ -133,19 +174,20 @@ def evaluate(panel, destination):
             )
         )
         for name, (model, target) in models().items():
-            model.fit(train[FEATURES], train[target])
+            model.fit(train[MODEL_INPUTS], train[target])
             pred = (
-                model.predict_proba(test[FEATURES])[:, 1]
+                model.predict_proba(test[MODEL_INPUTS])[:, 1]
                 if target == "selected"
-                else model.predict(test[FEATURES])
+                else model.predict(test[MODEL_INPUTS])
             )
             output = test[
                 [
                     "player_id",
                     "player_name",
+                    "country",
                     "cutoff_date",
                     "label_end",
-                    "missing_outcome_matches",
+                    "missing_affiliation_matches",
                 ]
             ].copy()
             output["model"], output["target"], output["phase"] = name, target, phase
@@ -157,7 +199,7 @@ def evaluate(panel, destination):
                 joblib.dump(
                     {
                         "model": model,
-                        "features": FEATURES,
+                        "input_columns": MODEL_INPUTS,
                         "trained_before": cutoff,
                         "target": target,
                     },
@@ -180,6 +222,26 @@ def evaluate(panel, destination):
             dict(cutoff_date=date, model=name, target=target, **metrics(block))
         )
     pd.DataFrame(annual).to_csv(destination / "metrics_by_year.csv", index=False)
+    country_scores = []
+    for (phase, name, target, country), block in predictions.groupby(
+        ["phase", "model", "target", "country"]
+    ):
+        country_scores.append(
+            dict(
+                phase=phase,
+                model=name,
+                target=target,
+                country=country,
+                **metrics(block),
+            )
+        )
+    country_scores = pd.DataFrame(country_scores)
+    country_scores.to_csv(destination / "metrics_by_country.csv", index=False)
+    country_scores.groupby(["phase", "model", "target"])[
+        ["log_loss", "brier", "mae"]
+    ].mean().reset_index().to_csv(
+        destination / "metrics_country_macro.csv", index=False
+    )
     selected = min(
         (s for s in scores if s["phase"] == "validation" and s["target"] == "selected"),
         key=lambda s: s["log_loss"],
@@ -188,7 +250,7 @@ def evaluate(panel, destination):
         json.dumps(
             {
                 "classification_model_selected_on_validation_log_loss": selected,
-                "features": FEATURES,
+                "input_columns": MODEL_INPUTS,
                 "test_years": [2022, 2023, 2024],
                 "caveat": (
                     "Overlapping outcomes and repeated players; "
@@ -226,21 +288,33 @@ def forecast(panel, snapshot, destination):
     selected = json.loads((destination / "selection.json").read_text())[
         "classification_model_selected_on_validation_log_loss"
     ]
-    output = snapshot[["player_id", "player_name", "cutoff_date", "label_end"]].copy()
+    output = snapshot[
+        ["player_id", "player_name", "country", "cutoff_date", "label_end"]
+    ].copy()
     folder = destination / "models"
     folder.mkdir(exist_ok=True)
-    for name in [selected, "logistic", "poisson", "mean_count"]:
+    for name in dict.fromkeys(
+        [
+            selected,
+            "country_only",
+            "logistic",
+            "logistic_country",
+            "poisson",
+            "poisson_country",
+            "mean_count",
+        ]
+    ):
         model, target = models()[name]
-        model.fit(train[FEATURES], train[target])
+        model.fit(train[MODEL_INPUTS], train[target])
         output[name] = (
-            model.predict_proba(snapshot[FEATURES])[:, 1]
+            model.predict_proba(snapshot[MODEL_INPUTS])[:, 1]
             if target == "selected"
-            else model.predict(snapshot[FEATURES])
+            else model.predict(snapshot[MODEL_INPUTS])
         )
         joblib.dump(
             {
                 "model": model,
-                "features": FEATURES,
+                "input_columns": MODEL_INPUTS,
                 "target": target,
                 "trained_before": cutoff[0],
             },
@@ -283,7 +357,8 @@ def write_report(predictions, scores, selected, destination):
         [
             "",
             "Lower log loss and Brier are better. Higher average precision "
-            "and top-10 precision are better. Each year's top ten form the ranking "
+            "and top-10 precision are better. Up to ten players per country "
+            "and year form the ranking "
             "comparison; tied base-rate ranks use arbitrary stable ID order.",
             "",
             "## Match counts",
@@ -308,6 +383,38 @@ def write_report(predictions, scores, selected, destination):
             "Overlapping windows and repeated players are dependent. Identity "
             "corrections were made during development; this is an exploratory "
             "backtest rather than an untouched confirmation sample.",
+            "",
+        ]
+    )
+    lines.extend(
+        [
+            "## Coverage by country",
+            "",
+            "Country is the auction nationality recorded before each cutoff, "
+            "a proxy for affiliation.",
+            "Outcomes count appearances for any national side; earlier appearances "
+            "for any side exclude a player.",
+            "",
+            "| Country | Test snapshots | Distinct players | Positive snapshots | "
+            "Missing-calendar fixtures in label windows (max) |",
+            "| --- | ---: | ---: | ---: | ---: |",
+        ]
+    )
+    for country, block in test.groupby("country"):
+        lines.append(
+            f"| {country} | {len(block)} | {block.player_id.nunique()} | "
+            f"{int(block.actual.sum())} | "
+            f"{int(block.missing_affiliation_matches.max())} |"
+        )
+    lines.extend(
+        [
+            "",
+            "Per-country metrics and equal-country averages are exported separately. "
+            "Small country samples cannot establish country-specific predictive "
+            "accuracy. The pooled model is dominated by the largest cohort. "
+            "IPL participation is a selective pathway, especially for overseas "
+            "players who often already have caps. These results do not cover "
+            "every country's domestic player pool.",
             "",
         ]
     )

@@ -50,13 +50,13 @@ P0048,Abhishek Porel,,sibling_alias,0
 P0049,Abhishek Sharma,f29185a1,exact_scorecard_name,1
 P0050,Abu Nechim Ahmed,2af1b6d2,reviewed_name_link,1
 P0051,Adam Milne,350bb1b1,sibling_alias,1
-P0052,Adam Voges,,sibling_alias,0
+P0052,Adam Voges,864c199e,reviewed_name_link,1
 P0053,Adam Zampa,14f96089,sibling_alias,1
 P0054,Adil Rashid,249d60c9,sibling_alias,1
 P0055,Aditya Garhwal,,sibling_alias,0
 P0056,Aditya Tare,855a210c,reviewed_name_link,1
 P0057,Agnivesh Ayachi,,sibling_alias,0
-P0058,Aiden Blizzard,,sibling_alias,0
+P0058,Aiden Blizzard,1efb8a28,reviewed_name_link,1
 P0059,Ajantha Mendis,,sibling_alias,2
 P0060,Ajay Dev Goud,,sibling_alias,0
 P0061,Ajay Mandal,,sibling_alias,0
@@ -75,15 +75,15 @@ P0073,Akshdeep Nath,f10e94c4,reviewed_name_link,1
 P0074,Albie Morkel,c3d35165,sibling_alias,1
 P0075,Alex Carey,69d03465,sibling_alias,1
 P0076,Alex Hales,92aeac25,sibling_alias,1
-P0077,Alfonso Thomas,,sibling_alias,0
+P0077,Alfonso Thomas,b552a935,reviewed_name_link,1
 P0078,Alzarri Joseph,b0946605,sibling_alias,1
 P0079,Aman Khan,378daa89,reviewed_name_link,1
 P0080,Aman Rao,,sibling_alias,0
 P0081,Amit Kumar,,sibling_alias,0
 P0082,Amit Paunikar,3a02626a,reviewed_name_link,1
 P0083,Anand Rajan,d2340a43,exact_scorecard_name,1
-P0084,Andrew Flintoff,,sibling_alias,0
-P0085,Andrew McDonald,,sibling_alias,0
+P0084,Andrew Flintoff,ddc0828d,reviewed_name_link,1
+P0085,Andrew McDonald,16043342,reviewed_name_link,1
 P0086,Andrew Tye,7c7d63a2,sibling_alias,1
 P0087,Aneeshwar Gautam,,sibling_alias,0
 P0088,Aniket Choudhary,18e6906e,reviewed_name_link,1
@@ -137,7 +137,7 @@ P0135,Barinder Singh Saran,,sibling_alias,0
 P0136,Barinder Singh Sran,d8b2f218,sibling_alias,1
 P0137,Basil Thampi,871e9faf,exact_scorecard_name,1
 P0138,Ben Duckett,,sibling_alias,0
-P0139,Ben Dunk,,sibling_alias,0
+P0139,Ben Dunk,272d796e,reviewed_name_link,1
 P0140,Ben Dwarshuis,,sibling_alias,0
 P0141,Ben Hilfenhaus,f3171936,sibling_alias,1
 P0142,Ben Laughlin,b2a79f17,sibling_alias,1
@@ -148,7 +148,7 @@ P0146,Bhagath Verma,,sibling_alias,0
 P0147,Bhanuka Rajapaksa,6c882e9a,sibling_alias,1
 P0148,Billy Stanlake,6834d1f2,sibling_alias,1
 P0149,Bipul Sharma,c18496e1,exact_scorecard_name,1
-P0150,Brad Haddin,,sibling_alias,0
+P0150,Brad Haddin,b0c772ee,reviewed_name_link,1
 P0151,Brad Hogg,f708a0bc,sibling_alias,1
 P0152,Brendan Taylor,,sibling_alias,0
 P0153,Brijesh Sharma,,sibling_alias,0
@@ -169,7 +169,7 @@ P0167,CV Varun,5b7ab5a9,exact_scorecard_name,1
 P0168,Callum Ferguson,,sibling_alias,0
 P0169,Cameron Delport,,sibling_alias,0
 P0170,Cameron Green,eaa76d3c,sibling_alias,1
-P0171,Carlos Brathwaite,,sibling_alias,0
+P0171,Carlos Brathwaite,e342e5fb,reviewed_name_link,1
 P0172,Chaitanya Bishnoi,,sibling_alias,0
 P0173,Chama Milind,,sibling_alias,0
 P0174,Chamika Karunaratne,,sibling_alias,0
@@ -185,7 +185,7 @@ P0183,Christopher Morris,fb66ce1f,sibling_alias,1
 P0184,Chris Woakes,4c5d73db,sibling_alias,1
 P0185,Christopher Barnwell,,sibling_alias,0
 P0186,Clinton McKay,94eac556,sibling_alias,1
-P0187,Colin Ingram,,sibling_alias,0
+P0187,Colin Ingram,c995d726,reviewed_name_link,1
 P0188,Colin Munro,af2c687b,sibling_alias,1
 P0189,Cooper Connolly,,sibling_alias,0
 P0190,Corey Anderson,8abdf100,sibling_alias,1
@@ -212,35 +212,35 @@ P0210,DS Kulkarni,d2a989fc,exact_scorecard_name,1
 P0211,Daniel Christian,2a2e6343,sibling_alias,1
 P0212,Dale Steyn,8fd1a8f5,sibling_alias,1
 P0213,Daksh Kamra,,sibling_alias,0
-P0214,Damien Martyn,,sibling_alias,0
-P0215,Daniel Harris,,sibling_alias,0
+P0214,Damien Martyn,69762509,reviewed_name_link,1
+P0215,Daniel Harris,39f82db3,reviewed_name_link,1
 P0216,Daniel Sams,caf69bf7,sibling_alias,1
 P0217,Danish Malewar,,sibling_alias,0
 P0218,Darcy Short,1a156c88,sibling_alias,1
-P0219,Darren Bravo,,sibling_alias,0
+P0219,Darren Bravo,14b14cd8,reviewed_name_link,1
 P0220,Darren Sammy,c03c6200,sibling_alias,1
 P0221,Darshan Nalkande,cd8d2859,reviewed_name_link,1
 P0222,Daryl Mitchell,eade4650,sibling_alias,1
 P0223,David Wiese,aa8d28ae,sibling_alias,1
 P0224,David Willey,7f048519,sibling_alias,1
 P0225,Davy Jacobs,,sibling_alias,0
-P0226,Dawid Malan,,sibling_alias,0
+P0226,Dawid Malan,ad9c32a2,reviewed_name_link,1
 P0227,Debabrata Das,7050a1e7,reviewed_name_link,1
 P0228,Deepak Chahar,23eeb873,sibling_alias,1
 P0229,Deepak Hooda,73ad96ed,sibling_alias,1
 P0230,Deepak Punia,,sibling_alias,0
 P0231,Devon Conway,df5a6881,sibling_alias,1
-P0232,Dewald Brevis,,sibling_alias,0
+P0232,Dewald Brevis,844e79d1,reviewed_name_link,1
 P0233,Dhruv Jurel,bcf325d2,exact_scorecard_name,1
 P0234,Digvijay Deshmukh,,sibling_alias,0
 P0235,Dinesh Chandimal,,sibling_alias,0
 P0236,KD Karthik,c03f1114,exact_scorecard_name,1
 P0237,Dinesh Salunkhe,0264c10e,reviewed_name_link,1
-P0238,Dirk Nannes,,sibling_alias,0
+P0238,Dirk Nannes,c404f58a,reviewed_name_link,1
 P0239,Dishant Yagnik,063b3673,reviewed_name_link,1
 P0240,Dominic Drakes,,sibling_alias,0
 P0241,Domnic Joseph Muthuswamy,,sibling_alias,0
-P0242,Donovan Ferreira,,sibling_alias,0
+P0242,Donovan Ferreira,f0af99a7,reviewed_name_link,1
 P0243,Doug Bollinger,,sibling_alias,0
 P0244,Doug Bracewell,2e9fdf9b,sibling_alias,1
 P0245,Duan Jansen,8dc152d1,sibling_alias,1
@@ -250,14 +250,14 @@ P0248,E Lewis,0ebfb1ad,exact_scorecard_name,1
 P0249,EJG Morgan,d2a6c0e6,exact_scorecard_name,1
 P0250,Eklavya Dwivedi,b274dbbd,reviewed_name_link,1
 P0251,Eoin Morgan,d2a6c0e6,sibling_alias,1
-P0252,Evin Lewis,,sibling_alias,0
+P0252,Evin Lewis,0ebfb1ad,reviewed_name_link,1
 P0253,F du Plessis,3355b542,exact_scorecard_name,1
-P0254,Fabian Allen,b52ffbbd,sibling_alias,1
+P0254,Fabian Allen,b52ffbbd,reviewed_name_link,1
 P0255,Farhaan Behardien,,sibling_alias,0
 P0256,Fazalhaq Farooqi,e9c7f0d0,exact_scorecard_name,1
 P0257,Fidel Edwards,a7c226e1,sibling_alias,1
-P0258,Finn Allen,b52ffbbd,sibling_alias,1
-P0259,Francois du Plessis,,sibling_alias,0
+P0258,Finn Allen,,reviewed_name_link,0
+P0259,Francois du Plessis,3355b542,reviewed_name_link,1
 P0260,G Gambhir,bb345e0b,exact_scorecard_name,1
 P0261,G Periyaswamy,,sibling_alias,0
 P0262,Graeme Smith,72861603,sibling_alias,1
@@ -267,7 +267,7 @@ P0265,Gahlaut Rahul Singh,,sibling_alias,0
 P0266,George Bailey,5056011d,sibling_alias,1
 P0267,George Linde,,sibling_alias,0
 P0268,Gerald Coetzee,3204c99f,sibling_alias,1
-P0269,Glenn McGrath,,sibling_alias,0
+P0269,Glenn McGrath,ee7d0c82,reviewed_name_link,1
 P0270,Glenn Phillips,9a46c4e5,sibling_alias,1
 P0271,Gurinder Sandhu,,sibling_alias,0
 P0272,Gurkeerat Singh,6eb146d2,exact_scorecard_name,1
@@ -285,8 +285,8 @@ P0283,Harishankar Reddy,,sibling_alias,0
 P0284,Harmeet Singh,,sibling_alias,4
 P0285,Harpreet Bhatia,,sibling_alias,0
 P0286,Harpreet Brar,c05edf8e,exact_scorecard_name,1
-P0287,Harry Brook,,sibling_alias,0
-P0288,Harry Gurney,,sibling_alias,0
+P0287,Harry Brook,4ae1755b,reviewed_name_link,1
+P0288,Harry Gurney,e412cb64,reviewed_name_link,1
 P0289,Harsh Tyagi,,sibling_alias,0
 P0290,Harshal Patel,f986ca1a,sibling_alias,1
 P0291,Harshit Rana,77b1aa15,exact_scorecard_name,1
@@ -305,7 +305,7 @@ P0303,Ishan Kishan,752f7486,exact_scorecard_name,1
 P0304,Ishan Porel,fdf7491e,reviewed_name_link,1
 P0305,Ishank Jaggi,dded65e7,reviewed_name_link,1
 P0306,Ishwar Chandra Pandey,,sibling_alias,0
-P0307,Isuru Udana,,sibling_alias,0
+P0307,Isuru Udana,ac5ae4af,reviewed_name_link,1
 P0308,J Botha,7c503806,exact_scorecard_name,1
 P0309,J Suchith,4125d931,exact_scorecard_name,1
 P0310,J Syed Mohammed,,sibling_alias,0
@@ -331,7 +331,7 @@ P0329,Jagadeesha Suchith,4125d931,reviewed_name_link,1
 P0330,Jaydev Unadkat,1e66c162,reviewed_name_link,1
 P0331,Jalaj Saxena,249abedf,sibling_alias,1
 P0332,James Faulkner,808f425a,sibling_alias,1
-P0333,James Hopes,,sibling_alias,0
+P0333,James Hopes,2498e163,reviewed_name_link,1
 P0334,James Neesham,9219eff0,sibling_alias,1
 P0335,James Pattinson,f752db61,sibling_alias,1
 P0336,Jaskaran Singh,d7b3a420,exact_scorecard_name,1
@@ -341,18 +341,18 @@ P0339,Jatin Saxena,,sibling_alias,0
 P0340,Javon Searless,,sibling_alias,0
 P0341,Jayant Yadav,81049310,reviewed_name_link,1
 P0342,Jaydev Shah,,sibling_alias,0
-P0343,Jean-Paul Duminy,,sibling_alias,0
+P0343,Jean-Paul Duminy,2e8994e7,reviewed_name_link,1
 P0344,Jeevan Mendis,,sibling_alias,0
 P0345,Jerome Taylor,4180d897,sibling_alias,1
 P0346,Jesse Ryder,91ffa6c6,sibling_alias,1
 P0347,Jhye Richardson,1ee08e9a,sibling_alias,1
 P0348,Jitesh Sharma,800d2d97,reviewed_name_link,1
 P0349,Joe Denly,,sibling_alias,0
-P0350,Joe Root,,sibling_alias,0
+P0350,Joe Root,a343262c,reviewed_name_link,1
 P0351,Joel Paris,,sibling_alias,0
 P0352,Jofra Archer,5574750c,sibling_alias,1
 P0353,Joginder Sharma,9f961c14,exact_scorecard_name,1
-P0354,Johan Botha,,sibling_alias,0
+P0354,Johan Botha,7c503806,reviewed_name_link,1
 P0355,Johan van der Wath,,sibling_alias,0
 P0356,John Hastings,012829ff,sibling_alias,1
 P0357,Jonathan Vandiar,,sibling_alias,0
@@ -361,7 +361,7 @@ P0359,Josh Inglis,989889ff,sibling_alias,1
 P0360,Joshua Little,,sibling_alias,0
 P0361,Joshua Philippe,,sibling_alias,0
 P0362,Juan Theron,,sibling_alias,0
-P0363,Justin Kemp,,sibling_alias,0
+P0363,Justin Kemp,6581d753,reviewed_name_link,1
 P0364,K Bhagath Varma,,sibling_alias,0
 P0365,K C Cariappa,edb3d4f8,exact_scorecard_name,1
 P0366,K Goel,a1f1829d,exact_scorecard_name,1
@@ -390,7 +390,7 @@ P0388,KS Williamson,d027ba9f,exact_scorecard_name,1
 P0389,Kagiso Rabada,e62dd25d,sibling_alias,1
 P0390,Kamlesh Nagarkoti,b4f5c2d9,reviewed_name_link,1
 P0391,Kamran Khan,6ef60d3a,exact_scorecard_name,1
-P0392,Kane Richardson,,sibling_alias,0
+P0392,Kane Richardson,dfc4d8b5,reviewed_name_link,1
 P0393,Kanishk Chouhan,,sibling_alias,0
 P0394,Kanishk Seth,,sibling_alias,0
 P0395,Karan Sharma,,sibling_alias,0
@@ -402,7 +402,7 @@ P0400,Kedar Jadhav,99d63244,reviewed_name_link,1
 P0401,Keemo Paul,75224f22,sibling_alias,1
 P0402,Kemar Roach,78eb4223,sibling_alias,1
 P0403,Kevin Pietersen,39f01cdb,sibling_alias,1
-P0404,Kevon Cooper,,sibling_alias,0
+P0404,Kevon Cooper,557153ca,reviewed_name_link,1
 P0405,Kishore Pramod Kamath,,sibling_alias,0
 P0406,Kona Srikar Bharat,,sibling_alias,0
 P0407,Krains Fuletra,,sibling_alias,0
@@ -416,7 +416,7 @@ P0414,Kunal Rathore,e3851766,reviewed_name_link,1
 P0415,Kusal Janith Perera,f21043a5,sibling_alias,1
 P0416,Kyle Abbott,,sibling_alias,0
 P0417,Kyle Jamieson,68c56d09,sibling_alias,1
-P0418,Kyle Mayers,,sibling_alias,0
+P0418,Kyle Mayers,73c18486,reviewed_name_link,1
 P0419,Kyle Mills,,sibling_alias,0
 P0420,Lakshmipathy Balaji,b2b50355,sibling_alias,1
 P0421,L Ngidi,f834dcfc,exact_scorecard_name,1
@@ -430,7 +430,7 @@ P0428,Liam Livingstone,50c6bc2b,sibling_alias,1
 P0429,Lalit Yadav,ad427b5c,exact_scorecard_name,1
 P0430,Lasith Malinga,a12e1d51,sibling_alias,1
 P0431,Laxmi Ratan Shukla,b1451597,reviewed_name_link,1
-P0432,Litton Das,,sibling_alias,0
+P0432,Litton Das,0404d43c,reviewed_name_link,1
 P0433,Lockie Ferguson,2f9d0389,sibling_alias,1
 P0434,Luke Wood,,sibling_alias,0
 P0435,Lukman Meriwala,,sibling_alias,0
@@ -474,7 +474,7 @@ P0472,MS Bisla,5afd4539,exact_scorecard_name,1
 P0473,MS Dhoni,4a8a2e3b,exact_scorecard_name,1
 P0474,Manpreet Gony,ae78bc32,sibling_alias,1
 P0475,MV Boucher,f3cb53a1,exact_scorecard_name,1
-P0476,Maheesh Theekshana,,sibling_alias,0
+P0476,Maheesh Theekshana,f24c6701,reviewed_name_link,1
 P0477,Mahipal Lomror,da934ee8,reviewed_name_link,1
 P0478,Manan Ajay Sharma,,sibling_alias,0
 P0479,Manan Vohra,c03e2850,sibling_alias,1
@@ -486,13 +486,13 @@ P0484,Manoj Bhandage,,sibling_alias,0
 P0485,Manprit Juneja,605b7efa,reviewed_name_link,1
 P0486,Manvinder Bisla,5afd4539,reviewed_name_link,1
 P0487,Manzoor Dar,,sibling_alias,0
-P0488,Marchant De Lange,,sibling_alias,0
+P0488,Marchant De Lange,d4eef961,reviewed_name_link,1
 P0489,Marcus Stoinis,d9273ee7,sibling_alias,1
 P0490,Mark Wood,8d92a2c3,sibling_alias,1
 P0491,Marnus Labuschagne,,sibling_alias,0
 P0492,Martin Guptill,2be41edb,sibling_alias,1
 P0493,Mashrafe Mortaza,e186f49c,exact_scorecard_name,1
-P0494,Matheesha Pathirana,,sibling_alias,0
+P0494,Matheesha Pathirana,64839cb3,reviewed_name_link,1
 P0495,Matt Henry,e84ac20c,sibling_alias,1
 P0496,Matthew Short,,sibling_alias,0
 P0497,Matthew Wade,afa7e784,sibling_alias,1
@@ -507,7 +507,7 @@ P0505,Milind Kumar,,sibling_alias,0
 P0506,Milind Tandon,,sibling_alias,0
 P0507,Misbah-ul-Haq,7eae4418,exact_scorecard_name,1
 P0508,Mitchell Marsh,3d8feaf8,sibling_alias,1
-P0509,Mitchell McClenaghan,,sibling_alias,0
+P0509,Mitchell McClenaghan,51a3c5ef,reviewed_name_link,1
 P0510,Mitchell Santner,e4a0deae,sibling_alias,1
 P0511,Mithun Manhas,c42aaf71,reviewed_name_link,1
 P0512,Moeen Ali,bb351c23,sibling_alias,1
@@ -543,7 +543,7 @@ P0541,NV Ojha,890946a0,exact_scorecard_name,1
 P0542,Naman Tiwari,,sibling_alias,0
 P0543,Nathan Coulter-Nile,56ab442f,sibling_alias,1
 P0544,Nathan McCullum,5673a3fc,sibling_alias,1
-P0545,Nathan Rimmington,,sibling_alias,0
+P0545,Nathan Rimmington,6042bf26,reviewed_name_link,1
 P0546,Nathu Singh,b822e99c,reviewed_name_link,1
 P0547,Navdeep Saini,21d4e29b,reviewed_name_link,1
 P0548,Naveen Ul Haq,c0c411cb,exact_scorecard_name,1
@@ -560,7 +560,7 @@ P0558,Owais Shah,7bf96684,sibling_alias,1
 P0559,Obed Mccoy,529eb9e0,sibling_alias,1
 P0560,Odean Smith,23cca426,sibling_alias,1
 P0561,Onkar Tarmale,,sibling_alias,0
-P0562,Oshane Thomas,,sibling_alias,0
+P0562,Oshane Thomas,c6097d68,reviewed_name_link,1
 P0563,Parvinder Awana,1a0c3177,sibling_alias,1
 P0564,P Kumar,e938e1bc,exact_scorecard_name,1
 P0565,Pawan Negi,f62772e5,sibling_alias,1
@@ -639,7 +639,7 @@ P0637,RR Rossouw,cad00a4d,exact_scorecard_name,1
 P0638,Ravi Bopara,7ca5e05d,sibling_alias,1
 P0639,RV Patel,60500956,exact_scorecard_name,1
 P0640,RV Uthappa,1c17e270,exact_scorecard_name,1
-P0641,Rachin Ravindra,,sibling_alias,0
+P0641,Rachin Ravindra,ba5e1069,reviewed_name_link,1
 P0642,Raghav Goyal,,sibling_alias,0
 P0643,Rahul Buddhi,,sibling_alias,0
 P0644,Rahul Chahar,2ed569a0,sibling_alias,1
@@ -656,9 +656,9 @@ P0654,Ramesh Kumar,,sibling_alias,0
 P0655,Ranganath Vinay Kumar,,sibling_alias,0
 P0656,Rashid Khan,5f547c8b,exact_scorecard_name,1
 P0657,Rasikh Dar,b8527c3d,sibling_alias,1
-P0658,Rassie Van Der Dussen,,sibling_alias,0
+P0658,Rassie Van Der Dussen,9948e262,reviewed_name_link,1
 P0659,Ravi Bishnoi,df064e1a,reviewed_name_link,1
-P0660,Ravi Rampaul,,sibling_alias,0
+P0660,Ravi Rampaul,d68e7f48,reviewed_name_link,1
 P0661,Rinku Singh,0a509d6b,reviewed_name_link,1
 P0662,Reece Topley,8db7f47f,sibling_alias,1
 P0663,Ricky Ponting,7d415ea5,sibling_alias,1
@@ -667,14 +667,14 @@ P0665,Riley Meredith,64775749,sibling_alias,1
 P0666,Ripal Patel,60500956,reviewed_name_link,1
 P0667,Riyan Parag,04a418e8,reviewed_name_link,1
 P0668,Robert Frylinck,,sibling_alias,0
-P0669,Robin Peterson,,sibling_alias,0
-P0670,Romario Shepherd,,sibling_alias,0
+P0669,Robin Peterson,26ff4c29,reviewed_name_link,1
+P0670,Romario Shepherd,c5aef772,reviewed_name_link,1
 P0671,Ronit More,b2b23612,reviewed_name_link,1
 P0672,Rovman Powell,650d5e49,sibling_alias,1
 P0673,Rudra Pratap Singh,,sibling_alias,0
 P0674,Rusty Theron,,sibling_alias,0
-P0675,Ryan Harris,,sibling_alias,0
-P0676,Ryan McLaren,,sibling_alias,0
+P0675,Ryan Harris,12eddf28,reviewed_name_link,1
+P0676,Ryan McLaren,c654af19,reviewed_name_link,1
 P0677,S Anirudha,95a2ea61,exact_scorecard_name,1
 P0678,S Aravind,957532de,exact_scorecard_name,1
 P0679,S Badrinath,3576e47e,exact_scorecard_name,1
@@ -721,9 +721,9 @@ P0719,Sakib Hussain,,sibling_alias,0
 P0720,Salil Arora,,sibling_alias,0
 P0721,Salman Butt,4d6d6280,exact_scorecard_name,1
 P0722,Samarth Vyas,,sibling_alias,0
-P0723,Samuel Badree,,sibling_alias,0
+P0723,Samuel Badree,76388dc8,reviewed_name_link,1
 P0724,Sandeep Bavanaka,,sibling_alias,0
-P0725,Sandeep Lamichhane,,sibling_alias,0
+P0725,Sandeep Lamichhane,b410bd3d,reviewed_name_link,1
 P0726,Sandeep Sharma,ce820073,exact_scorecard_name,1
 P0727,Sanjay Yadav,,sibling_alias,0
 P0728,Swapnil Singh,983f2f61,exact_scorecard_name,1
@@ -748,13 +748,13 @@ P0746,Shahrukh Khan,7dcb9bc9,sibling_alias,1
 P0747,Shaik Rasheed,cbf58a86,reviewed_name_link,1
 P0748,Shakib Al Hasan,7dc35884,exact_scorecard_name,1
 P0749,Shams Mulani,9d704f6f,reviewed_name_link,1
-P0750,Shane Bond,,sibling_alias,0
+P0750,Shane Bond,4f629497,reviewed_name_link,1
 P0751,Sharad Lumba,,sibling_alias,0
 P0752,Shardul Thakur,1abb78f8,sibling_alias,1
 P0753,Shashank Singh,26989d80,exact_scorecard_name,1
-P0754,Shaun Pollock,,sibling_alias,0
+P0754,Shaun Pollock,88fccd6c,reviewed_name_link,1
 P0755,Shaun Tait,addfb70e,sibling_alias,1
-P0756,Sheldon Cottrell,,sibling_alias,0
+P0756,Sheldon Cottrell,a1d053dd,reviewed_name_link,1
 P0757,Sheldon Jackson,acc1aeda,sibling_alias,1
 P0758,Shelley Shaurya,,sibling_alias,0
 P0759,Sherfane Rutherford,d014d5ac,sibling_alias,1
@@ -812,20 +812,20 @@ P0810,Tanmay Agarwal,,sibling_alias,0
 P0811,Tanmay Mishra,c9cac448,reviewed_name_link,1
 P0812,Tejas Baroka,c28e9f12,exact_scorecard_name,1
 P0813,Tejasvi Singh,,sibling_alias,0
-P0814,Thilan Thushara,,sibling_alias,0
+P0814,Thilan Thushara,b2ae53f5,reviewed_name_link,1
 P0815,Thisara Perera,0f12f9df,sibling_alias,1
 P0816,Tim Paine,,sibling_alias,0
-P0817,Tim Seifert,,sibling_alias,0
+P0817,Tim Seifert,4663bd23,reviewed_name_link,1
 P0818,Tirumalasetti Suman,aaa1b522,reviewed_name_link,1
-P0819,Tom Banton,,sibling_alias,0
+P0819,Tom Banton,25f7b7d6,reviewed_name_link,1
 P0820,Tom Curran,e86754b2,sibling_alias,1
-P0821,Travis Birt,,sibling_alias,0
+P0821,Travis Birt,d2d4bb0a,reviewed_name_link,1
 P0822,Travis Head,12b610c2,sibling_alias,1
 P0823,Trent Boult,a818c1be,sibling_alias,1
-P0824,Tristan Stubbs,,sibling_alias,0
+P0824,Tristan Stubbs,85b3fab2,reviewed_name_link,1
 P0825,Tushar Deshpande,46a9bea1,sibling_alias,1
 P0826,Tymal Mills,245c97cb,sibling_alias,1
-P0827,Tyron Henderson,,sibling_alias,0
+P0827,Tyron Henderson,0a4ebc61,reviewed_name_link,1
 P0828,UBT Chand,0c94f480,exact_scorecard_name,1
 P0829,UT Yadav,cc1e8c68,exact_scorecard_name,1
 P0830,Umang Sharma,,sibling_alias,0
@@ -865,7 +865,7 @@ P0863,Wasim Jaffer,619aa81f,sibling_alias,1
 P0864,WA Mota,3dba85c2,exact_scorecard_name,1
 P0865,WD Parnell,3a60e0b5,exact_scorecard_name,1
 P0866,WP Saha,fe11caa6,exact_scorecard_name,1
-P0867,Wanindu Hasaranga,,sibling_alias,0
+P0867,Wanindu Hasaranga,a97c8ec2,reviewed_name_link,1
 P0868,Washington Sundar,f19ccfad,exact_scorecard_name,1
 P0869,Wayne Parnell,3a60e0b5,sibling_alias,1
 P0870,Will Jacks,9caf69a1,sibling_alias,1
@@ -885,7 +885,7 @@ P0883,Yo Mahesh,93a17209,reviewed_name_link,1
 P0884,Yogesh Gowalkar,,sibling_alias,0
 P0885,Yudhvir Charak,,sibling_alias,0
 P0886,Yudhvir Singh,4885bbe6,exact_scorecard_name,1
-P0887,Yusuf Abdulla,,sibling_alias,0
+P0887,Yusuf Abdulla,4353bba5,reviewed_name_link,1
 P0888,Yuvraj Singh,1c914163,exact_scorecard_name,1
 P0889,Yuzvendra Singh Chahal,57ee1fde,sibling_alias,1
 P0890,Zaheer Khan,91a4a398,sibling_alias,1
