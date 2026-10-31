@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: out/site
+  execute-dir: project
+  render:
+    - index.qmd
+    - forecasts.qmd
+    - docs/*.md
+    - out/report.md
+    - out/monthly_*/report.md
+    - out/annual_*/report.md
+  resources:
+    - data/build/**
+    - out/**/*.csv
+    - out/**/selection.json
+    - out/publication.json
+
+website:
+  title: International entry
+  description: Forecasts of first international cricket appearances, with chronological backtests and documented data coverage.
+  site-url: https://outside-edge.github.io/national_selection/
+  repo-url: https://github.com/outside-edge/national_selection
+  navbar:
+    background: '#173744'
+    foreground: '#ffffff'
+    left:
+      - href: index.qmd
+        text: Overview
+      - href: forecasts.qmd
+        text: Forecasts
+      - href: out/report.md
+        text: Backtests
+      - href: docs/monthly_design.md
+        text: Methods
+      - href: docs/data_sources.md
+        text: Data
+    right:
+      - href: https://outside-edge.github.io/player_value/
+        text: Player value
+      - href: https://outside-edge.github.io/side_order/
+        text: Team ratings
+      - icon: github
+        href: https://github.com/outside-edge/national_selection
+        aria-label: Source code
+  page-footer:
+    left: Outside Edge · Recorded international entry from the IPL pathway
+    right:
+      - href: docs/publication.md
+        text: Publication and updates
+      - href: docs/protocol.md
+        text: Protocol
+
+format:
+  html:
+    theme: cosmo
+    css: docs/styles.css
+    toc: true
+    lang: en
+
+execute:
+  enabled: false

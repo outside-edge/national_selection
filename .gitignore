@@ -9,3 +9,10 @@ dist/
 out/**/models/
 
 out/run.log
+out/site/
+docs/_generated/
+out/publication.json
+out/**/forecast_metrics.csv
+
+/.quarto/
+**/*.quarto_ipynb

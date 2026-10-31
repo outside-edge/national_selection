@@ -1,10 +1,15 @@
-name: Checks
-on: [push, pull_request]
+name: Checks and website
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -12,6 +17,45 @@ jobs:
       - uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.12'
+      - uses: quarto-dev/quarto-actions/setup@v2.2.0
+        with:
+          version: '1.10.20'
       - run: python -m pip install -e '.[dev]'
       - run: make check
       - run: make prepare evaluate forecast
+      - run: make site
+      - name: Capture desktop and mobile previews
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+          mkdir -p /tmp/site-previews
+          python -m playwright screenshot --viewport-size='1440,1100' "file://$PWD/out/site/index.html" /tmp/site-previews/overview.png
+          python -m playwright screenshot --viewport-size='1440,1100' "file://$PWD/out/site/forecasts.html" /tmp/site-previews/forecasts.png
+          python -m playwright screenshot --viewport-size='390,844' "file://$PWD/out/site/forecasts.html" /tmp/site-previews/mobile.png
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: site-previews
+          path: /tmp/site-previews
+      - uses: actions/upload-pages-artifact@v5.0.0
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: out/site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v6.0.0
+      - id: deployment
+        uses: actions/deploy-pages@v5.0.1

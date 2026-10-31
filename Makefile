@@ -1,7 +1,8 @@
 PYTHON ?= python3
+QUARTO ?= quarto
 export PYTHONPATH := src
 export LOKY_MAX_CPU_COUNT := 2
-.PHONY: all import prepare evaluate forecast check test lint ci-docker
+.PHONY: all import prepare evaluate forecast check test lint ci-docker site
 all:
 	$(PYTHON) -m national_selection.cli all
 import:
@@ -18,5 +19,9 @@ lint:
 test:
 	$(PYTHON) -m pytest -q
 check: lint test
+site:
+	$(PYTHON) -m national_selection.site prepare
+	$(QUARTO) render
+	$(PYTHON) -m national_selection.site check
 ci-docker:
 	docker run --rm -v "$(CURDIR):/work" -w /work python:3.12-slim sh -c 'pip install -e ".[dev]" && ruff check src tests && ruff format --check src tests && python -m pytest -q'

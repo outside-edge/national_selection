@@ -1,5 +1,8 @@
 # National selection
 
+[Forecasts and documentation](https://outside-edge.github.io/national_selection/) ·
+[Player tables](https://outside-edge.github.io/national_selection/forecasts.html)
+
 Forecast whether an uncapped IPL player will make a recorded senior international
 appearance in the next **H months**, across countries. Forecasts update monthly;
 the main horizon is **12 months**, with 6- and 24-month comparisons. Exact match
@@ -63,6 +66,7 @@ src/national_selection/
   models.py           Annual fits, dated evaluation and forecasts
   backtest.py         Matched January and common-horizon comparisons
   cli.py              Command-line entry points
+  site.py             Forecast tables and rendered publication checks
   reference/          Reviewed identity links and verified appearance evidence
 data/build/
   panel_6m.csv         Monthly panel with six-month labels
@@ -96,6 +100,12 @@ Included normalized data make these commands independent of sibling checkouts.
 `make all` imports, prepares, evaluates and forecasts. `make ci-docker` runs checks
 in a standard Python image. GitHub CI runs tests and the complete backtest from
 included inputs.
+
+`make site` builds the Quarto website from the saved results, verifies forecast
+metadata and checks the rendered links and downloadable files. The overview
+includes this README, so its documentation stays synchronized. See
+[publication and updates](docs/publication.md) and the
+[sibling-data inventory](docs/data_sources.md).
 
 For a single horizon or a historical forecast date:
 

@@ -1,0 +1,22 @@
+---
+title: Player forecasts
+---
+
+{{< include docs/_generated/forecasts.md >}}
+
+## Reading the table
+
+The selected model is chosen using the earlier validation period. The performance
+logistic model is shown alongside it to make individual rankings inspectable;
+it is an exploratory alternative, not the validation winner. Ties in the selected
+model do not establish a ranking. Country groups use dated auction affiliation.
+
+Career statistics mean **observed IPL career before the forecast date**. Batting
+average is runs per dismissal; strike rate is runs per 100 balls faced. A missing
+average means no recorded dismissals. Players without batting records can be
+bowlers; there is no role filter or age predictor in this model yet.
+
+The outcome is at least one recorded senior Test, ODI or T20I appearance, rather
+than a squad announcement. The sample is IPL participants with no known prior
+international appearance. Archive omissions can affect both eligibility and
+outcomes. See the [protocol](docs/protocol.md) and [backtests](out/report.md).

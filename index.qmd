@@ -1,0 +1,11 @@
+---
+pagetitle: International entry forecasts
+---
+
+{{< include docs/_generated/status.md >}}
+
+[Explore player forecasts](forecasts.qmd) ·
+[Read the backtests](out/report.md) ·
+[Where the data come from](docs/data_sources.md)
+
+{{< include README.md >}}
