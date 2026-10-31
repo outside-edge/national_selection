@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-10-31T02:03:48.624700+00:00",
+  "observed_through": "2026-10-25",
+  "cutoff_date": "2026-10-26",
+  "source_receipts": {
+    "retrieved_at": "2026-10-31T02:01:27.029614+00:00",
+    "siblings": {
+      "side_order": {
+        "commit": "5f4ae023ef2044c3e6d6cb0e44f3c93a4cc8acd5",
+        "files": {
+          "data/build/matches.csv": "93493cb0b02e7fa2d725780fcaff15b3948b0d2f20c70a0a91e059547e7ba733",
+          "data/build/manifest.json": "0cce3d12f72458fd1fdf3d1dc7e6fcda16b5b0c3ee71cd55186457ad000582cb"
+        }
+      },
+      "ipl_auction": {
+        "commit": "44a449e4f5000b8c9d3f8b6d037f28143d90d8f7",
+        "files": {
+          "data/acquisitions/player_registry.csv": "e7b86dd5947cb53042cdb53a902b2c0482e436160fd8002cd562f1fec54232fa",
+          "data/acquisitions/name_aliases.csv": "f899ad8e418f0e83545fa09da6a91b878bcbf2a8b3dae3b74c8e10f0d54ce69f"
+        }
+      }
+    },
+    "archives": {
+      "ipl": {
+        "url": "https://cricsheet.org/downloads/ipl_json.zip",
+        "sha256": "5757e04287179767ff8495f02902bd13812b9572ec8fa2ac1347ec2e9c6d4709",
+        "match_files": 1243
+      },
+      "tests": {
+        "url": "https://cricsheet.org/downloads/tests_json.zip",
+        "sha256": "9ab20f2c1e045eb327b412a19861cbd45ecb0cafbbed874959bda30ab9831784",
+        "match_files": 921
+      },
+      "odis": {
+        "url": "https://cricsheet.org/downloads/odis_json.zip",
+        "sha256": "c5b88855d6c06158a12c3f9d70f119aefd1433c1f921919297145fafad112dce",
+        "match_files": 3226
+      },
+      "t20s": {
+        "url": "https://cricsheet.org/downloads/t20s_json.zip",
+        "sha256": "dde77edf6e313b83785094b7428918536db916f359e8dd61491f9c6337e41487",
+        "match_files": 5845
+      }
+    },
+    "affiliations_sha256": "d404ccf5b3dde6fb5ebd2594db48b1fe2b189a937407125b5c8bbb4976b74242"
+  },
+  "ipl_matches": 1243,
+  "last_ipl_match": "2026-05-31",
+  "code_sha256": {
+    "site.py": "35001bee2d90cdc45889f2a01d2e397c3edc099ea80198c9612941bcd598c9dc",
+    "models.py": "9203af47441fb52bde7d5ee751364f4f2c8d99244baa183019db3649ed384f3d",
+    "backtest.py": "49c8734d4f3215816a05fce44f1039e086eb1a57ad441b7dffe3ae46d272941d",
+    "refresh.py": "75857e56fb05f9afb6898865c741025ec076bbaf808dc29468eddde2da23bc7c",
+    "cli.py": "3c354ce537d1454d0e9ff2b6b279adb600691f15c20c76d8dc54aafe2b0919ce",
+    "__init__.py": "499a410a46db67cbcc9fdd88e815b6f5fc0ad172b22a1e07be24751e13b7e634",
+    "features.py": "dce088737f03f57ae03910c6ec162659e89fa90351af8b2c4a7e02b7acbb5fdf",
+    "data.py": "2b3b0f737f5e8af8fe8fbb6a48c72a1ae2a2419c94dcd0218d60725c3089ba1c",
+    "coverage.py": "d2a87ffc20df8d806f1ac81064cc7462b1661841def75ebe5965c705a81ca8b7"
+  },
+  "input_sha256": {
+    "calendar.csv": "1c8b82f9b4d45ffedebfa90401d018e8a20ed878a09a65e2ec7becaddf4f1738",
+    "eligibility.csv": "75fc519baea0418a640547c53d84b7287a51bdd39ef9d504678d7da6853ed4a0",
+    "first_recorded_appearances.csv": "c340785c94ea2ce185c0ca9d5a4b6f0b6030b6b1a536446d513fe76d514b25a6",
+    "inconsistent_appearances.csv": "e1a97b5a0b13204f8b4ad6a382690e3f07d9cb22f173e8d0a2cfc7c1118a0ddb",
+    "international_appearances.csv": "83f454305c94d95582013c5f6d023d09f95618847875a62b189fa043281c4b90",
+    "international_coverage_by_country.csv": "76b85ff207ac926ab86204bca1a5e8f461c732547f2abb7751363e784221c146",
+    "linkage_by_year.csv": "c9f43f2737f6689be6402d6691c867bc661c7ebe05b70aa5e82ab5880230eee7",
+    "manifest.json": "c684f831f2c5a5c31a33aa6f7bc9157480770a6fa78ffcafc2c60440fb855c19",
+    "missing_internationals.csv": "a03dbbb0e3f6bed30cc91f9560dbd4607b1655945bf0cb3edd2e8977241cd866",
+    "nationality_conflicts.csv": "0d27c1c73239f7b6d820ba9aadaddcccb695a3d9f4e26e292c806153eefe6ccb",
+    "nationality_links.csv": "5a31c5262d9315c1e5fee41f96636b711612b9a7972c625e8c924dc685144666",
+    "performances.csv": "f770fb91804531fdb1e5f4fe04e4ab6619235008fcd7de0e921f950837d4b0fb",
+    "player_crosswalk.csv": "ef395da6afaf8799d077ed1805dcfcf9a2c6812efcab491e3da4f14d576cb0da",
+    "players.csv": "90bf0afedca05e5577ea930fd4a2ba77ea21c240eb56449b2d92defc5287f9c0",
+    "prior_appearances.csv": "de018c7642e221138f642a748e00231f02962bfd7e7691f4d05027b74dc585d2",
+    "unlinked_players.csv": "1a750bbe1e1863a153f6a8238169d9b629e093bd98215af1c15990cb1ccb845d",
+    "unresolved_nationality.csv": "0b20dd7cccc9ef144d1bba80ba6ec195df9171c8d10e28890f99e8b3f88b8d1a",
+    "unsupported_affiliations.csv": "a041d77f38292c6e07cac690bb96747649cf923b4679af4e7fda99db78657fd3"
+  },
+  "forecast_sha256": {
+    "monthly_24m/forecast.csv": "b9d8da6da4333a5da01c19f65630c3e59ed8c2c02d8f93195c81a195647d249d",
+    "monthly_12m/forecast.csv": "0ec3b3ab5172f9755c0c32ab3db70bec644aeef89cbb85744d2cbbefccd2c2b7",
+    "monthly_6m/forecast.csv": "f66462bfe002d19245eddf1ada4f007176557a6628011bb6243779bb82a69ce6"
+  }
+}
