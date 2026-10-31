@@ -13,13 +13,15 @@ def candidate_audit(performances, eligibility, appearances, prior, cutoff):
     )
     known = eligibility[pd.to_datetime(eligibility.known_from) <= cutoff]
     countries = known.groupby("player_id").country.agg(lambda x: sorted(set(x)))
-    audit["country"] = audit.player_id.map(countries).map(
-        lambda x: "Unknown"
-        if not isinstance(x, list)
-        else x[0]
-        if len(x) == 1
-        else "Conflicting affiliations"
-    )
+
+    def affiliation(values):
+        if not isinstance(values, list):
+            return "Unknown"
+        if len(values) == 1:
+            return values[0]
+        return "Conflicting affiliations"
+
+    audit["country"] = audit.player_id.map(countries).map(affiliation)
     caps = pd.concat([appearances[["player_id", "date"]], prior[["player_id", "date"]]])
     caps["date"] = pd.to_datetime(caps.date)
     caps = caps[caps.date < cutoff].groupby("player_id").date.min()
